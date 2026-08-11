@@ -1,0 +1,3909 @@
+{
+  "version": "2026.08.1",
+  "updated": "2026-08-11",
+  "license": "Mixed: WordNet, CC-BY-3.0/4.0, Apache-2.0, MIT, CeCILL-C (all commercial-safe)",
+  "source_repo": "hudaiapa88/lingolate-dict-data",
+  "release_tag": "v2026.08.1",
+  "dictionaries": [
+    {
+      "code": "ar-de",
+      "size": 225280,
+      "sha256": "4c34680c73e00b0c7cf94998283b4d41235e54ed77aa332f7e96b4caaad5d9ca",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 535,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ar-de.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ar-en",
+      "size": 237568,
+      "sha256": "83c78b8c00923ddda80759091333fa09fe548e554c22978b2b3bfbdfd5870487",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 542,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ar-en.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "ar-es",
+      "size": 204800,
+      "sha256": "4cbc3485f6470376939b002f9981146e064f9b577262e0bde41ef89329505231",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 466,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ar-es.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "ar-fr",
+      "size": 237568,
+      "sha256": "726baf29020467652acd3c457f339022204cf723f8baefd674bf07bdd6a0f78f",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 522,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ar-fr.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "ar-ja",
+      "size": 290816,
+      "sha256": "22d7ee655b2433e76bcf6b6ae7e3f8afac58dcb3c1bcdbd48894e660229af5c3",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 527,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ar-ja.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "ar-ru",
+      "size": 229376,
+      "sha256": "c416b51ac3024901ef24bfa2ae7447278465ee52ad1c46c4784422d07deee07e",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 536,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ar-ru.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ar-tr",
+      "size": 225280,
+      "sha256": "b43c0cc89dbed5f4ef1f7175acec273dcf7a72b4e79c2b94c939d5156eaee81c",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 530,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ar-tr.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ar-zh",
+      "size": 192512,
+      "sha256": "c76874ca1f2ec4c05dc0482fad22494064ba02a29eaf6956ff12267578bbade7",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 426,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ar-zh.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "bg-de",
+      "size": 200704,
+      "sha256": "6f9ae28774565b5a563808370486b37fea4d11ae13bdc32acae2f63287924a9f",
+      "source": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 407,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/bg-de.sqlite3",
+      "attribution": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "bg-en",
+      "size": 2560000,
+      "sha256": "dcf55267e5dcf8514f684d37e5e04154d1f45a5c758f3bb3c47a8b1354513545",
+      "source": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 6720,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/bg-en.sqlite3",
+      "attribution": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0 + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "bg-es",
+      "size": 1986560,
+      "sha256": "18a19cca3cd710eba3c26c778ccb4268e3b9198fc424b4a2cd677afe31231085",
+      "source": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 5365,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/bg-es.sqlite3",
+      "attribution": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0 + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "bg-fr",
+      "size": 2371584,
+      "sha256": "1f141631b114f5de7ead27f7108ed617e84af56a8983237a40d576c69911f14d",
+      "source": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 6277,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/bg-fr.sqlite3",
+      "attribution": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0 + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "bg-ja",
+      "size": 3194880,
+      "sha256": "3076d884be63858aaaf9ffe55fb6b93710a6c80fd20ab7de610379461f4502b6",
+      "source": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 6401,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/bg-ja.sqlite3",
+      "attribution": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0 + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "bg-ru",
+      "size": 208896,
+      "sha256": "4ca73950b4f468a7a9ba1596742b467e38e185f421f51491a055d45d3a317f96",
+      "source": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 416,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/bg-ru.sqlite3",
+      "attribution": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "bg-tr",
+      "size": 204800,
+      "sha256": "505b0d2844cd9a8cd8851195e7c2349b44d615a316e1e88613cdb66c8ff6a6d4",
+      "source": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 412,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/bg-tr.sqlite3",
+      "attribution": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "bg-zh",
+      "size": 2568192,
+      "sha256": "856434ac2fb322494482fa0ed80b74b1afcd4277013f05d4f88e187317f6070c",
+      "source": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 6672,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/bg-zh.sqlite3",
+      "attribution": "BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0 + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "cs-de",
+      "size": 21979136,
+      "sha256": "3f0ba0f1c293f1ab00ea95a76703c4973ef8d441bcc72a6ac29e19e4ce5b1d1d",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 136554,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/cs-de.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "cs-en",
+      "size": 29769728,
+      "sha256": "cf738e070043367090c8854debbaabb415db5fd3e753f7b3bb746ab040399908",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 187661,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/cs-en.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "cs-es",
+      "size": 14626816,
+      "sha256": "51283c371113d3bc87e2ea5bbb576791051540c34487308933c4da31c833423c",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 92038,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/cs-es.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "cs-fr",
+      "size": 16855040,
+      "sha256": "64cb9de7ddfd5ba67ff61e6cc40258e33fe4625485087772e5e25fd7013b2b95",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 106061,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/cs-fr.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "cs-hi",
+      "size": 7327744,
+      "sha256": "a784c21c0a86e624e0fbc0f9fb45dea0e755482ed606418f2ee17673d347f806",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 37856,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/cs-hi.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "cs-ja",
+      "size": 9883648,
+      "sha256": "46f006516c207b39ec2aa835ce0c4e3dfc53a4ad49d05e1ad3d0a5e7546ba51c",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 61484,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/cs-ja.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "cs-lt",
+      "size": 5824512,
+      "sha256": "5dacb09f4e674de1148451f05b64b925d5a99557a1baf177ebb68f99f7250d8f",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 39545,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/cs-lt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "cs-nl",
+      "size": 12361728,
+      "sha256": "9d86d93813bcf22b19f7129da6e2bf64443cd3a839c23f7348a3a0e8d375fdba",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 79613,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/cs-nl.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "cs-pt",
+      "size": 12914688,
+      "sha256": "b9cd8e07fee66363128af848833522ed4f00492d822bf708877c575a12b8ff54",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 81341,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/cs-pt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "cs-ru",
+      "size": 20709376,
+      "sha256": "11c083550dde3f35ae66d3a54c5badc87f7320c96623f6495424e8b7206dc8d7",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 117433,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/cs-ru.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "cs-tr",
+      "size": 8122368,
+      "sha256": "525c03802c0ecaa7fabd65e6a8077d4fed0e2f4915811c2f32a6d86eabbfd4fa",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 53060,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/cs-tr.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "cs-uk",
+      "size": 7569408,
+      "sha256": "9ca8738c24ebfabdebd37b84a873a05a44aa1dd6356001e5f2156655b5e5b923",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 46150,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/cs-uk.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "cs-zh",
+      "size": 10678272,
+      "sha256": "60122a051f1b746d4d90109bbeb0b8d72c05216b7a557e8c8eed44670d1b3ce1",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 61624,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/cs-zh.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "da-de",
+      "size": 131072,
+      "sha256": "c8ab5358ddb9a2078471bab0b6bae31c1271b14e03ca10dfec39ba522bc158cd",
+      "source": "DanNet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 435,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/da-de.sqlite3",
+      "attribution": "DanNet — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "da-en",
+      "size": 696320,
+      "sha256": "7714998cff5660db0fe326554893d3bf9546a20f844785373df0790b4719f8c9",
+      "source": "DanNet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 4468,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/da-en.sqlite3",
+      "attribution": "DanNet — WordNet-style License (NICT/DanNet/etc.) + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "da-es",
+      "size": 544768,
+      "sha256": "ac7d29141d685605156074944496ab1fcb75200546f2cc016cf9ef83a91745c9",
+      "source": "DanNet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 3602,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/da-es.sqlite3",
+      "attribution": "DanNet — WordNet-style License (NICT/DanNet/etc.) + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "da-fr",
+      "size": 647168,
+      "sha256": "53d3107733c26ccd42160e96081c364c8e6f6686f52fac855580ad7a937c3b7b",
+      "source": "DanNet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 4197,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/da-fr.sqlite3",
+      "attribution": "DanNet — WordNet-style License (NICT/DanNet/etc.) + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "da-ja",
+      "size": 1044480,
+      "sha256": "dcc6592590933eeb82295df294d110749a0171fe722cf84f5c3b98356fa7ea8f",
+      "source": "DanNet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 4292,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/da-ja.sqlite3",
+      "attribution": "DanNet — WordNet-style License (NICT/DanNet/etc.) + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "da-ru",
+      "size": 135168,
+      "sha256": "230188e5088b579795dd089a98fd04c6c38919dd363c399f61b403fd0bad6545",
+      "source": "DanNet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 436,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/da-ru.sqlite3",
+      "attribution": "DanNet — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "da-tr",
+      "size": 131072,
+      "sha256": "11d0ea70fc02705555d03bff85e99ba33b418ea862c639aecbe38b999f2c4f13",
+      "source": "DanNet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 439,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/da-tr.sqlite3",
+      "attribution": "DanNet — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "da-zh",
+      "size": 679936,
+      "sha256": "c7ab4160ebcfafa7586953ddee8af8c34f7545a74cca3ad4fa27630c22e4451d",
+      "source": "DanNet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 4276,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/da-zh.sqlite3",
+      "attribution": "DanNet — WordNet-style License (NICT/DanNet/etc.) + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "de-ar",
+      "size": 176128,
+      "sha256": "4e5172bc4ae57eea8fb5f31ae19d5aaa2c66cc1009a38c0d3f88d9c5bd89cd4b",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 403,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-ar.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "de-bg",
+      "size": 122880,
+      "sha256": "7d031a6c1fa833d206eb7dc79998b00f2863c5c2ee01708c579ff416857a4fa1",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 278,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-bg.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "de-cs",
+      "size": 24707072,
+      "sha256": "363b658f00e9cdd8064b137cd57e74d6c31c3af45bd6cce04238301b6577952d",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 155164,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-cs.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "de-da",
+      "size": 118784,
+      "sha256": "02946d90324bb779d9cd194fa7716d2f937c1e0abdf739653e35b305d72eb341",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 260,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-da.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + DanNet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "de-el",
+      "size": 139264,
+      "sha256": "89ad53c5d20caf55ea8acf19c210721d66b2f243cdbcf872c25cecbc22c96f49",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 320,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-el.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Greek Wordnet — Apache License 2.0"
+    },
+    {
+      "code": "de-en",
+      "size": 180224,
+      "sha256": "f50fb591e8c650b853e7f470b1fc40f6563e33525b417dbfe9bd19e006674da2",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 429,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-en.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "de-es",
+      "size": 163840,
+      "sha256": "afef7e08a0a52539e9276b388b5a2b7c212fafd4ff81de971cdc41942618f89a",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 363,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-es.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "de-fi",
+      "size": 180224,
+      "sha256": "c0782120b6253f9169b71d93c2281dfb304a253021c20a730f5ec8b0641a7f4a",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 426,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-fi.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "de-fr",
+      "size": 176128,
+      "sha256": "f95f1fc0c7f95ad4c6b60c6e119e42abea818907ec7c5c3535e6060c98ad597a",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 410,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-fr.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "de-hi",
+      "size": 11927552,
+      "sha256": "a7f805a5df30310a5839aabe7a8b6f759df1d59d57adcb3184dc9f2b3a45f216",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 64876,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-hi.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "de-id",
+      "size": 184320,
+      "sha256": "2bbe5192999cea133dd297ea41ef124084463fa6b9ffd2b38def18879d39c8db",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 401,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-id.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Wordnet Bahasa (Indonesia) — MIT License"
+    },
+    {
+      "code": "de-it",
+      "size": 176128,
+      "sha256": "e8e271002b77e75ca128b5144aa1ac88df45bc02869edc2e412501f8a9bd0267",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 387,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-it.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "de-ja",
+      "size": 221184,
+      "sha256": "5011962f4ca9e511d8517a5c8496fa488caaf616a556b9ef5245b4d6f486d844",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 414,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-ja.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "de-ko",
+      "size": 172032,
+      "sha256": "e861edee2ab3bb7bded9e037256485e7eac1422df6694b20247c641dee8368d7",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 428,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-ko.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "de-lt",
+      "size": 8364032,
+      "sha256": "a0000ca8ebca30249427cc60a150abd3d43c7e2efe545ec66d1651cc3401f585",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 56372,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-lt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "de-nl",
+      "size": 30593024,
+      "sha256": "ab65c28630fdc24b4f890a5652bf5a2186cba015eb7125ea00324dea185bba23",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 195105,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-nl.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "de-no",
+      "size": 118784,
+      "sha256": "fca2d47fea666c54c6fd401059e8d8f4ded917402d069059f1e64938f38544ef",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 260,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-no.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "de-pl",
+      "size": 139264,
+      "sha256": "4a39e0fdebfa37f3772c18980a2247a3fff2edadb9ee8365e4b77a1c52168ffa",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 302,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-pl.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "de-pt",
+      "size": 29208576,
+      "sha256": "407b9b407f528c4ef4b4777aa6613181196d7c6b32124d84779c5239594ab86d",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 183421,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-pt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "de-ru",
+      "size": 172032,
+      "sha256": "de28e90c2bb32781aa5f9ebd64719e34204ed452f21bf72ff8b46618e7cb639b",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 424,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-ru.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "de-sv",
+      "size": 118784,
+      "sha256": "953fd524335d89b774e1d101ac59da7c434bf9bc920ac72f6aa408159b9d75b7",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 286,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-sv.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "de-th",
+      "size": 192512,
+      "sha256": "b143b98ed75115f814fbbdd29d0f1d116b1e4d826a2eb50fddee4a1a5332e26e",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 408,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-th.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "de-tr",
+      "size": 172032,
+      "sha256": "b41c347addd67f1e03ec2f37bc17a52e0783a158cade8316c9d375406772b222",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 422,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-tr.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "de-uk",
+      "size": 12193792,
+      "sha256": "537c7cae9b839d761e09738523b74691edf5c308f4696ad7d2908c51191ad45d",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 72379,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-uk.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "de-vi",
+      "size": 172032,
+      "sha256": "d1f281b7e3effee5a930ccff0e5f08e560dac007020a8a7d8e48f4ba3f41c311",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 427,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-vi.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "de-zh",
+      "size": 143360,
+      "sha256": "65a448eb0fcac2d6f8df7d66905425ecb18d5a5a8f3f73e9619d4ad2e2f85ebd",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 329,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/de-zh.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "el-de",
+      "size": 237568,
+      "sha256": "07606ee8541bfa6266b2f24814f2329d43e36094ada11342b37dcd666eecea4c",
+      "source": "Greek Wordnet — Apache License 2.0",
+      "license": "Apache-2.0",
+      "entry_count": 470,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/el-de.sqlite3",
+      "attribution": "Greek Wordnet — Apache License 2.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "el-en",
+      "size": 7028736,
+      "sha256": "7f48f3a90320aef546cc135808ee70cbedd187f368c7ede2e1cb18cf2f350a48",
+      "source": "Greek Wordnet — Apache License 2.0",
+      "license": "Apache-2.0",
+      "entry_count": 18221,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/el-en.sqlite3",
+      "attribution": "Greek Wordnet — Apache License 2.0 + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "el-es",
+      "size": 3366912,
+      "sha256": "0a6b08636ded9d0826b19d1f62332a30a03e32f28922e4a07eda8d073ea3be6e",
+      "source": "Greek Wordnet — Apache License 2.0",
+      "license": "Apache-2.0",
+      "entry_count": 9063,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/el-es.sqlite3",
+      "attribution": "Greek Wordnet — Apache License 2.0 + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "el-fr",
+      "size": 5267456,
+      "sha256": "33240f8d41705079dc158c80299b9be1cd29ce35751ed4f72cf907560461738d",
+      "source": "Greek Wordnet — Apache License 2.0",
+      "license": "Apache-2.0",
+      "entry_count": 13792,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/el-fr.sqlite3",
+      "attribution": "Greek Wordnet — Apache License 2.0 + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "el-ja",
+      "size": 5783552,
+      "sha256": "0af20f4c2012748be43d619d177fc7062eda2515439638499a4e18245cc3f72a",
+      "source": "Greek Wordnet — Apache License 2.0",
+      "license": "Apache-2.0",
+      "entry_count": 13152,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/el-ja.sqlite3",
+      "attribution": "Greek Wordnet — Apache License 2.0 + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "el-ru",
+      "size": 249856,
+      "sha256": "9c28a9050bdeb5dfd890d60279b09665dff020650427c35dad69a26d38985141",
+      "source": "Greek Wordnet — Apache License 2.0",
+      "license": "Apache-2.0",
+      "entry_count": 483,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/el-ru.sqlite3",
+      "attribution": "Greek Wordnet — Apache License 2.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "el-tr",
+      "size": 237568,
+      "sha256": "6002bceb62eafca08a269ec09510b395cba6cf5b93574a206afcd15cde251065",
+      "source": "Greek Wordnet — Apache License 2.0",
+      "license": "Apache-2.0",
+      "entry_count": 478,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/el-tr.sqlite3",
+      "attribution": "Greek Wordnet — Apache License 2.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "el-zh",
+      "size": 3158016,
+      "sha256": "17bcd785e2fc7a9f9de0c6374b35338b938edaab0372d8357ff6bbdfc34607ab",
+      "source": "Greek Wordnet — Apache License 2.0",
+      "license": "Apache-2.0",
+      "entry_count": 8606,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/el-zh.sqlite3",
+      "attribution": "Greek Wordnet — Apache License 2.0 + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "en-ar",
+      "size": 315392,
+      "sha256": "19fc7d526479a9bd7bb2b170864dd4b48cbc1092ab0a0fe01580b3ddc3b66df7",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 1161,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-ar.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "en-bg",
+      "size": 2179072,
+      "sha256": "aa3586edd0c95ab75acdcab56a036d6f0d6ad49dfacc0cae4340d836edc6a3bd",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 8875,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-bg.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "en-cs",
+      "size": 32227328,
+      "sha256": "f18b26bc08ffa3e3543d001aaecdc37fde007a7ad5eeb324bdc6e11686c17b7e",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 204448,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-cs.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "en-da",
+      "size": 1708032,
+      "sha256": "e0ab5944729c5849f76a066e1b9cdaa73841b677a48e0d92a00ffd8bd6ed888d",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 7891,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-da.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + DanNet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "en-de",
+      "size": 303104,
+      "sha256": "74927a9e860aa57b95b7a89bed6c3621a0ebf531d9cf79bf3c2d8a5308abd61c",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 1177,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-de.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "en-el",
+      "size": 7016448,
+      "sha256": "09ba3175551312d4b93d99b51831c87145b73b070631382eac0e4e3e1e2e5ece",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 28207,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-el.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + Greek Wordnet — Apache License 2.0"
+    },
+    {
+      "code": "en-es",
+      "size": 12447744,
+      "sha256": "96a61ba7515f5a222282d86e6fd621b7ca1e9d8f2c92bd2bb4fb726b8658ba9f",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 54801,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-es.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "en-fi",
+      "size": 37777408,
+      "sha256": "a4115b215f249509b9dd0485d065d75b6a6edaea4c1c1b19bf5d53cea40a3388",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 147912,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-fi.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "en-fr",
+      "size": 21266432,
+      "sha256": "f4adcb11b529ced4d262745eb8d277d01f350a37c60fed4a8e4b322d0e96772a",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 85871,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-fr.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "en-hi",
+      "size": 22134784,
+      "sha256": "3cd52525bdfa1089bc34b7124fdd43c7aef0a097e62c6dc6ab2f5a119f4f91d0",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 101105,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-hi.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "en-id",
+      "size": 14045184,
+      "sha256": "7768d72f32d62657b53706b601394185d5ec5a217ce7615e12d6841a1107d2f9",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 51269,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-id.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + Wordnet Bahasa (Indonesia) — MIT License"
+    },
+    {
+      "code": "en-it",
+      "size": 12529664,
+      "sha256": "44118e587d9ce9d2312ba9bad288b35a9549fb4f3e89d7bf6d67593930ad8870",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 52226,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-it.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "en-ja",
+      "size": 22450176,
+      "sha256": "c4b7a706da94686f042d99cf5d30677fd4114a42badf64fc886322e64e337172",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 81045,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-ja.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "en-ko",
+      "size": 307200,
+      "sha256": "30447faf701df1d95de16f8ec509e1fe18008858e4394888ba93e803433554f3",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 1224,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-ko.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "en-lt",
+      "size": 8712192,
+      "sha256": "cba212e0b1b9da88e4c03aa36ce117da48167fd1657f939956854ed3b072f9c6",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 59864,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-lt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "en-nl",
+      "size": 39157760,
+      "sha256": "c77eced7ed9fdae61c8f47da076a9ebb21eb444a1a2a6383f247584de7292298",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 257701,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-nl.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "en-no",
+      "size": 1683456,
+      "sha256": "229adce5dd82b7689e76509f25c88e36ead21db58e412f9746f85ac236f02a9c",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 7854,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-no.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "en-pl",
+      "size": 13332480,
+      "sha256": "41f24c1cce8886948dc5918f59435d38eacdbc6fd461670d0cd8c3254273d19c",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 57222,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-pl.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "en-pt",
+      "size": 46563328,
+      "sha256": "2a11cc36d2ce8006ca76809284e89247684b8b67dc748ab8802f32abbb3183ad",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 296847,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-pt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "en-ru",
+      "size": 315392,
+      "sha256": "251182c880640d4e1a9aa659bf62ff98fd3ad8f74ba6903f0b9292857db6c053",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 1220,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-ru.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "en-sv",
+      "size": 2527232,
+      "sha256": "9e50543b6d39e835f8085622ce00f0a23448cb2bdcf3fbe408bff9e16be355ea",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 12191,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-sv.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "en-th",
+      "size": 29728768,
+      "sha256": "dc9ccdb5c6dff5bb605f9688acc8b17afcb135c04e4b73a052d9950812366df5",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 105736,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-th.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "en-tr",
+      "size": 303104,
+      "sha256": "0ac574c2891b04def264fcd4bd2748f1f142cc9ecc02ea249bb9d33330de652d",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 1206,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-tr.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "en-uk",
+      "size": 10895360,
+      "sha256": "3a93aca896de08787716093f9c8eb71548077747ff5ba1b86a7890a7aa4aa3a3",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 66282,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-uk.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "en-vi",
+      "size": 307200,
+      "sha256": "186f859696c6ea984ced9c6c4834887d6cab28d93105a6cb5c52122531cca6fd",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 1214,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-vi.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "en-zh",
+      "size": 14266368,
+      "sha256": "d70cf5c7c04ec23b9300d216d7fadea5d3d0bf5105aa6708c95943f15422272e",
+      "source": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License",
+      "license": "WordNet-3.0",
+      "entry_count": 61596,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/en-zh.sqlite3",
+      "attribution": "OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "es-ar",
+      "size": 167936,
+      "sha256": "83e28d2385f7a66db73faf05102466e9c97b8ec284bf90b295f6ae139066e14a",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 677,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-ar.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "es-bg",
+      "size": 811008,
+      "sha256": "8f46111d023659b3ace70b3201669b3382bea6a71d3948acd8fb0467c94aad02",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 4786,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-bg.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "es-cs",
+      "size": 15527936,
+      "sha256": "90ac07b3a970431887047b55300b51b506814769aea9aed521679ce37a7a550e",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 97131,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-cs.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "es-da",
+      "size": 630784,
+      "sha256": "41ad52bc231f0185b2287941df17edec84808170596933e84354d99540ab61e7",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 4334,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-da.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + DanNet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "es-de",
+      "size": 159744,
+      "sha256": "50a8e373612e79dd1aa0cb8bdac896578cc121a28fb36db4c7350e53adf62f00",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 691,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-de.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "es-el",
+      "size": 1540096,
+      "sha256": "6960e0c95fb9d9276fcfa66717a6833d505792f618038bdc7aa3c37d9c47101c",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 9156,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-el.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + Greek Wordnet — Apache License 2.0"
+    },
+    {
+      "code": "es-en",
+      "size": 5926912,
+      "sha256": "a7e3fcd7f192f0896ae0b7146efe00fe51f6792b0694c99ae117a4be27888dba",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 36681,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-en.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "es-fi",
+      "size": 5984256,
+      "sha256": "2938ae53b6b740edf6bf29e2b2c6d6c96fb27994caac14bf403d6d8faccfdb16",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 36546,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-fi.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "es-fr",
+      "size": 3796992,
+      "sha256": "9b9a73e257c013fc5353d247bde6fee56fb8aaab9ab98419f2ecf707723f953c",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 24805,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-fr.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "es-hi",
+      "size": 11177984,
+      "sha256": "8db4a985bb8ea9cc900d359dcd2bdb1554ef84e45e36c06e30bdd95280d884de",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 57415,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-hi.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "es-id",
+      "size": 3178496,
+      "sha256": "d54d9dec9de1b980a56ac7b6d51e908a255fc30f5a997e0d25f32542c5e526ad",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 16965,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-id.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + Wordnet Bahasa (Indonesia) — MIT License"
+    },
+    {
+      "code": "es-it",
+      "size": 2387968,
+      "sha256": "76371973b5f4c8f05c1fe59687bc53537383eee7dbe1a8fab0d20ffd50b694ba",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 15081,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-it.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "es-ja",
+      "size": 4628480,
+      "sha256": "de74849a63906f0b8adb581dcf99cb4f70bed6a87f7cbd78109c21d2e15f56f8",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 22005,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-ja.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "es-ko",
+      "size": 172032,
+      "sha256": "355bf6180ecf21bcc759f7f84f3118890df1af51dd2e2f17b5399e8e763f93ef",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 710,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-ko.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "es-lt",
+      "size": 6987776,
+      "sha256": "b9a3d88100f03c446b8a20e3c2a271cf3aba734b37e4767ef850161859726d16",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 46772,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-lt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "es-nl",
+      "size": 20107264,
+      "sha256": "f8b0f1878909dec7897b577791b2de7204207c3fc099eff9454647e2bb7e7d90",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 129058,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-nl.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "es-no",
+      "size": 626688,
+      "sha256": "380144402169002893e8d77db087b13a266abb9b29731d9dc12ee4efdb1ce40a",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 4330,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-no.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "es-pl",
+      "size": 2109440,
+      "sha256": "a74d73dce99dfcb70fc0488aeaf799832637a08095a5a9713be4a7449556484e",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 14255,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-pl.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "es-pt",
+      "size": 29265920,
+      "sha256": "59493634f34a0ec3bbd1b60b2d3d2c235e4c6292ceeb38d84de4ba9db00444ab",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 181193,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-pt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "es-ru",
+      "size": 172032,
+      "sha256": "eb4bd92162895271c2ec925b673125140f64f1dd186cbdf158b413d3d743a7bf",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 703,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-ru.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "es-sv",
+      "size": 770048,
+      "sha256": "695d30eb8825a178c5d787fe0e7923f4913cf116dc0d4235a28ec5daa3016c3d",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 5735,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-sv.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "es-th",
+      "size": 5582848,
+      "sha256": "42f2cab986a7e01e4698e739f076fb42e1bf6ea2fecc8d21b25a191c6417d55b",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 28464,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-th.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "es-tr",
+      "size": 167936,
+      "sha256": "eac20f88a15ebddec1d8dfa92ce1caf4c1c22e93ed712d81654ad1b5ed6766ab",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 699,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-tr.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "es-uk",
+      "size": 8400896,
+      "sha256": "0e31be7e3b1ad1548d3107d78cdd5dab0603e76c99bc66dba7aa59786c4f4c9c",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 50667,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-uk.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "es-vi",
+      "size": 167936,
+      "sha256": "0be58825197f654aa0a9ead06b45bc0c207c070de426a87cc761d164fd61407a",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 705,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-vi.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "es-zh",
+      "size": 2506752,
+      "sha256": "0b2203aeb7dcacbf48a82eb076b91ba76a406d14d929e6be384df2e2ba814146",
+      "source": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 16399,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/es-zh.sqlite3",
+      "attribution": "Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0 + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "fi-de",
+      "size": 204800,
+      "sha256": "fc3ebcdd78cfc88f555ff313381a117bd4f1b875635498eef63de03589d05c37",
+      "source": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 987,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fi-de.sqlite3",
+      "attribution": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "fi-en",
+      "size": 21983232,
+      "sha256": "e5c83793931107fbd3c795422bc23a7c53ed2c4b9bad085fafd62b67250e5dfd",
+      "source": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 129837,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fi-en.sqlite3",
+      "attribution": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0 + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "fi-es",
+      "size": 7598080,
+      "sha256": "387860f6a32e18bd97449d74b7938c87ed4165b7d6ddd851fd234f99c540854a",
+      "source": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 49394,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fi-es.sqlite3",
+      "attribution": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0 + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "fi-fr",
+      "size": 12042240,
+      "sha256": "d0d68df32e1ff5771619ddf53f437c1e33741501b17283db7bf0cf0cad784d5d",
+      "source": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 76779,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fi-fr.sqlite3",
+      "attribution": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0 + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "fi-ja",
+      "size": 13123584,
+      "sha256": "54038ee736f209d5b56c8f688f0a3e61e88ffc6bc2494398403b4ab805afa651",
+      "source": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 70726,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fi-ja.sqlite3",
+      "attribution": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0 + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "fi-ru",
+      "size": 229376,
+      "sha256": "6d231ddf3e4393c987c560a20e1406547d8e7595700f14cffa05e9b11cc0ce5f",
+      "source": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 1022,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fi-ru.sqlite3",
+      "attribution": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "fi-tr",
+      "size": 212992,
+      "sha256": "6fead1dc3d735bc85a4b2960a7c081e15a004493c3e0aec9b537856e3576af69",
+      "source": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 1015,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fi-tr.sqlite3",
+      "attribution": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "fi-zh",
+      "size": 8597504,
+      "sha256": "7cc1ec4db595c5a1388ab6b7b8f6bc72e41f82c78c060852299c36a25ee0d6ee",
+      "source": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 54294,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fi-zh.sqlite3",
+      "attribution": "Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0 + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "fr-ar",
+      "size": 217088,
+      "sha256": "15b0366200b559ff5f3da09900f02fdb3115f5e98ed57cbdd393d1fb1e3dca8f",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 1027,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-ar.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "fr-bg",
+      "size": 1085440,
+      "sha256": "cc97bd4bfa7e306a7743edc186b2535f08c68397892ea18721a4e0110381ad4d",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 6303,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-bg.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "fr-cs",
+      "size": 17195008,
+      "sha256": "1b9079babeeb69bac13aaf0c9a31aee4985f44f9bde61905c589969e9531de0e",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 106982,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-cs.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "fr-da",
+      "size": 798720,
+      "sha256": "1fadf76026344eb3fd064d52109f490623110ce961170068202958b2d1a484f5",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 5673,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-da.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + DanNet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "fr-de",
+      "size": 208896,
+      "sha256": "83129ea3db27a8e23c842dddc6f7754bcc859570fecff778f12055f5736ca207",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 1048,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-de.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "fr-el",
+      "size": 2539520,
+      "sha256": "ce630f643c17621112753f31edee2d1201661f591880b98e319582e0480fd1e8",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 15130,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-el.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + Greek Wordnet — Apache License 2.0"
+    },
+    {
+      "code": "fr-en",
+      "size": 9252864,
+      "sha256": "80a8cc67a62e03dd8d68e95d5cec1b69b5bada7040276c5f3c69fb940ce13269",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 55351,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-en.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "fr-es",
+      "size": 3952640,
+      "sha256": "67f893fa0c4e8dea6fb14a4ac14307d91ba55bef73f4bc747ce2255f4ab8319a",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 26280,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-es.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "fr-fi",
+      "size": 9379840,
+      "sha256": "c9b2351e11bc88ed9974906533194d1d3ef105cb6f96cccc8ee5d41d62193fce",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 55138,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-fi.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "fr-hi",
+      "size": 10838016,
+      "sha256": "0f30c5c1e884325f25046c0cd73cdb7d5b553d6d2628b2ed64dbbad6fa9cd4c1",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 56723,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-hi.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "fr-id",
+      "size": 5152768,
+      "sha256": "9517580238fc46a0600933f3ad1ef15be58c7f0f2b8e7749c90ae471d50a232a",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 28151,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-id.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + Wordnet Bahasa (Indonesia) — MIT License"
+    },
+    {
+      "code": "fr-it",
+      "size": 4419584,
+      "sha256": "62aa56b975b41ee052ddc3dfc09bf79e2e99a316508d4b915c266667e5a65a99",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 27686,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-it.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "fr-ja",
+      "size": 8089600,
+      "sha256": "dcf8d866697438e9e7c35d559772499ac094487a602d2b378c14b15233761ea7",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 39111,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-ja.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "fr-ko",
+      "size": 212992,
+      "sha256": "6799d61a27caf3e30abb52a2f423ec3b387109ec1a0f7e0d88f73be3c90c4d6d",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 1074,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-ko.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "fr-lt",
+      "size": 7548928,
+      "sha256": "4d97cf32dfd82497956adee6f4eadfc1755d60d962d8ed5459880907ce3ea2d0",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 50615,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-lt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "fr-nl",
+      "size": 26673152,
+      "sha256": "cfe803fe76a24fb4d27bd544c9a34b00822a28d6eef291c948ae4e1a785ed42a",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 171458,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-nl.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "fr-no",
+      "size": 790528,
+      "sha256": "d1e411084706076faf640db9bbd3908cc47b6381ec4b6d9bcde09be0de374e76",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 5656,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-no.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "fr-pl",
+      "size": 4612096,
+      "sha256": "914f58ef7c64667c6b378545ba5eda0eeaa2c01fd64935a8831fc634b8c0ad4d",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 31148,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-pl.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "fr-pt",
+      "size": 31879168,
+      "sha256": "7e111b20012c88843b11d08f3586074ba45794a1f6e685e322b860f2f907f21d",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 195539,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-pt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "fr-ru",
+      "size": 217088,
+      "sha256": "bad7b5e3a62e1b417498bb697671472953cadb640972366f5e12c6dfe4449c32",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 1067,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-ru.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "fr-sv",
+      "size": 1114112,
+      "sha256": "8b4f04d8f5fc668a2384229bd055941430ed280b8ac5e4a36b13ef6c7e5516a7",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 8345,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-sv.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "fr-th",
+      "size": 9359360,
+      "sha256": "be4ef8d4072a798fc008c1b6d364534e318db9ec6dda41c92b9e8a88a622b273",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 45673,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-th.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "fr-tr",
+      "size": 208896,
+      "sha256": "76b9936e1c2fe617dac9b0d5be79bf4bad62744016d70c9f644b2e6ffe55777d",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 1060,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-tr.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "fr-uk",
+      "size": 9465856,
+      "sha256": "c802605a7f3da1852d48853b36fadb4a0b93dc52ae3f1abb77e6fa45b057e30c",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 56557,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-uk.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "fr-vi",
+      "size": 212992,
+      "sha256": "cbf278d1bbe798fa7cf3148a8a9ab3bc077ea9078900ebcb50644681aa923ffb",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 1070,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-vi.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "fr-zh",
+      "size": 4018176,
+      "sha256": "3cbb5d29e012b7f3758a6a5aa6c4a71eef6e370787734f59e97f41e5f7e17a9e",
+      "source": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)",
+      "license": "CeCILL-C",
+      "entry_count": 25791,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/fr-zh.sqlite3",
+      "attribution": "WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French) + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "hi-cs",
+      "size": 7987200,
+      "sha256": "a423a5340f2f6d199849ca5907f8a970e4121795ee9f4dbb5e808806b5a5ad4b",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 40530,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/hi-cs.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "hi-de",
+      "size": 11051008,
+      "sha256": "62c7f105f3133f09ef688edbd1c2dabc561528ced0e29e1a38ed8e00e2519fbc",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 54177,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/hi-de.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "hi-en",
+      "size": 30396416,
+      "sha256": "208d6966a84440edea014a90217dee4dde26a4e50c8c671407f6975d9a588e01",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 149447,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/hi-en.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "hi-es",
+      "size": 10711040,
+      "sha256": "7437b178a79267995541d4b841270343e2ec8350857c23f84b22cdf66d222294",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 51798,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/hi-es.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "hi-fr",
+      "size": 10919936,
+      "sha256": "45d4486a24eb96cb795daf87db16b50349a16248fb284c0d17ec64a42838d6c3",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 53540,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/hi-fr.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "hi-ja",
+      "size": 10096640,
+      "sha256": "51ec676cd1c54bc834a5580d6636e186b26d19acd38c34ad0abca91ccd061dc0",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 47310,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/hi-ja.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "hi-lt",
+      "size": 3043328,
+      "sha256": "b27c398c6400cb6ba0b1612e14197ac1cc4954740af9190ea9aec76c203626df",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 17283,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/hi-lt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "hi-nl",
+      "size": 4165632,
+      "sha256": "8330bc7440c38bcfaa147a59315a7d360b5356a3ba3799bcf2ae28936f74a842",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 24407,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/hi-nl.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "hi-pt",
+      "size": 10489856,
+      "sha256": "e23ec85baa79470dd92936c12eb845536610d08bd9db26212ea70bede1fc8cc1",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 50999,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/hi-pt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "hi-ru",
+      "size": 4939776,
+      "sha256": "89b6bf3b8221bef69ae80ba6610c94e905110a019dd3455669ed01d41c0934c6",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 25561,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/hi-ru.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "hi-tr",
+      "size": 4177920,
+      "sha256": "93d3facddbad070bd4c9b1fd8dbb09a6fc6828c029f3e04d13b981d76f5c4ed4",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 24673,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/hi-tr.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "hi-uk",
+      "size": 4268032,
+      "sha256": "15c7feba80b2bd59dfe70e7869ba449a946dbb1e25f5d7982a43858f4357e9a7",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 23076,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/hi-uk.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "hi-zh",
+      "size": 10379264,
+      "sha256": "62dcbeb2771024e53214db2574a19c10c6cfd9a56b4c90a28784ad954b9cb441",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 49170,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/hi-zh.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "id-de",
+      "size": 270336,
+      "sha256": "c3c8d87e1d0d2965c88cd3204ab0a12c4286cbf7ed39e54fd3d90f2850d81479",
+      "source": "Wordnet Bahasa (Indonesia) — MIT License",
+      "license": "MIT",
+      "entry_count": 1576,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/id-de.sqlite3",
+      "attribution": "Wordnet Bahasa (Indonesia) — MIT License + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "id-en",
+      "size": 7163904,
+      "sha256": "1266f977322af83677c847e8768098d6599138519a67522d2bb38f96bc743239",
+      "source": "Wordnet Bahasa (Indonesia) — MIT License",
+      "license": "MIT",
+      "entry_count": 36954,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/id-en.sqlite3",
+      "attribution": "Wordnet Bahasa (Indonesia) — MIT License + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "id-es",
+      "size": 4141056,
+      "sha256": "75201c990ce5406e5fc13fceafeec0a3a01e7ff04b5787cae4ebe3c515e83aa0",
+      "source": "Wordnet Bahasa (Indonesia) — MIT License",
+      "license": "MIT",
+      "entry_count": 23966,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/id-es.sqlite3",
+      "attribution": "Wordnet Bahasa (Indonesia) — MIT License + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "id-fr",
+      "size": 5853184,
+      "sha256": "c491be415f525f0f8e5ea1b9088e8c10a092b04610b0ffa7cc3d32bcef8370a9",
+      "source": "Wordnet Bahasa (Indonesia) — MIT License",
+      "license": "MIT",
+      "entry_count": 32274,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/id-fr.sqlite3",
+      "attribution": "Wordnet Bahasa (Indonesia) — MIT License + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "id-ja",
+      "size": 10498048,
+      "sha256": "c8b17f880d73aa8c90dab68deed8784e2802abbbef96a7bcd6cdad613bc21d2a",
+      "source": "Wordnet Bahasa (Indonesia) — MIT License",
+      "license": "MIT",
+      "entry_count": 31809,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/id-ja.sqlite3",
+      "attribution": "Wordnet Bahasa (Indonesia) — MIT License + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "id-ru",
+      "size": 290816,
+      "sha256": "13a1ead49b3886ef796a9834d49d6a2b67908366334caf9723f6721dff23dd09",
+      "source": "Wordnet Bahasa (Indonesia) — MIT License",
+      "license": "MIT",
+      "entry_count": 1620,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/id-ru.sqlite3",
+      "attribution": "Wordnet Bahasa (Indonesia) — MIT License + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "id-tr",
+      "size": 274432,
+      "sha256": "88c2f93885b4a216d3208c5f3a600209ff925540acc6ac738e7c84d24635b624",
+      "source": "Wordnet Bahasa (Indonesia) — MIT License",
+      "license": "MIT",
+      "entry_count": 1619,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/id-tr.sqlite3",
+      "attribution": "Wordnet Bahasa (Indonesia) — MIT License + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "id-zh",
+      "size": 3481600,
+      "sha256": "3e95488f790fb58795e0fa41031d700fb8a4d8b736b46b36e60907669c759ca8",
+      "source": "Wordnet Bahasa (Indonesia) — MIT License",
+      "license": "MIT",
+      "entry_count": 17936,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/id-zh.sqlite3",
+      "attribution": "Wordnet Bahasa (Indonesia) — MIT License + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "it-de",
+      "size": 212992,
+      "sha256": "2789d8f535b8ce7bfef49de527e220acf11e68eee01eb07d4061b86da4d2c539",
+      "source": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 904,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/it-de.sqlite3",
+      "attribution": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "it-en",
+      "size": 6897664,
+      "sha256": "11e33dd9dc67220dc558b00ffeedf7767dc4194846f4c35cbb3aab861bf49ffc",
+      "source": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 41855,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/it-en.sqlite3",
+      "attribution": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0 + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "it-es",
+      "size": 3178496,
+      "sha256": "6744b611c1ee1d79d789fcb9bd23c87023d183323f3b36d1b05b54d0e9622be6",
+      "source": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 20773,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/it-es.sqlite3",
+      "attribution": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0 + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "it-fr",
+      "size": 5238784,
+      "sha256": "8089e07debdb281d969ed58f66a4accd35649907da13745ea498b46d7e6e7ae7",
+      "source": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 33183,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/it-fr.sqlite3",
+      "attribution": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0 + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "it-ja",
+      "size": 6864896,
+      "sha256": "aa41ca5a216ff16d6d003a34f787f9fbb755493a5ca1ddde30fa038464496c3d",
+      "source": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 31947,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/it-ja.sqlite3",
+      "attribution": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0 + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "it-ru",
+      "size": 221184,
+      "sha256": "ebefbe1dead30c5479164132ad7fff69c413c262108e6ba9cbbd34bc68b3c79b",
+      "source": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 917,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/it-ru.sqlite3",
+      "attribution": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "it-tr",
+      "size": 212992,
+      "sha256": "9ec71f4fcf5bd493f65484150b14ae72cf5b064df425e71401cad58492ae19f5",
+      "source": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 911,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/it-tr.sqlite3",
+      "attribution": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "it-zh",
+      "size": 3387392,
+      "sha256": "a439a74e7bbc9b033b9ff6ccffce6b8e01d739b7d0ff47ef31bd37bad0a28d39",
+      "source": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 21478,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/it-zh.sqlite3",
+      "attribution": "Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0 + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "ja-ar",
+      "size": 892928,
+      "sha256": "4e563087c435c3b5441d8622841d25e82a8d0292dbef1de1ad044713f98e3017",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 4159,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-ar.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ja-bg",
+      "size": 6578176,
+      "sha256": "364c532b1bf45747b4769fd873ddd06541eb704d0239b195c40d6e108558bc96",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 28387,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-bg.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "ja-cs",
+      "size": 11186176,
+      "sha256": "4bec41853f9e40293982a65d1f0c378abe5a6b29a56a0bd0b64710f425f128bb",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 66856,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-cs.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "ja-da",
+      "size": 5144576,
+      "sha256": "4bf08b1ea5174f53e66f3b5a886312a28b72f79467d6009346c36962ba9f795c",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 25573,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-da.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + DanNet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "ja-de",
+      "size": 843776,
+      "sha256": "f854e8e80ea2a5cc175a04244689a4678eb09798a80e0448dcb123bd7de44d5f",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 4145,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-de.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ja-el",
+      "size": 9711616,
+      "sha256": "cd68be3bc11175991436d5109adf7208a7c1c3072e489fc61a548662b20e85fc",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 40032,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-el.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + Greek Wordnet — Apache License 2.0"
+    },
+    {
+      "code": "ja-en",
+      "size": 24387584,
+      "sha256": "345b6c1b7af1a00a3be2878d758b20325d5177efce1ee6d81795dd399b741556",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 91964,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-en.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "ja-es",
+      "size": 13479936,
+      "sha256": "0c4d3bcb1cf165bae9f918175d1f39a58db6038661db80a6ff0f42350d8a957c",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 56007,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-es.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "ja-fi",
+      "size": 24502272,
+      "sha256": "c56cf74b9780bf994ed221bb04cfac2e69861f31fa288eb8fbd4a7de9e12b900",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 91771,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-fi.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "ja-fr",
+      "size": 19173376,
+      "sha256": "fe0197ec24b77fc7c7c156dc625600929913500a6d50d9ee4c7b0e3213441904",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 75009,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-fr.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "ja-hi",
+      "size": 9752576,
+      "sha256": "8e55e76a8bd4d83540d2c9650d3ba6d1ac7091cb3da1e9ead31e624e8b5845f2",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 46017,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-hi.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "ja-id",
+      "size": 19103744,
+      "sha256": "566d4fb99d135b84f02d9bcfa23df80fe441807943f9d79ca47c59dd1e8c3eb2",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 63733,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-id.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + Wordnet Bahasa (Indonesia) — MIT License"
+    },
+    {
+      "code": "ja-it",
+      "size": 15872000,
+      "sha256": "02a550cd8af8b699ffe31a4d1969100f01673aa4483aacfb9d0c2302942c2fdb",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 63441,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-it.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "ja-ko",
+      "size": 864256,
+      "sha256": "7e8d3eb2f1cf9290f9cac25fb01c7d4c88a40ed3813fe391c0eeae83aadce63a",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 4241,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-ko.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ja-lt",
+      "size": 5365760,
+      "sha256": "caff2181659f87367bb04950359213b77ab5cb4b4d24ea2e2012e5410b5f049d",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 34392,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-lt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "ja-nl",
+      "size": 14876672,
+      "sha256": "c01a1e245afcc286a0b259594d1a4927e210d773092d6e75327a0bf145096b02",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 88800,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-nl.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "ja-no",
+      "size": 5099520,
+      "sha256": "b15380d642b8e0603c5d64454983b4d4dd94d0c7c375b73ae28d29065a0c4db7",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 25468,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-no.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "ja-pl",
+      "size": 10752000,
+      "sha256": "980e193ecb8f567a8ccb5215a9e9aff90fd07f519f8aa3d95c8fe02d7f4b92fe",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 46711,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-pl.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "ja-pt",
+      "size": 30334976,
+      "sha256": "0c7f92eed4304c348fbeaf34a29630cbc60ef7f5af11355dc7211347d4c8fdca",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 176776,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-pt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "ja-ru",
+      "size": 880640,
+      "sha256": "dd7aeefaa991722ecdd65abeca7c3e1d019ff8d7424e64fff9ba77f962bac740",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 4201,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-ru.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ja-sv",
+      "size": 6324224,
+      "sha256": "860ff1f4089e623a2fd2cc1163855ee900da6b21425ac0ceee27c5002d1eaa1b",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 31695,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-sv.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "ja-th",
+      "size": 21860352,
+      "sha256": "1c59953f2f9c903950ebe24e5456b24aa5de6d6be5a3ca4b66b5f14379945556",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 75720,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-th.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "ja-tr",
+      "size": 847872,
+      "sha256": "b158b1cecdf50edfc46561141cbb7e3f37656f847c87e97336417e8c890c5b43",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 4178,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-tr.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ja-uk",
+      "size": 6144000,
+      "sha256": "7958854b9fb6d11310ec68dfbea103a94a33a7032d202b6bae705ef9e4fd7bc8",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 35854,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-uk.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "ja-vi",
+      "size": 864256,
+      "sha256": "8a98897f6d56343e8e55e91238e6777f180b724cf8ae81631879b4dc71a0df39",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 4230,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-vi.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ja-zh",
+      "size": 12136448,
+      "sha256": "22986ca19e23734f34c8f5af57afbc8087ae315f2401c7c41d891195fe46ccd8",
+      "source": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 50293,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ja-zh.sqlite3",
+      "attribution": "Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.) + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "ko-de",
+      "size": 192512,
+      "sha256": "d41e4e4bea142a4caf378673b726cbdb78e6edf35752fa0c93f8592da5b49b3e",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 443,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ko-de.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ko-en",
+      "size": 204800,
+      "sha256": "290086a0364c503ee5ecb93f68e8924ddb6aec320f3a935449937f451d1922e2",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 452,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ko-en.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "ko-es",
+      "size": 176128,
+      "sha256": "3330307b41874b582fd67e6d5f7d2b356d40c711292ad577c6a8ed810d70ae75",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 383,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ko-es.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "ko-fr",
+      "size": 200704,
+      "sha256": "1d27f82eb0496b1525a2ebcafce5ceb77fb052f98962c99721c8f0a69dc933f9",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 435,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ko-fr.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "ko-ja",
+      "size": 237568,
+      "sha256": "87bc64946aa94e66d08a42188104b75603732b841f82df64162c522a41af1753",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 434,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ko-ja.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "ko-ru",
+      "size": 196608,
+      "sha256": "1edd68ff51de8c2a0db07bbfc954a4c875c9ffc63c8dcace728536863040c4da",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 449,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ko-ru.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ko-tr",
+      "size": 192512,
+      "sha256": "3aa4d93ac3380db2bb0023963fc6e998e0a6f11b5e0882319d0bee6981175bcc",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 444,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ko-tr.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ko-zh",
+      "size": 159744,
+      "sha256": "79e2939a4807ecb702a13f60e73130e513ac4940f1b715d0f9c0bd40c5722adc",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 346,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ko-zh.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "lt-cs",
+      "size": 5746688,
+      "sha256": "a7bd7ab881fdf468eb6c93db416c40f81b68f62fd0f44a24ee8552b758e46099",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 37810,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/lt-cs.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "lt-de",
+      "size": 7491584,
+      "sha256": "72b2724b7fa152f0f6df43d11c72b057d8f53f396f2777a5c857af5e3ef37854",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 48340,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/lt-de.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "lt-en",
+      "size": 8077312,
+      "sha256": "4ea57c918cafb7cc9514ef9358b9f51bf3e4d633a0e9d55b86ce688ae9628d05",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 53412,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/lt-en.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "lt-es",
+      "size": 6545408,
+      "sha256": "623ab4b196438b517a9bb4c47f5f47e267b823942a2d5ba8b49570e806f18a9a",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 43186,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/lt-es.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "lt-fr",
+      "size": 7299072,
+      "sha256": "f2e0c89fe59ef9d72fbc0b522d1e161ae278af143bf2f8afda38862e30baa201",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 47637,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/lt-fr.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "lt-hi",
+      "size": 2568192,
+      "sha256": "d17ad21bd698d253a1b9e728593b4b529299b09eb1cdcec05e8b902647d2edcc",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 15491,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/lt-hi.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "lt-ja",
+      "size": 4653056,
+      "sha256": "e87bbe870e282de88928d451f4e76bfeb36c44c4b3723275401a8847c3d780d6",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 30298,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/lt-ja.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "lt-nl",
+      "size": 6426624,
+      "sha256": "71f2e5273ea7939caf8b70fa701d95a2e0579edcec466483b7abeec3d9850160",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 42659,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/lt-nl.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "lt-pt",
+      "size": 6377472,
+      "sha256": "d974d5ce400bed7c7b6d253b87f906ec2d52c5248aeac13c3d33990e94077108",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 41715,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/lt-pt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "lt-ru",
+      "size": 7557120,
+      "sha256": "ddbcf6fffe91e27f392abf78d84a5b68d93404435a4e41da8507b2bbb672e26a",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 46185,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/lt-ru.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "lt-tr",
+      "size": 3936256,
+      "sha256": "fbbc06178a88d4873d86f7e670e7b215ec35bf23cd13c47aa3f4511f944c3f5f",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 26516,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/lt-tr.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "lt-uk",
+      "size": 4034560,
+      "sha256": "cc62fdc6ad3be914e0418e24575d326b344ce771c10641517ffed584bd836833",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 24649,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/lt-uk.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "lt-zh",
+      "size": 4554752,
+      "sha256": "5d6149e72f95ba76ccac5d8190182a1e915b9f2ae2b5f65df1e4e5f409be71c8",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 27978,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/lt-zh.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "nl-cs",
+      "size": 12554240,
+      "sha256": "885f365bed5e705aa156b1820b3a68c792e0da5be3178a4419bd3462f8cadf05",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 80071,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/nl-cs.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "nl-de",
+      "size": 28778496,
+      "sha256": "c5fde7c7d3a2597bb3342435711ee8cca82580c1cdf6876336152ffd87a93f26",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 180957,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/nl-de.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "nl-en",
+      "size": 38023168,
+      "sha256": "00005a8e7c2316d70fe78b6cb40c6d96a225ed773dd175768e9da774fcf5f7f7",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 248286,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/nl-en.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "nl-es",
+      "size": 19955712,
+      "sha256": "2e3145087921bd5a84389c9e9fb6f8b801e427beba89736f7002ead6d246a1d3",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 128661,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/nl-es.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "nl-fr",
+      "size": 26857472,
+      "sha256": "e9166a237050de6a4103e7bec3b9024ac93ff1d284e2ae35946ed4e13612e737",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 174566,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/nl-fr.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "nl-hi",
+      "size": 4276224,
+      "sha256": "c31a521d90d1ab8ec964c1b53b2dacc04b4fc6ed23b21ba62eccf4dfe7817fdc",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 28058,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/nl-hi.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "nl-ja",
+      "size": 13234176,
+      "sha256": "c3af4ba0bf2cbafd018efd5dd034b607660d4e2a90e19744623960c559530e3d",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 85219,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/nl-ja.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "nl-lt",
+      "size": 6606848,
+      "sha256": "8c254c7d0ea5c2f8ef99dfd4bdd5a30b60fae57b143e11069b01cc3dedeffaa1",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 44712,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/nl-lt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "nl-pt",
+      "size": 20873216,
+      "sha256": "680039c7d794d68df9247f7935dd595418d903f194fe40b4a66038f9c5b43354",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 137363,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/nl-pt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "nl-ru",
+      "size": 19222528,
+      "sha256": "300770bac93cb20b6b314bf021f73c08d3faf010879228bf9267093b50b38f61",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 106577,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/nl-ru.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "nl-tr",
+      "size": 8765440,
+      "sha256": "bc86b4236e19eea6ff99aff2370d3d760bf30c8a276be3216e84e47bd0c0238a",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 58236,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/nl-tr.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "nl-uk",
+      "size": 7090176,
+      "sha256": "883efe76eb3411c683810a7ce73eb5e7c14082962b416f47d14314cce68a596a",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 42951,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/nl-uk.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "nl-zh",
+      "size": 11247616,
+      "sha256": "9295f9c042fa77c24c7e8cefc8e700c4517be648c6ed48952fe201d12c20f9ac",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 66430,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/nl-zh.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "no-de",
+      "size": 118784,
+      "sha256": "dcc8cba5d30f05ed0666759669d7359d736a59c72dbd3474ac48020953a2ede8",
+      "source": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 393,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/no-de.sqlite3",
+      "attribution": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "no-en",
+      "size": 655360,
+      "sha256": "d3ed6764601e95e51226f53c8fef3032641c230d8638d6c2834971d624012d1d",
+      "source": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 4186,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/no-en.sqlite3",
+      "attribution": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.) + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "no-es",
+      "size": 520192,
+      "sha256": "e949898db4a2b0b68bb28e8a686807bf2d85bd4b4ee3639c23a16f32a3392e2e",
+      "source": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 3396,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/no-es.sqlite3",
+      "attribution": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.) + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "no-fr",
+      "size": 610304,
+      "sha256": "ea8772bc15ee7e7a3a5b734fab971a1753bf41db68c4afe09186d40fd898e5a0",
+      "source": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 3932,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/no-fr.sqlite3",
+      "attribution": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.) + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "no-ja",
+      "size": 974848,
+      "sha256": "e0bbce6213ae4f42efd663024cd97b41b3f537e4755ffc82bd749c8e8b9c09dd",
+      "source": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 4022,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/no-ja.sqlite3",
+      "attribution": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.) + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "no-ru",
+      "size": 122880,
+      "sha256": "5e6a352007e3d0b4caf1847c695898b5b347bc5da5825bb2092cb932e2712d4c",
+      "source": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 397,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/no-ru.sqlite3",
+      "attribution": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "no-tr",
+      "size": 122880,
+      "sha256": "76a86261017489ecd4cd43e17de1a1588bbc29528049691a209a3e2b44806f7c",
+      "source": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 397,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/no-tr.sqlite3",
+      "attribution": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "no-zh",
+      "size": 634880,
+      "sha256": "6e6e915304e6b13b229cae509764aa8529336f0bef4aa7275ca038a8587ce324",
+      "source": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 4008,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/no-zh.sqlite3",
+      "attribution": "Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.) + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "pl-de",
+      "size": 155648,
+      "sha256": "d40f21313d16121b7ad6117fb0351cd41c4f9dd4773212b0740ed54dfc4a91a8",
+      "source": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 573,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pl-de.sqlite3",
+      "attribution": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "pl-en",
+      "size": 6897664,
+      "sha256": "05943a4abc8c0a087c8a5439010ae9a912f2f816b878ebfaf5560cb4bb538a8a",
+      "source": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 45385,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pl-en.sqlite3",
+      "attribution": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.) + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "pl-es",
+      "size": 2564096,
+      "sha256": "f467caea34e9693556fc31cafce4d598ca410bd7d3753e65bb51389c19c86c65",
+      "source": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 18559,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pl-es.sqlite3",
+      "attribution": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.) + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "pl-fr",
+      "size": 4845568,
+      "sha256": "1a5e40ddd947aa78820d1f789b592895cff86ab9ae29b4c88a4e60474dd4a8d4",
+      "source": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 33487,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pl-fr.sqlite3",
+      "attribution": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.) + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "pl-ja",
+      "size": 4956160,
+      "sha256": "65a85d5b690c68afab80316b9b6d487020f4b194c0b65f1a442a9a8a9148d519",
+      "source": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 30212,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pl-ja.sqlite3",
+      "attribution": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.) + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "pl-ru",
+      "size": 159744,
+      "sha256": "1666f69581c42e3c3374c05265e7f21bcd8533a62e0d89da5005fb1f5bddd52d",
+      "source": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 574,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pl-ru.sqlite3",
+      "attribution": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "pl-tr",
+      "size": 155648,
+      "sha256": "e295bee0810e0f24caa2041e671b71fed704f4256aa1b5be6cb28ecbe32a57e1",
+      "source": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 571,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pl-tr.sqlite3",
+      "attribution": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "pl-zh",
+      "size": 3096576,
+      "sha256": "31d432d48c46d1b204900f7942e62629735d1a794a100801d5c0e25cc078d839",
+      "source": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 21484,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pl-zh.sqlite3",
+      "attribution": "Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.) + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "pt-cs",
+      "size": 13615104,
+      "sha256": "dc74259a5b23a9f188cc44172bd96e7bb4b8291f3f2e7d3ef3ed35e169586a76",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 84353,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pt-cs.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "pt-de",
+      "size": 27172864,
+      "sha256": "0e496c0ab105d49b07611a7963245ef16efea9c816c8621e81b7f8b815f35905",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 165933,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pt-de.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "pt-en",
+      "size": 45445120,
+      "sha256": "2d209f1873912f71a26461ee771be9f65791a1c8ede352eab280c0cdf95e16fe",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 285187,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pt-en.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "pt-es",
+      "size": 28704768,
+      "sha256": "a4062a0fc463ee660465e8bf3a69678b08c7575183ac058d00e04b5e49a6703c",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 176748,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pt-es.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "pt-fr",
+      "size": 31842304,
+      "sha256": "d15c8db88a82beeba288cb17976df879c2e59d299000e06bd4d723a4731ab559",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 195861,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pt-fr.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "pt-hi",
+      "size": 10231808,
+      "sha256": "a034d3d1b0d080860eb0fae840669c66a7a5cf2604d850cc6a3aab816a32f513",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 51019,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pt-hi.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "pt-ja",
+      "size": 24264704,
+      "sha256": "d877d15272c7a43e35abf485c23738a593b7fdb1c26e9afe0a53df9d683a790a",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 137185,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pt-ja.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "pt-lt",
+      "size": 7061504,
+      "sha256": "3710d41e0e3107382c5505f1907b54837a2d016f0777c678f036c30ee0eed706",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 46487,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pt-lt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "pt-nl",
+      "size": 20795392,
+      "sha256": "3015a67be05defc794206fe625d83fb1ba4f98e240a84bef7f971bdbe16ce20e",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 135480,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pt-nl.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "pt-ru",
+      "size": 16437248,
+      "sha256": "738e375fed816e9693a02d3fc0be88dca6ed2c9547824ef4deef4ffeee07abca",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 88979,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pt-ru.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "pt-tr",
+      "size": 8781824,
+      "sha256": "3bb8ca14788d9a807afc20726decfd3c3121a067dda3fb58dc982407bb150626",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 57448,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pt-tr.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "pt-uk",
+      "size": 7528448,
+      "sha256": "8fc4c3c3d49a8718bec64d0b46c134b9322c1d5a968030561f67fec281d2aeff",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 44607,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pt-uk.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "pt-zh",
+      "size": 18874368,
+      "sha256": "f809f29c5102d7924563a8b2c749898f79de9483ec9ee03b5a88ecad7f2c8cdd",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 110154,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/pt-zh.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "ru-ar",
+      "size": 188416,
+      "sha256": "6ce7ef15a6a3d2601a051cb0e521de14ab57163d05e17f2d980689d2490a201a",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 401,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-ar.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ru-bg",
+      "size": 151552,
+      "sha256": "c697d08db85d4a954e732e9047e4411e7bf979015e1ff2cfceef5655b53906e2",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 280,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-bg.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "ru-cs",
+      "size": 23044096,
+      "sha256": "bff3791c25c21edf0c36d8766b931d11c3c1555f45fd783a7fb9b80e7596646b",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 127011,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-cs.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "ru-da",
+      "size": 139264,
+      "sha256": "2c8220ceaeb25c4195e441fdc54b109ad5e854e4c7a434678707fa52419481d2",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 264,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-da.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + DanNet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "ru-de",
+      "size": 188416,
+      "sha256": "c0845a3a783d8d64273796498bcedacdd40ba209059a85a2a4f31fe8314270e5",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 417,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-de.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ru-el",
+      "size": 159744,
+      "sha256": "f65d1b4237798fee66f406f2c5704c4603ff4a598dd461f415608fab77aa10e8",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 317,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-el.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Greek Wordnet — Apache License 2.0"
+    },
+    {
+      "code": "ru-en",
+      "size": 196608,
+      "sha256": "ea7dd114fc47475a8db06b07a08b7de99041d66f0cfa861553c54f96efa77797",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 425,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-en.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "ru-es",
+      "size": 176128,
+      "sha256": "4818535c440e0b45e10094f7bee584d3266919548e5e2e05210e69d268051a56",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 362,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-es.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "ru-fi",
+      "size": 196608,
+      "sha256": "8c2abf3da87edc187737631ae2b08f1000d9d96461353ff7d2bba56a8bad0af7",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 424,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-fi.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "ru-fr",
+      "size": 192512,
+      "sha256": "431d7c55632d8533abfcc38043efa21a1fa916033886d02d81936803cab336bb",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 405,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-fr.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "ru-hi",
+      "size": 6529024,
+      "sha256": "50fb8364357dcaf756dc46b63100b534dedb2fe6b73169049a93c2715b4a7f78",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 35945,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-hi.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "ru-id",
+      "size": 196608,
+      "sha256": "45737985bd066d9a7c43ff68e335ad1db607519337aeedc57b478ac0692d4b94",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 396,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-id.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Wordnet Bahasa (Indonesia) — MIT License"
+    },
+    {
+      "code": "ru-it",
+      "size": 184320,
+      "sha256": "37ffddc2a479fd66ae2e11c1bf7025e8bfeb8f6c5fca3183303805a56f4879ae",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 385,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-it.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "ru-ja",
+      "size": 233472,
+      "sha256": "11950ead15efecf091cdf7af3eaebde1f584428e6e39c7b68b6f920e51837816",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 411,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-ja.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "ru-ko",
+      "size": 188416,
+      "sha256": "55178db1ce4bc53c0118bc22a6329f74973eb2a0bdb4928c0508157a40c6726a",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 424,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-ko.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ru-lt",
+      "size": 9490432,
+      "sha256": "bcd585efad93bd80123b903db0f7b0a479192e4a795ba1ae412087f7254b0baa",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 54830,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-lt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "ru-nl",
+      "size": 23773184,
+      "sha256": "01feb99751c72ccd540b122a563b3d689fd37c59f610fd8e5e6af33e0875279f",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 132196,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-nl.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "ru-no",
+      "size": 139264,
+      "sha256": "84019df9e90584e856c71a621eff8dd3cb6eeba103435d2abd7fd14047760d76",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 264,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-no.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "ru-pl",
+      "size": 159744,
+      "sha256": "2b28629f212e34d65a9cbd947344df1500c10cd576e039aa5c7e9760f16c8156",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 304,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-pl.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "ru-pt",
+      "size": 21573632,
+      "sha256": "828bfd74ccd1b8a4389b713e812487c35619cbc8a7e68c448a81635d1bb2ed46",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 121032,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-pt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "ru-sv",
+      "size": 147456,
+      "sha256": "c2a59a3d4696ed236e0af46455656240e97ed5385f67d4be46ec3e3436292f93",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 288,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-sv.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "ru-th",
+      "size": 204800,
+      "sha256": "37c972a64902f555caafe1ca4580d96cb97b097b6ea860f1866f492939d9467b",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 403,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-th.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "ru-tr",
+      "size": 188416,
+      "sha256": "4a4388fe8643c28dcfab5bd4cf57c75e988a32677e6d1aea6287ef43e3154cc8",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 418,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-tr.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ru-uk",
+      "size": 14536704,
+      "sha256": "ee1558d90321028fab32ba85865991766114d326148cf24e1b3a0c6a396c4460",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 73914,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-uk.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "ru-vi",
+      "size": 188416,
+      "sha256": "c75cf940ba26228901aa7bed23f3920c0cb3c15646e02daa340e8c6e7944c53d",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 422,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-vi.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "ru-zh",
+      "size": 163840,
+      "sha256": "dfb0d559476525264f17ca1f0beccfa7c2007b0d3c4ad614bad35229e2790cb2",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 328,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/ru-zh.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "sv-de",
+      "size": 86016,
+      "sha256": "a683f5db86c233234242f24e4b2777b6dd8e0b80390ab42fa8bd35fc6533f1b6",
+      "source": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 307,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/sv-de.sqlite3",
+      "attribution": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "sv-en",
+      "size": 851968,
+      "sha256": "f17f992ec783b0938b2eac8859060259d08d398f4da30cedf3fbee7486bc22cd",
+      "source": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 5824,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/sv-en.sqlite3",
+      "attribution": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0 + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "sv-es",
+      "size": 589824,
+      "sha256": "e170a0f81db2a526a6b0f8abff104028a02cc88f5d1fb4a9329642978d7ee778",
+      "source": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 4079,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/sv-es.sqlite3",
+      "attribution": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0 + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "sv-fr",
+      "size": 765952,
+      "sha256": "5e00d1cb5e27ac58be32b9581a37462ab6c15ff6c19db68f8d4c59377a59a6a5",
+      "source": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 5265,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/sv-fr.sqlite3",
+      "attribution": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0 + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "sv-ja",
+      "size": 1122304,
+      "sha256": "9cbe42a67df521d6d8c554579f5909e0d2f6d6b2987d66fac875d895b97ee65d",
+      "source": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 5289,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/sv-ja.sqlite3",
+      "attribution": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0 + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "sv-ru",
+      "size": 90112,
+      "sha256": "ab4e7baa44f6688e2c271d6e30bb02a09357d53a457e13bf730386579645c055",
+      "source": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 309,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/sv-ru.sqlite3",
+      "attribution": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "sv-tr",
+      "size": 86016,
+      "sha256": "ef57b3a945ea6f2855ea76774d185209d38aaf8e47119e85068be398621a4970",
+      "source": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 307,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/sv-tr.sqlite3",
+      "attribution": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0 + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "sv-zh",
+      "size": 729088,
+      "sha256": "e5a4ae4a771190bfeafb545044cead5fc866d70c50e6566177ba051b4c329c47",
+      "source": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0",
+      "license": "CC-BY-3.0",
+      "entry_count": 4764,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/sv-zh.sqlite3",
+      "attribution": "Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0 + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "th-de",
+      "size": 241664,
+      "sha256": "b1ed6aa5693b5eb0297ef82a709d4e60333f760b02caf18e2f588eb06300e6b6",
+      "source": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 992,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/th-de.sqlite3",
+      "attribution": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "th-en",
+      "size": 18370560,
+      "sha256": "645624c6f577c31f28b2e164162261b5ede1fb819aa1f34ff0cb446fc9b68455",
+      "source": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 82504,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/th-en.sqlite3",
+      "attribution": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.) + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "th-es",
+      "size": 6770688,
+      "sha256": "baf6bc3e95820cb1eeeabaecdbde1868cf2e5ad6d3dd06bfd9c4fc41cd696c46",
+      "source": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 32583,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/th-es.sqlite3",
+      "attribution": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.) + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "th-fr",
+      "size": 10780672,
+      "sha256": "f1794e2da199310581c1d1ac9da3459e9de3e5f24d4db148469180368340cc32",
+      "source": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 50730,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/th-fr.sqlite3",
+      "attribution": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.) + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "th-ja",
+      "size": 11481088,
+      "sha256": "71b9a61b1949f185ece4e7b0236e1a19bfcc0da1d5820e5bb35fcdbe3605f293",
+      "source": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 48846,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/th-ja.sqlite3",
+      "attribution": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.) + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "th-ru",
+      "size": 245760,
+      "sha256": "bfab498424d538bcccc64f3f286cae03c6410ede477e09f3c2622ce26da6d7b2",
+      "source": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 1004,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/th-ru.sqlite3",
+      "attribution": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "th-tr",
+      "size": 245760,
+      "sha256": "7bb9b8748915477d230a04d7bd5c69da5e4377b181d461f0c7a9f2653323e686",
+      "source": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 998,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/th-tr.sqlite3",
+      "attribution": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "th-zh",
+      "size": 6537216,
+      "sha256": "6988c4e76c6d93c1d641bb5848fb1d1e0ecc99619003703d7123ba5747b0232f",
+      "source": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 31129,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/th-zh.sqlite3",
+      "attribution": "Thai Wordnet — WordNet-style License (NICT/DanNet/etc.) + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "tr-ar",
+      "size": 167936,
+      "sha256": "8d4b75229a42139fc99746b9068f0b3ad72010d68fa182c0d933f5a91c5473b6",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 398,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-ar.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "tr-bg",
+      "size": 122880,
+      "sha256": "60c387da3313549f785e7d737df17cd7d440a37c1825c39761976504762e2fcc",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 279,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-bg.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "tr-cs",
+      "size": 8577024,
+      "sha256": "e5e44f538e7f758c1beb336870239e64265e283141fe1494c0d91eac7fae4e73",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 57141,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-cs.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "tr-da",
+      "size": 114688,
+      "sha256": "8d2e8e1b22767ad596edddc63e0233d8c469c39c1c3b3a1580b1f49a924f4285",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 261,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-da.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + DanNet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "tr-de",
+      "size": 167936,
+      "sha256": "549854c56e8201efbea7a8dd08ff947ac104c0ab7511824b526e3bb0df8a8432",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 417,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-de.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "tr-el",
+      "size": 135168,
+      "sha256": "52b756af7c6630c241b1aa7d4994280f09fbcf025215ad01a6648971391df693",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 311,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-el.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Greek Wordnet — Apache License 2.0"
+    },
+    {
+      "code": "tr-en",
+      "size": 176128,
+      "sha256": "f53fb7a6e068dd69df702be6c98e3ddde3a6b8f3260a9238080a538593996f35",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 426,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-en.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "tr-es",
+      "size": 151552,
+      "sha256": "f587302ac0c89b2b2bf5692e098128cb12fed1540139519cbb9b992b1f9ac9f6",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 361,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-es.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "tr-fi",
+      "size": 176128,
+      "sha256": "42bb287fa18ed611e54972a836675bd56aae676114bf4efe8a1a256ace842b30",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 423,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-fi.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "tr-fr",
+      "size": 172032,
+      "sha256": "d5271860f1093bf675801b975b4d3e8647e99a1d00f36d9583debc0a49991589",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 411,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-fr.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "tr-hi",
+      "size": 4476928,
+      "sha256": "479d088e7056f78826305b6ea42e8e228b3c1d253c0e5ce454904b91b99e79bf",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 29490,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-hi.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "tr-id",
+      "size": 176128,
+      "sha256": "5e49531646cd68f89e09ed2e69db40ea2c4688a8ee2014eaa5d224d5828322f5",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 402,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-id.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Wordnet Bahasa (Indonesia) — MIT License"
+    },
+    {
+      "code": "tr-it",
+      "size": 155648,
+      "sha256": "5cb891e18b7f4841b27f346b81277bf6c7c4e073e172c0d7a4cce7e306ec1111",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 385,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-it.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "tr-ja",
+      "size": 212992,
+      "sha256": "648f76fafe7593a8b2420e2adfab4411b0a6fd0b426891ba0caaa4f91784ce6b",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 409,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-ja.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "tr-ko",
+      "size": 167936,
+      "sha256": "1df9fc5d4fe36d5fc098b20dd9cead678fc81164bfc30b35a683c61e25e91bb1",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 425,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-ko.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "tr-lt",
+      "size": 4235264,
+      "sha256": "f58d827c0341445e95c1b368197755ddc0d6425cfec56f4a80212935293bd88e",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 29774,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-lt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "tr-nl",
+      "size": 8863744,
+      "sha256": "9cc217e635edb2cbe1321d70ea861038e5ca104028d5ebc79aed552203357f7f",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 59368,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-nl.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "tr-no",
+      "size": 110592,
+      "sha256": "7eaf471fd61427846fb2229fb85d9a1d63f496196465d8f1f33cc897be853325",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 261,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-no.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "tr-pl",
+      "size": 122880,
+      "sha256": "9217663a4ce0aa475255efffc433e26c3f7eac2376b31c5c847756ed49ee3cd6",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 295,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-pl.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "tr-pt",
+      "size": 8880128,
+      "sha256": "33d23c9c90f3f95fa4fb7541c8c2be29588e8ccfadbd6b72da5641ac26ae9071",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 59518,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-pt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "tr-ru",
+      "size": 167936,
+      "sha256": "e263b16831307e58cc0fc43c643d97509c5bdf0a3da3c3ecf254544b946349e3",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 422,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-ru.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "tr-sv",
+      "size": 118784,
+      "sha256": "3aff6943d7cfe2bbecd545272b5f25e3001381daf2940c016222b6858ee904a8",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 287,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-sv.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "tr-th",
+      "size": 184320,
+      "sha256": "d5444af20865e6bd309174ed74b43f4daabcf55184416a75b1e7b628aead35bc",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 401,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-th.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "tr-uk",
+      "size": 7503872,
+      "sha256": "d806dd7498d50f5b10ca101e59f65e7a7f8016396dedaa875dddd7c13ebf5149",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 43909,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-uk.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "tr-vi",
+      "size": 167936,
+      "sha256": "6cdb96076145bcb5a524495b1cbe5a181371ceb5dfb3b827dbb0ac377461d49a",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 423,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-vi.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "tr-zh",
+      "size": 139264,
+      "sha256": "c66edc9130a98829fabd5d1e00f9018c964e4899bd9fa7e04ddbfed74ccaf657",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 328,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/tr-zh.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "uk-cs",
+      "size": 8798208,
+      "sha256": "0156e1f614d4e3704d02561a6a883f7e8a21966e86da259828967dc3842c656d",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 50245,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/uk-cs.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "uk-de",
+      "size": 11411456,
+      "sha256": "315ed552969cc519bc0e316923dc65b9d100ec3a22af40154ef36b94f637bd5d",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 61452,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/uk-de.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "uk-en",
+      "size": 11448320,
+      "sha256": "318d0eb517203e6c0a88a9c331c5cbafd7438efc1140f7c25aafa4bed90805d7",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 63403,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/uk-en.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "uk-es",
+      "size": 9490432,
+      "sha256": "894dd2abc06ff9bb044dfab2927d226cd030b866bd2c2c814e5e3ee047393e8e",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 54093,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/uk-es.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "uk-fr",
+      "size": 10403840,
+      "sha256": "8c2801286db8080842524ddc89e3b5f83d3d7532ebdd833fca1e9663426dc41d",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 58229,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/uk-fr.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "uk-hi",
+      "size": 5054464,
+      "sha256": "97d19b2f30270c306531995533cd226ecc934fb4992125583012325639f7b344",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 27728,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/uk-hi.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "uk-ja",
+      "size": 6721536,
+      "sha256": "b533c44ebc594154a5cd65374f37b699ea7546b70f6b426a0870c0c3c939d125",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 37324,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/uk-ja.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "uk-lt",
+      "size": 5144576,
+      "sha256": "aad78be839cc05b0618e0f891715b174bba810dfcbb89a1eec760b58138743fc",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 29621,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/uk-lt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "uk-nl",
+      "size": 8187904,
+      "sha256": "9a714dfe654a946712059d2b4732738d9ea3b0a853cc24b21bfab0ae11118ac5",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 46177,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/uk-nl.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "uk-pt",
+      "size": 8462336,
+      "sha256": "38875b6b704a7586d1a9460b16fa36c16e2dd936f78e3b97b72de330c6a4fd88",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 47894,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/uk-pt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "uk-ru",
+      "size": 13889536,
+      "sha256": "5afef47db73a78f05fcfd58b1b657220baab48f96c1680be64621329661d8b97",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 69435,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/uk-ru.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "uk-tr",
+      "size": 8159232,
+      "sha256": "e0ea3877625de740a642f3c5bd367f1da8b28e3402f1a39093c20ab30c736ae3",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 44840,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/uk-tr.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "uk-zh",
+      "size": 7933952,
+      "sha256": "e0ababe89926182d677af2deee94380f71e7b9990a4a6ebd712171977db188d8",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 40198,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/uk-zh.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "vi-de",
+      "size": 180224,
+      "sha256": "a61fa21a95870c83728d0ee14ecb23c69944ff087a06ebfc280e69cc1001c51a",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 433,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/vi-de.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "vi-en",
+      "size": 196608,
+      "sha256": "61075561735c42969e0774804d2251ff5ab54bd4bc31cc51406653f67878132a",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 444,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/vi-en.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "vi-es",
+      "size": 159744,
+      "sha256": "fc2fadaa2d2525b8ceb6fb06973945ea602c4f081eda6cd9ee578f5a9c324839",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 380,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/vi-es.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "vi-fr",
+      "size": 180224,
+      "sha256": "a69766ea6baa6f96358764b1a1355e193174a41714f3f069a8eb41bd2fffc6dd",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 427,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/vi-fr.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "vi-ja",
+      "size": 225280,
+      "sha256": "64bd91be63b5c17c38bb602d41c37098221246376e6835d2e42a1c4b41853bb0",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 427,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/vi-ja.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "vi-ru",
+      "size": 192512,
+      "sha256": "2a0806b21b3bf9051cc372b92e53fb463502bf73743c7bb11ca8a205fe699520",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 441,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/vi-ru.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "vi-tr",
+      "size": 188416,
+      "sha256": "980b9b4e20a3779fdae2b7ab552d1233525c1d3f9e426b49090dc8e70fcbae15",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 436,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/vi-tr.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "vi-zh",
+      "size": 151552,
+      "sha256": "5630d7ecf7778bb96adc774e4d610a9d550ef9a1aba9d4bf9604aca8827d4c4d",
+      "source": "TUFS Basic Vocabulary — CC BY 4.0",
+      "license": "CC-BY-4.0",
+      "entry_count": 345,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/vi-zh.sqlite3",
+      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "zh-ar",
+      "size": 221184,
+      "sha256": "3d9875fd0e4b1b8896d23aa78af500cdd2bbb1c25143a09f7d1cd43a8b7f74fb",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 1043,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-ar.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "zh-bg",
+      "size": 1601536,
+      "sha256": "40705dd6fd5bf1ebea55b41e6ae57b9526201c5fc7dd9bb517a473f14c91fe45",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 10273,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-bg.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + BulTreeBank Wordnet (BTB-WN) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "zh-cs",
+      "size": 18231296,
+      "sha256": "568c12329b19c2abae32bccbeb78812554677e89cb2c8778c072f7285406299e",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 123349,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-cs.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "zh-da",
+      "size": 1155072,
+      "sha256": "0681cf1f28ee893e05f2fd6e97046e64d71e67ad3d8b4ca8cb6024a43448cd0b",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 8839,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-da.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + DanNet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "zh-de",
+      "size": 208896,
+      "sha256": "292b5e4cbb183996b2d442fa94e5e8b8ccabb7a6ae99ca36f1c2690f34c15070",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 1059,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-de.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "zh-el",
+      "size": 2080768,
+      "sha256": "d4e09947bb4234b870ea8530439f6bbbecd5e6f36d4705f5a4be974bfa22200c",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 13916,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-el.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + Greek Wordnet — Apache License 2.0"
+    },
+    {
+      "code": "zh-en",
+      "size": 9269248,
+      "sha256": "12ccfb0c651ed2b66bb78ee3ae82eae921dca8b236f3a417d9f70cae42cdd254",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 61525,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-en.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+    },
+    {
+      "code": "zh-es",
+      "size": 3452928,
+      "sha256": "393eda995fb44e8a21201522e69e651fb22f63f7a5aaa9bef54f1ea650625762",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 24787,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-es.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + Multilingual Central Repository (Spanish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "zh-fi",
+      "size": 9310208,
+      "sha256": "c401754bdcf989f4f355abc941051be1d578a4a87b82305682ede1b79f519974",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 61028,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-fi.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + Multilingual Central Repository (Finnish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "zh-fr",
+      "size": 5316608,
+      "sha256": "0b93c36b772afa303acee2bdf7c2c078726cd117478139245a6c99fadc1fd015",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 36908,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-fr.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + WOLF (French Wordnet) — CeCILL-C License (MIT-compatible, French)"
+    },
+    {
+      "code": "zh-hi",
+      "size": 13979648,
+      "sha256": "1229a277203e695db83ace66343c67317ed6fa3998833d1509da99c5309ff2ec",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 81946,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-hi.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "zh-id",
+      "size": 4055040,
+      "sha256": "fab1e5a120c459f492a3913e71da32b20421779326c43cf9f6c9daef21d9d045",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 24112,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-id.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + Wordnet Bahasa (Indonesia) — MIT License"
+    },
+    {
+      "code": "zh-it",
+      "size": 3866624,
+      "sha256": "6a085df939f3092e12ed8970b640658157f036a3d475c95f7e8d39fc5e27c23f",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 26887,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-it.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + Multilingual Central Repository (Italian) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "zh-ja",
+      "size": 6377472,
+      "sha256": "6010f30f43c454f8fcf9f068c3e1329eebaa8859457ef9f3d6c04aef9b903c71",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 34262,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-ja.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + Japanese WordNet (NICT) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "zh-ko",
+      "size": 208896,
+      "sha256": "6c69fb1fa0672455068bf1e47ba8375ae9e9b76592b275bcdaecdd6fc650a855",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 1086,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-ko.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "zh-lt",
+      "size": 8028160,
+      "sha256": "177a340a77bf558bff1db48ca77c07ddffd9e2cb1db45108ecca5e54828aa223",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 57640,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-lt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "zh-nl",
+      "size": 18178048,
+      "sha256": "8a10af6d884f6c00754a8a76edd4c34b61de958f0f559f409aadad2cb1c7b5e3",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 123813,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-nl.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "zh-no",
+      "size": 1134592,
+      "sha256": "99a453d33ee04e1770c52dd36cbd8f81d3d28d46733caac5864b96f31c573e90",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 8823,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-no.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + Norwegian Wordnet (Bokmål = no) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "zh-pl",
+      "size": 3530752,
+      "sha256": "642c60e560c6f4bc4c733b619f50792bf46c1964cf1c6f66c637a840b93f0f0e",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 25325,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-pl.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + Polish Wordnet (plWordNet) — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "zh-pt",
+      "size": 26726400,
+      "sha256": "44a2792a3c832964c1361cefe63a3c9be58ee49ef0cb477b2d614b06144f3c2f",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 175610,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-pt.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "zh-ru",
+      "size": 217088,
+      "sha256": "7ae91050a089e47d5120e2a8198d06cb77d72ec55fb576ad4f4fddb5f507da71",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 1073,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-ru.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "zh-sv",
+      "size": 1437696,
+      "sha256": "0b7288f568d42717ed8593f157a55bb1e62a1ab7007cf1e597edc5891c32e37c",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 11448,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-sv.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + Multilingual Central Repository (Swedish) — Creative Commons Attribution 3.0"
+    },
+    {
+      "code": "zh-th",
+      "size": 7073792,
+      "sha256": "af2a43d008469ce05f76d284849e75e176dc8f76e8d7835b601f878301b088af",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 40254,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-th.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + Thai Wordnet — WordNet-style License (NICT/DanNet/etc.)"
+    },
+    {
+      "code": "zh-tr",
+      "size": 208896,
+      "sha256": "b7f0d94125a6535b4e35d8a1abb7bdddb044f6229b276ae238f8a003ae2ab6a3",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 1062,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-tr.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    },
+    {
+      "code": "zh-uk",
+      "size": 12771328,
+      "sha256": "bbbf440f2adffde6aca04da24d4b38f31cf39a05d71122007e1fa40753ce5885",
+      "source": "PanLex (CC0)",
+      "license": "CC0-1.0",
+      "entry_count": 78731,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-uk.sqlite3",
+      "attribution": "PanLex Database (CC0 1.0) — The Long Now Foundation"
+    },
+    {
+      "code": "zh-vi",
+      "size": 212992,
+      "sha256": "fd8b1ead9e10b516f99c4a52aaabc082d9b0c1f9e09e4d9f25cd624e2ae5bea4",
+      "source": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.)",
+      "license": "wordnet",
+      "entry_count": 1081,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.1/zh-vi.sqlite3",
+      "attribution": "Chinese Open Wordnet (Mandarin) — WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary — CC BY 4.0"
+    }
+  ]
+}

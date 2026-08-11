@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://hudaiapa88.github.io/lingolate-dict-data/manifest.schema.json",
+  "title": "Lingolate Dictionary Manifest",
+  "type": "object",
+  "required": ["version", "updated", "license", "dictionaries"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d{4}\\.\\d{2}\\.\\d+$",
+      "description": "Calendar versioning YYYY.MM.N"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date the manifest was generated"
+    },
+    "license": {
+      "type": "string",
+      "description": "Top-level license summary (individual entries declare their own)"
+    },
+    "source_repo": {
+      "type": "string",
+      "description": "GitHub repo that hosts the releases, e.g. hudaiapa88/lingolate-dict-data"
+    },
+    "release_tag": {
+      "type": "string",
+      "description": "GitHub Release tag this manifest belongs to, e.g. v2026.08.1"
+    },
+    "dictionaries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "size", "sha256", "source", "license", "downloadUrl"],
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string",
+            "pattern": "^[a-z]{2,3}-[a-z]{2,3}$",
+            "description": "Language pair, e.g. en-tr"
+          },
+          "size": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "File size in bytes"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "description": "SHA-256 of the .sqlite3 file"
+          },
+          "source": {
+            "type": "string",
+            "description": "Upstream source identifier, e.g. open-dict-data/wikidict-en"
+          },
+          "license": {
+            "type": "string",
+            "description": "SPDX-like identifier, e.g. CC0-1.0, CC-BY-4.0"
+          },
+          "attribution": {
+            "type": "string",
+            "description": "Human-readable attribution string (required for CC-BY, optional for CC0)"
+          },
+          "entry_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of rows in the entries table"
+          },
+          "downloadUrl": {
+            "type": "string",
+            "format": "uri",
+            "description": "GitHub Releases asset URL"
+          }
+        }
+      }
+    }
+  }
+}

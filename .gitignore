@@ -1,0 +1,17 @@
+# Generated artifacts — not committed, distributed via GitHub Releases
+dictionaries/
+sources_cache/
+*.sqlite3
+*.sqlite3.sha256
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
