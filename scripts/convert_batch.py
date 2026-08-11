@@ -164,6 +164,11 @@ def build_synset_to_definition(wn: dict) -> dict[str, str]:
     return {ss["id"]: ss["definition"] for ss in wn["synsets"] if ss["definition"]}
 
 
+def build_synset_to_examples(wn: dict) -> dict[str, list[str]]:
+    """Map synset_id → list of example sentences (from Synset-level <Example>)."""
+    return {ss["id"]: ss["examples"] for ss in wn["synsets"] if ss.get("examples")}
+
+
 # ---------------------------------------------------------------------------
 # Bilingual dictionary construction (fast — uses pre-computed maps)
 # ---------------------------------------------------------------------------
@@ -176,8 +181,15 @@ def normalize(text: str) -> str:
 def build_bilingual_fast(
     src_wn: dict,
     tgt_ili_to_forms: dict[str, list[str]],
+    ili_to_en_def: dict[str, str] | None = None,
+    ili_to_en_examples: dict[str, list[str]] | None = None,
 ) -> list[dict]:
-    """Build bilingual entries using pre-computed tgt ILI→forms map."""
+    """Build bilingual entries using pre-computed tgt ILI→forms map.
+
+    If ili_to_en_def / ili_to_en_examples are provided, fall back to English
+    WordNet definitions/examples when the source language's synset doesn't
+    have them (most non-English OMW WordNets lack definitions).
+    """
     headword_map: dict[str, dict] = defaultdict(lambda: {
         "pos": None, "pronunciation": None, "forms": [],
         "translations": [], "senses": [], "examples": [], "ilis": set(),
@@ -200,10 +212,19 @@ def build_bilingual_fast(
                 for tgt_form in tgt_ili_to_forms[ili]:
                     hw["translations"].append(tgt_form)
                 hw["ilis"].add(ili)
-                # Definition from synset
+                # Definition from synset (fall back to English via ILI)
                 ss_def = src_wn.get("_synset_defs", {}).get(sense["synset"])
                 if ss_def:
                     hw["senses"].append(ss_def)
+                elif ili_to_en_def and ili in ili_to_en_def:
+                    hw["senses"].append(ili_to_en_def[ili])
+                # Examples from synset (fall back to English via ILI)
+                ss_examples = src_wn.get("_synset_examples", {}).get(sense["synset"])
+                if ss_examples:
+                    hw["examples"].extend(ss_examples)
+                elif ili_to_en_examples and ili in ili_to_en_examples:
+                    hw["examples"].extend(ili_to_en_examples[ili])
+                # Also check Sense-level examples (some WordNets may have them)
                 if sense["examples"]:
                     hw["examples"].extend(sense["examples"])
 
@@ -411,6 +432,7 @@ def main() -> int:
         print(f"  [parse] {lang} ({src_tag}/{info.omw_id or 'tufs'}) {xml_path.stat().st_size:,} bytes...", end=" ", flush=True)
         wn = parse_wordnet(xml_path)
         wn["_synset_defs"] = build_synset_to_definition(wn)
+        wn["_synset_examples"] = build_synset_to_examples(wn)
         wn["_source"] = info
         parsed[lang] = wn
         ili_forms_cache[lang] = build_ili_to_forms(wn)
@@ -418,6 +440,22 @@ def main() -> int:
         print(f"{len(wn['entries']):,} entries, {len(wn['ili_to_synsets']):,} ILIs ({time.time()-t1:.1f}s)")
 
     print(f"\nParsed {len(parsed)} langs in {time.time()-t0:.1f}s")
+
+    # Pre-compute English ILI → definition and ILI → examples for fallback
+    # (most non-English OMW WordNets lack definitions/examples)
+    ili_to_en_def: dict[str, str] = {}
+    ili_to_en_examples: dict[str, list[str]] = {}
+    if "en" in parsed:
+        en_wn = parsed["en"]
+        for ss in en_wn["synsets"]:
+            ili = ss.get("ili")
+            if not ili:
+                continue
+            if ss["definition"] and ili not in ili_to_en_def:
+                ili_to_en_def[ili] = ss["definition"]
+            if ss.get("examples") and ili not in ili_to_en_examples:
+                ili_to_en_examples[ili] = ss["examples"]
+        print(f"English fallback: {len(ili_to_en_def):,} ILI→def, {len(ili_to_en_examples):,} ILI→examples")
 
     print(f"\n=== Phase 2: Build {len(buildable_pairs)} bilingual dictionaries ===")
     t0 = time.time()
@@ -433,7 +471,11 @@ def main() -> int:
             continue
 
         t1 = time.time()
-        entries = build_bilingual_fast(parsed[src], ili_forms_cache[tgt])
+        entries = build_bilingual_fast(
+            parsed[src], ili_forms_cache[tgt],
+            ili_to_en_def=ili_to_en_def,
+            ili_to_en_examples=ili_to_en_examples,
+        )
         if not entries:
             print(f"  [{i}/{len(buildable_pairs)}] [empty] {src}-{tgt}: no shared ILIs")
             skipped += 1

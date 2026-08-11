@@ -27,7 +27,7 @@ if not TOKEN:
     print("ERROR: Set GITHUB_TOKEN env var or configure git credential manager", file=sys.stderr)
     sys.exit(1)
 REPO = "hudaiapa88/lingolate-dict-data"
-RELEASE_ID = 368452110
+RELEASE_ID = 368493865
 DICT_DIR = Path(__file__).resolve().parent.parent / "dictionaries"
 
 UPLOAD_URL = f"https://uploads.github.com/repos/{REPO}/releases/{RELEASE_ID}/assets"

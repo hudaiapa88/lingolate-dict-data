@@ -248,9 +248,14 @@ def build_bilingual(
                 hw["ilis"].add(ili)
                 # Use synset definition as sense
                 for ss in src_wn["synsets"]:
-                    if ss["id"] == sense["synset"] and ss["definition"]:
-                        hw["senses"].append(ss["definition"])
+                    if ss["id"] == sense["synset"]:
+                        if ss["definition"]:
+                            hw["senses"].append(ss["definition"])
+                        # Synset examples (OMW stores examples at Synset level, not Sense level)
+                        if ss.get("examples"):
+                            hw["examples"].extend(ss["examples"])
                         break
+                # Also check Sense-level examples (some WordNests may have them)
                 if sense["examples"]:
                     hw["examples"].extend(sense["examples"])
 
