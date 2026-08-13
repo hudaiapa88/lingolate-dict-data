@@ -3237,13 +3237,13 @@
     },
     {
       "code": "tr-en",
-      "size": 212992,
-      "sha256": "8b530c07e2abfab17a34f99e23043cdf1a50fdec42d696bf15101233edf76932",
-      "source": "TUFS Basic Vocabulary — CC BY 4.0",
-      "license": "CC-BY-4.0",
-      "entry_count": 426,
+      "size": 43573248,
+      "sha256": "887d87e35783c363e08219c5357f9baa59badaab64ba23e6dbc19de8736cccdf",
+      "source": "WikDict (open-dict-data/wikidict-en) — CC BY-SA 4.0",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 247795,
       "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/tr-en.sqlite3",
-      "attribution": "TUFS Basic Vocabulary — CC BY 4.0 + OMW English Wordnet (WordNet 3.0) — Princeton WordNet 3.0 License"
+      "attribution": "WikDict (open-dict-data/wikidict-en) — CC BY-SA 4.0"
     },
     {
       "code": "tr-es",
