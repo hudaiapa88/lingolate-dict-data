@@ -617,13 +617,13 @@
     },
     {
       "code": "de-ko",
-      "size": 204800,
-      "sha256": "3b65767a19c159c58efa230dd5cacbd63b788e230ba9d60c0847052d48c0374d",
-      "source": "TUFS Basic Vocabulary ÔÇö CC BY 4.0",
-      "license": "CC-BY-4.0",
-      "entry_count": 428,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/de-ko.sqlite3",
-      "attribution": "TUFS Basic Vocabulary ÔÇö CC BY 4.0"
+      "size": 7593984,
+      "sha256": "6abba9f45b5d7480f891885b9109632129b9d251cc00cf8b3ac110a64fcdd1e9",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 90121,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/de-ko.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "de-lt",
@@ -1217,13 +1217,13 @@
     },
     {
       "code": "es-ko",
-      "size": 233472,
-      "sha256": "0d50d15e369c2b82f7d542db1b7762a6687fef4f7cdd91a4cce16448b10f7c94",
-      "source": "Multilingual Central Repository (Spanish) ÔÇö Creative Commons Attribution 3.0",
-      "license": "CC-BY-3.0",
-      "entry_count": 710,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/es-ko.sqlite3",
-      "attribution": "Multilingual Central Repository (Spanish) ÔÇö Creative Commons Attribution 3.0 + TUFS Basic Vocabulary ÔÇö CC BY 4.0"
+      "size": 4722688,
+      "sha256": "fe7510c3b7918889912abc46358914f53f190f263942a66375ad3c0422526348",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 58259,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/es-ko.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "es-lt",
@@ -1557,13 +1557,13 @@
     },
     {
       "code": "fr-ko",
-      "size": 307200,
-      "sha256": "b192d5b93e9aede9d6d8884ec4602242a71dda9498cd2b8dbbdbf37ee62f2d43",
-      "source": "WOLF (French Wordnet) ÔÇö CeCILL-C License (MIT-compatible, French)",
-      "license": "CeCILL-C",
-      "entry_count": 1074,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/fr-ko.sqlite3",
-      "attribution": "WOLF (French Wordnet) ÔÇö CeCILL-C License (MIT-compatible, French) + TUFS Basic Vocabulary ÔÇö CC BY 4.0"
+      "size": 6701056,
+      "sha256": "948240bc8573acb4c17ae3972e1a5a7d8e7ec35014fd1e7275bd91ea257a277f",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 78051,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/fr-ko.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "fr-lt",
@@ -1976,6 +1976,16 @@
       "attribution": "WikDict by Karl Bartel — Data from Wiktionary via DBnary (CC-BY-SA 3.0)"
     },
     {
+      "code": "id-ko",
+      "size": 974848,
+      "sha256": "6dc16cc067adda7438e5e8433777874ad91d62c19d1f83cbf5aac9b8c53c48b5",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 13361,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/id-ko.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
+    },
+    {
       "code": "id-nl",
       "size": 147456,
       "sha256": "54616e378ca69519757c4173618ba953b2d54ead080336b43349693a589c50e8",
@@ -2154,6 +2164,16 @@
       "entry_count": 20045,
       "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/it-ja.sqlite3",
       "attribution": "WikDict by Karl Bartel — Data from Wiktionary via DBnary (CC-BY-SA 3.0)"
+    },
+    {
+      "code": "it-ko",
+      "size": 3604480,
+      "sha256": "2f2190d08a1f2a2a3111157064ddd49dcb53feb235e449b6061c4f27899113a6",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 42599,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/it-ko.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "it-nl",
@@ -2387,13 +2407,13 @@
     },
     {
       "code": "ja-ko",
-      "size": 991232,
-      "sha256": "7263f2ac52912e55ba94890db1033177eb2ad00c01011727745d49189648b948",
-      "source": "Japanese WordNet (NICT) ÔÇö WordNet-style License (NICT/DanNet/etc.)",
-      "license": "wordnet",
-      "entry_count": 4241,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/ja-ko.sqlite3",
-      "attribution": "Japanese WordNet (NICT) ÔÇö WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary ÔÇö CC BY 4.0"
+      "size": 28504064,
+      "sha256": "f90ab68c289ed49f57689fff86119a41fc21a69c0b40dee1c56e8b3c4b6cbf1b",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 323017,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ja-ko.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "ja-lt",
@@ -2527,13 +2547,13 @@
     },
     {
       "code": "ko-de",
-      "size": 229376,
-      "sha256": "e5473603471a45692b8bbf58a824a067da3b8e22482accf8d6c64d1e65c6dc76",
-      "source": "TUFS Basic Vocabulary ÔÇö CC BY 4.0",
-      "license": "CC-BY-4.0",
-      "entry_count": 443,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/ko-de.sqlite3",
-      "attribution": "TUFS Basic Vocabulary ÔÇö CC BY 4.0"
+      "size": 5357568,
+      "sha256": "2088a6d850bcf6756627ba1c523ee09b0bf96007f320f3eaf29b4d382e2d479c",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 70106,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-de.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "ko-en",
@@ -2547,23 +2567,23 @@
     },
     {
       "code": "ko-es",
-      "size": 204800,
-      "sha256": "ad961790fc03a89d99572b03d26a66b9a78edf30909053e4eaaf3880b829820e",
-      "source": "TUFS Basic Vocabulary ÔÇö CC BY 4.0",
-      "license": "CC-BY-4.0",
-      "entry_count": 383,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/ko-es.sqlite3",
-      "attribution": "TUFS Basic Vocabulary ÔÇö CC BY 4.0 + Multilingual Central Repository (Spanish) ÔÇö Creative Commons Attribution 3.0"
+      "size": 5017600,
+      "sha256": "a0868949c9cbffb1be87d69ee3a0a4ae3341bf55c514c825662f5c4ca4d18109",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 68216,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-es.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "ko-fr",
-      "size": 233472,
-      "sha256": "a039f4f1ac9431461aeebfd179c670c8e8dc30e1c8978e1dd2a067bbdbfe375a",
-      "source": "TUFS Basic Vocabulary ÔÇö CC BY 4.0",
-      "license": "CC-BY-4.0",
-      "entry_count": 435,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/ko-fr.sqlite3",
-      "attribution": "TUFS Basic Vocabulary ÔÇö CC BY 4.0 + WOLF (French Wordnet) ÔÇö CeCILL-C License (MIT-compatible, French)"
+      "size": 5177344,
+      "sha256": "255addbad5de335d69c50f74728d1ab383bb20dd63cc1924528cad8dcc24f32b",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 73468,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-fr.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "ko-hi",
@@ -2576,24 +2596,94 @@
       "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
+      "code": "ko-id",
+      "size": 2998272,
+      "sha256": "22c312a470509d928d366c924c1e9e2589ead27e1fd4fea9c533be84b4aa9dfa",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 48465,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-id.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
+    },
+    {
+      "code": "ko-it",
+      "size": 4804608,
+      "sha256": "4832011808ed6272ebdfaa0c56687a6dc038da5daac5fff041d196787d701873",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 68821,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-it.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
+    },
+    {
       "code": "ko-ja",
-      "size": 270336,
-      "sha256": "a4dc407367e8ca915cd321db6a49a867aba01344e16d8e7ce99480aaa39d7fdd",
-      "source": "TUFS Basic Vocabulary ÔÇö CC BY 4.0",
-      "license": "CC-BY-4.0",
-      "entry_count": 434,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/ko-ja.sqlite3",
-      "attribution": "TUFS Basic Vocabulary ÔÇö CC BY 4.0 + Japanese WordNet (NICT) ÔÇö WordNet-style License (NICT/DanNet/etc.)"
+      "size": 6336512,
+      "sha256": "a946ecfa2e97b2a776800ef890849fe3e33ae8ea53ee7497b353b050a401aedd",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 60181,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-ja.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
+    },
+    {
+      "code": "ko-ko",
+      "size": 9154560,
+      "sha256": "adb284aa33514a733990b1568431f4e88a268f82648fdae67a2727e2147ccfd0",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 106007,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-ko.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
+    },
+    {
+      "code": "ko-nl",
+      "size": 4472832,
+      "sha256": "6853f61c4942069b4c35ad8144b0db11b6dc480c1a4c361b4ea0380b768d0495",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 64248,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-nl.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
+    },
+    {
+      "code": "ko-pl",
+      "size": 4825088,
+      "sha256": "e2820a75ce976908b25b70b85f1fe6e309c7ef971644f7ac0acb4d3662f71ae9",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 67805,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-pl.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
+    },
+    {
+      "code": "ko-pt",
+      "size": 4481024,
+      "sha256": "775a02270e2e39527c0000d79aa59751d663a0031ddccb59cc64ad9800715944",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 64641,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-pt.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "ko-ru",
-      "size": 233472,
-      "sha256": "718535a8cbb4e7fa9f7baf074cc8aab45fac1ebfa16c7b9b8f4449aa516c24bc",
-      "source": "TUFS Basic Vocabulary ÔÇö CC BY 4.0",
-      "license": "CC-BY-4.0",
-      "entry_count": 449,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/ko-ru.sqlite3",
-      "attribution": "TUFS Basic Vocabulary ÔÇö CC BY 4.0"
+      "size": 7151616,
+      "sha256": "3ba9f5db33ddc3d662bf133304477b3b8541bf7bd3ea9dfebff99a69b6ae7ef0",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 68997,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-ru.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
+    },
+    {
+      "code": "ko-sv",
+      "size": 4378624,
+      "sha256": "445f5f39fc8d7f0c2ed7d22f2860fa14d9aef01e36ddf21af4c18defcd293cf0",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 64574,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-sv.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "ko-th",
@@ -2607,13 +2697,13 @@
     },
     {
       "code": "ko-tr",
-      "size": 229376,
-      "sha256": "20fbbd0dc0259d623ea70dcc757628bba6ba870ce010871bf1cbc115e41e8e6b",
-      "source": "TUFS Basic Vocabulary ÔÇö CC BY 4.0",
-      "license": "CC-BY-4.0",
-      "entry_count": 444,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/ko-tr.sqlite3",
-      "attribution": "TUFS Basic Vocabulary ÔÇö CC BY 4.0"
+      "size": 3842048,
+      "sha256": "fe4082a69731130ac6f4da93b45fb8a6e2a2c851a4660b85e26ced1f1600b606",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 58187,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-tr.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "ko-uk",
@@ -2637,13 +2727,13 @@
     },
     {
       "code": "ko-zh",
-      "size": 184320,
-      "sha256": "a7481d7073f53e3122437e464f58ea2a8a2b0ea9f39c1471083d426bdcdb51d2",
-      "source": "TUFS Basic Vocabulary ÔÇö CC BY 4.0",
-      "license": "CC-BY-4.0",
-      "entry_count": 346,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/ko-zh.sqlite3",
-      "attribution": "TUFS Basic Vocabulary ÔÇö CC BY 4.0 + Chinese Open Wordnet (Mandarin) ÔÇö WordNet-style License (NICT/DanNet/etc.)"
+      "size": 2760704,
+      "sha256": "cd5a393092746422fddbcc3e4ccebb33d3eb3831989c8324398a2c012df9446e",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 42291,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-zh.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "lt-cs",
@@ -2874,6 +2964,16 @@
       "entry_count": 25866,
       "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/nl-ja.sqlite3",
       "attribution": "WikDict by Karl Bartel — Data from Wiktionary via DBnary (CC-BY-SA 3.0)"
+    },
+    {
+      "code": "nl-ko",
+      "size": 4034560,
+      "sha256": "034a0ce5da31cd71ba0754f304fd8fc516ca1c6e2d8cd56c3460ac93ae03c328",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 50203,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/nl-ko.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "nl-lt",
@@ -3146,6 +3246,16 @@
       "attribution": "WikDict by Karl Bartel — Data from Wiktionary via DBnary (CC-BY-SA 3.0)"
     },
     {
+      "code": "pl-ko",
+      "size": 4763648,
+      "sha256": "ff80f38f767aef8e80573bbc1d682c49bf020f9375cbaf22921bd49f9446226b",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 56480,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/pl-ko.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
+    },
+    {
       "code": "pl-nl",
       "size": 7970816,
       "sha256": "87449e23c14dd7f217941e4b08dd73b1a4a7e5aa7a84caecc3d87ed6ffa2ecd1",
@@ -3334,6 +3444,16 @@
       "entry_count": 12429,
       "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/pt-ja.sqlite3",
       "attribution": "WikDict by Karl Bartel — Data from Wiktionary via DBnary (CC-BY-SA 3.0)"
+    },
+    {
+      "code": "pt-ko",
+      "size": 2936832,
+      "sha256": "023b887ad2f36842c480c763562f56e81402cb3936ecbf1bac26d828d35fd200",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 37930,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/pt-ko.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "pt-lt",
@@ -3577,13 +3697,13 @@
     },
     {
       "code": "ru-ko",
-      "size": 221184,
-      "sha256": "43da3e2dee448e65bc8c0efa1a749a9f6196c2f9b18847ed05833a61a82a8bcf",
-      "source": "TUFS Basic Vocabulary ÔÇö CC BY 4.0",
-      "license": "CC-BY-4.0",
-      "entry_count": 424,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/ru-ko.sqlite3",
-      "attribution": "TUFS Basic Vocabulary ÔÇö CC BY 4.0"
+      "size": 8364032,
+      "sha256": "09ea3ec33bd3039e6d231053990ccec7f7a480c1b800c9b2b2d3a2ef9745a330",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 77584,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ru-ko.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "ru-lt",
@@ -3784,6 +3904,16 @@
       "entry_count": 25566,
       "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/sv-ja.sqlite3",
       "attribution": "WikDict by Karl Bartel — Data from Wiktionary via DBnary (CC-BY-SA 3.0)"
+    },
+    {
+      "code": "sv-ko",
+      "size": 3665920,
+      "sha256": "1c481e2a2ac13d33f4a80aa0eea2b085a4cf22b34ba5bd7064ee67f17614cd94",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 46521,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/sv-ko.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "sv-nl",
@@ -4207,13 +4337,13 @@
     },
     {
       "code": "tr-ko",
-      "size": 204800,
-      "sha256": "3efebebd616d44c61c9897c8d32dca2eb120dc7b165e7cad477972fb1c48eff3",
-      "source": "TUFS Basic Vocabulary ÔÇö CC BY 4.0",
-      "license": "CC-BY-4.0",
-      "entry_count": 425,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/tr-ko.sqlite3",
-      "attribution": "TUFS Basic Vocabulary ÔÇö CC BY 4.0"
+      "size": 2121728,
+      "sha256": "591b74cd44abfc2d77441ab2de8bf02c167bfa3048e544361a3cd02aa166d827",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 27457,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/tr-ko.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "tr-lt",
@@ -4867,13 +4997,13 @@
     },
     {
       "code": "zh-ko",
-      "size": 294912,
-      "sha256": "41c9d7588e8605a86b7ca8a577bb167b5428e5b53a97ce264b5f12ce7bc6b373",
-      "source": "Chinese Open Wordnet (Mandarin) ÔÇö WordNet-style License (NICT/DanNet/etc.)",
-      "license": "wordnet",
-      "entry_count": 1086,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/zh-ko.sqlite3",
-      "attribution": "Chinese Open Wordnet (Mandarin) ÔÇö WordNet-style License (NICT/DanNet/etc.) + TUFS Basic Vocabulary ÔÇö CC BY 4.0"
+      "size": 8749056,
+      "sha256": "da6713997cea451b8e77d3a5974dae92c6bbe4742d85a9aa5d81c208ba310008",
+      "source": "Pivot (Kaikki.org + WikDict/JMdict/CEDICT/Kengdic via English)",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 122902,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/zh-ko.sqlite3",
+      "attribution": "Pivot dictionary built from Kaikki.org + WikDict/JMdict/CEDICT/Kengdic data — CC BY-SA 4.0"
     },
     {
       "code": "zh-lt",
