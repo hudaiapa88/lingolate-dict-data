@@ -1,5 +1,5 @@
 {
-  "version": "2026.08.4",
+  "version": "2026.08.5",
   "updated": "2026-08-16",
   "license": "mixed (CC-BY-SA-3.0 for WikDict, CC-BY-4.0/CC0/WordNet for others)",
   "source_repo": "https://github.com/hudaiapa88/lingolate-dict-data",
@@ -837,23 +837,23 @@
     },
     {
       "code": "en-ja",
-      "size": 9441280,
-      "sha256": "fb0148ba9f3f4c03497bc5ae41b55157918ee2d185df10d53a5409ed38c4e91f",
-      "source": "WikDict",
-      "license": "CC-BY-SA-3.0",
-      "entry_count": 53266,
+      "size": 33206272,
+      "sha256": "4528936717f7ac8523fa98c8a15abeb2af820ed042e3d3570e73e3066463bb3c",
+      "source": "JMdict/EDRDG",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 267311,
       "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/en-ja.sqlite3",
-      "attribution": "WikDict by Karl Bartel — Data from Wiktionary via DBnary (CC-BY-SA 3.0)"
+      "attribution": "JMdict/EDRDG — CC BY-SA 4.0 (commercial use permitted)"
     },
     {
       "code": "en-ko",
-      "size": 331776,
-      "sha256": "73ee806ce8de152c827d27c8ba775a261d4b2dafbeb3dd6cb7deba4a0286d144",
-      "source": "OMW English Wordnet (WordNet 3.0) ÔÇö Princeton WordNet 3.0 License",
-      "license": "WordNet-3.0",
-      "entry_count": 1224,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/en-ko.sqlite3",
-      "attribution": "OMW English Wordnet (WordNet 3.0) ÔÇö Princeton WordNet 3.0 License + TUFS Basic Vocabulary ÔÇö CC BY 4.0"
+      "size": 6246400,
+      "sha256": "321d27b18756d0439e1f615fc4c807e0f61f5ca1d3ef657d9a17aacdd4081756",
+      "source": "Kengdic",
+      "license": "MPL-2.0",
+      "entry_count": 86778,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/en-ko.sqlite3",
+      "attribution": "Kengdic by Joe Speigle — MPL 2.0"
     },
     {
       "code": "en-lt",
@@ -967,13 +967,13 @@
     },
     {
       "code": "en-zh",
-      "size": 5169152,
-      "sha256": "16cf69dc8037a8d4dc6bde260142bf0181f9ff0a008d457f26452f1d80ca5ecd",
-      "source": "WikDict",
-      "license": "CC-BY-SA-3.0",
-      "entry_count": 30747,
+      "size": 13197312,
+      "sha256": "bcf3a3e6a72504ff6ac9e4a90d27e89823e0e0b5f06027483dd8420cdb2fffa5",
+      "source": "CC-CEDICT",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 136809,
       "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/en-zh.sqlite3",
-      "attribution": "WikDict by Karl Bartel — Data from Wiktionary via DBnary (CC-BY-SA 3.0)"
+      "attribution": "CC-CEDICT by MDBG — CC BY-SA 4.0"
     },
     {
       "code": "es-ar",
@@ -2027,13 +2027,13 @@
     },
     {
       "code": "ja-en",
-      "size": 5505024,
-      "sha256": "51195be409d94d2990cbcd47ffe3c97c51595bd70e65596983c927fba03821d0",
-      "source": "WikDict",
-      "license": "CC-BY-SA-3.0",
-      "entry_count": 56982,
+      "size": 45891584,
+      "sha256": "ee875102e4130b002c27440beb0cfac7670103437a2b116b4f529c8f244f2534",
+      "source": "JMdict/EDRDG",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 464790,
       "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ja-en.sqlite3",
-      "attribution": "WikDict by Karl Bartel — Data from Wiktionary via DBnary (CC-BY-SA 3.0)"
+      "attribution": "JMdict/EDRDG — CC BY-SA 4.0 (commercial use permitted)"
     },
     {
       "code": "ja-es",
@@ -2237,13 +2237,13 @@
     },
     {
       "code": "ko-en",
-      "size": 237568,
-      "sha256": "0db6b3704eb925b5009ab7bbcc38ef57cc24a334b8846f31b739f67c3f1d12f4",
-      "source": "TUFS Basic Vocabulary ÔÇö CC BY 4.0",
-      "license": "CC-BY-4.0",
-      "entry_count": 452,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/ko-en.sqlite3",
-      "attribution": "TUFS Basic Vocabulary ÔÇö CC BY 4.0 + OMW English Wordnet (WordNet 3.0) ÔÇö Princeton WordNet 3.0 License"
+      "size": 6868992,
+      "sha256": "e5d55902c054b8e0ebee81ebf932e7b4c8a666c4b72a2f45f41e6a774dd222cd",
+      "source": "Kengdic",
+      "license": "MPL-2.0",
+      "entry_count": 106229,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ko-en.sqlite3",
+      "attribution": "Kengdic by Joe Speigle — MPL 2.0"
     },
     {
       "code": "ko-es",
@@ -3987,13 +3987,13 @@
     },
     {
       "code": "zh-en",
-      "size": 13086720,
-      "sha256": "1b739df174e7657544439288a76cd78f0606c0541d4cd07cb941ae8f44344785",
-      "source": "WikDict",
-      "license": "CC-BY-SA-3.0",
-      "entry_count": 136854,
+      "size": 16740352,
+      "sha256": "57286b1b379e616fb0abfb80a4b51e23d5291f3f59b1cae2417c497e935c724e",
+      "source": "CC-CEDICT",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 197742,
       "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/zh-en.sqlite3",
-      "attribution": "WikDict by Karl Bartel — Data from Wiktionary via DBnary (CC-BY-SA 3.0)"
+      "attribution": "CC-CEDICT by MDBG — CC BY-SA 4.0"
     },
     {
       "code": "zh-es",
