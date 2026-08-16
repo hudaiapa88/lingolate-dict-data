@@ -8,7 +8,7 @@ requirements.
 ## Primary Source: WikDict (CC-BY-SA 3.0)
 
 14 languages (de, en, es, fr, id, it, ja, nl, pl, pt, ru, sv, tr, zh),
-182 language pairs, 8.1M entries. Data extracted from Wiktionary by the
+178 language pairs, 8.1M entries. Data extracted from Wiktionary by the
 DBnary project and processed into bilingual SQLite databases by WikDict.
 
 - Website: https://www.wikdict.com
@@ -30,10 +30,45 @@ by:
 - Major commercial dictionary apps (GoldenDict, KOReader, Dictionary
   Universal) use CC-BY-SA dictionary data with proprietary app code.
 
-## Fallback Sources (for ar, hi, ko, th, uk, vi — not in WikDict)
+## Premium Sources (Language-Specific Gold Standard)
 
-These 6 languages are not yet available in WikDict. Until Kaikki.org
-integration (Phase 2), the following sources are used as fallback.
+For Japanese, Chinese, and Korean, premium curated dictionaries replace
+WikDict with higher-quality, editorial-reviewed data.
+
+### JMdict/EDRDG (Japanese) — CC-BY-SA 4.0
+
+Gold standard for Japanese-English. 218K entries, editorial reviewed.
+Replaces WikDict for ja-en and en-ja pairs (464K + 267K entries).
+
+- Website: https://www.edrdg.org/jmdict/j_jmdict.html
+- License: CC-BY-SA 4.0 (commercial use explicitly permitted)
+- Attribution: "JMdict/EDRDG — CC BY-SA 4.0"
+- Note: EDRDG license explicitly states: "Software using these files does
+  NOT have to be under any form of open-source licence."
+
+### CC-CEDICT (Chinese) — CC-BY-SA 4.0
+
+Curated Chinese-English dictionary by MDBG. 125K entries.
+Replaces WikDict for zh-en and en-zh pairs (197K + 136K entries).
+
+- Website: https://www.mdbg.net/chinese/dictionary?page=cc-cedict
+- License: CC-BY-SA 4.0
+- Attribution: "CC-CEDICT by MDBG — CC BY-SA 4.0"
+
+### Kengdic (Korean) — MPL 2.0
+
+Korean-English dictionary by Joe Speigle. 117K entries.
+Provides ko-en and en-ko pairs (106K + 86K entries) — Korean was not
+available in WikDict.
+
+- Repository: https://github.com/garfieldnate/kengdic
+- License: MPL 2.0 / LGPL 2.0+
+- Attribution: "Kengdic by Joe Speigle — MPL 2.0"
+
+## Fallback Sources (for ar, hi, th, uk, vi — not in WikDict)
+
+These 5 languages are not yet available in WikDict or premium sources.
+Until Kaikki.org integration (Phase 2), the following sources are used.
 
 ### omw-data 1.4 (Open Multilingual Wordnet)
 
@@ -104,7 +139,7 @@ translations via ILI (Inter-Lingual Index).
 ### TUFS Basic Vocabulary (CC-BY 4.0)
 
 23 languages, ~500-1000 entries each. Used for languages not in omw-data
-(de, ko, ru, tr, ar, hi, vi) and for pronunciation audio + example sentences.
+and for pronunciation audio + example sentences.
 
 - Repository: https://github.com/omwn/tufs
 - License: CC-BY 4.0
@@ -120,7 +155,7 @@ Used for language pairs not covered by WikDict or omw-data.
 - License: CC0 1.0 (Public Domain)
 - Attribution: "PanLex — CC0 1.0"
 
-## Planned Sources (Phase 2-3)
+## Planned Sources (Phase 2)
 
 ### Kaikki.org / Wiktextract (CC-BY-SA 4.0) — Phase 2
 
@@ -132,29 +167,6 @@ Will replace WikDict for all 20 languages with higher-quality extraction
 - License: CC-BY-SA 4.0
 - Citation: Tatu Ylonen (2022), "Wiktextract: Wiktionary as Machine-Readable
   Structured Data", LREC 2022, pp. 1317-1325.
-
-### JMdict/EDRDG (CC-BY-SA 4.0) — Phase 3
-
-Gold standard for Japanese-English. 210K entries, editorial review.
-
-- Website: https://www.edrdg.org/jmdict/j_jmdict.html
-- License: CC-BY-SA 4.0 (commercial use explicitly permitted)
-- Attribution: "JMdict/EDRDG — CC BY-SA 4.0"
-
-### CC-CEDICT (CC-BY-SA 4.0) — Phase 3
-
-Curated Chinese-English dictionary. 125K entries.
-
-- Website: https://www.mdbg.net/chinese/dictionary?page=cc-cedict
-- License: CC-BY-SA 4.0
-- Attribution: "CC-CEDICT — CC BY-SA 4.0"
-
-### Kengdic (MPL 2.0) — Phase 3
-
-Korean-English dictionary. 130K entries.
-
-- License: MPL 2.0 / LGPL
-- Attribution: "Kengdic — MPL 2.0"
 
 ## How Attribution Is Surfaced
 
