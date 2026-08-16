@@ -65,10 +65,35 @@ available in WikDict.
 - License: MPL 2.0 / LGPL 2.0+
 - Attribution: "Kengdic by Joe Speigle — MPL 2.0"
 
-## Fallback Sources (for ar, hi, th, uk, vi — not in WikDict)
+## Kaikki.org / Wiktextract (CC-BY-SA 4.0)
 
-These 5 languages are not yet available in WikDict or premium sources.
-Until Kaikki.org integration (Phase 2), the following sources are used.
+Wiktionary extraction for 5 languages not available in WikDict:
+Arabic, Hindi, Thai, Ukrainian, Vietnamese. 371K entries across 10 pairs.
+
+- Website: https://kaikki.org
+- Source: https://github.com/tatuylonen/wiktextract
+- License: CC-BY-SA 4.0
+- Attribution: "Kaikki.org (Wiktextract) by Tatu Ylonen — CC BY-SA 4.0"
+- Citation: Ylonen (2022), "Wiktextract: Wiktionary as Machine-Readable
+  Structured Data", LREC 2022, pp. 1317-1325.
+
+## Pivot Dictionaries (CC-BY-SA 4.0)
+
+Direct bilingual dictionaries built OFFLINE at build time by pivoting
+through English. For example, ar-de is built from ar-en (Kaikki.org) +
+en-de (WikDict). 160 pairs, 5.4M entries.
+
+This is NOT runtime bridge translation — these are pre-computed direct
+SQLite dictionary files with the same schema as WikDict. Polysemy noise
+is mitigated by limiting translations to first 3 English glosses and
+top 5 target translations per word.
+
+- Source: Built from Kaikki.org + WikDict + JMdict + CC-CEDICT + Kengdic
+- License: CC-BY-SA 4.0 (inherits from source data)
+- Attribution: "Pivot dictionary built from Kaikki.org + WikDict/JMdict/
+  CEDICT/Kengdic data — CC BY-SA 4.0"
+
+## Fallback Sources (for remaining pairs)
 
 ### omw-data 1.4 (Open Multilingual Wordnet)
 
@@ -116,7 +141,7 @@ translations via ILI (Inter-Lingual Index).
 - License: MIT
 - Attribution: "Wordnet Bahasa — MIT"
 
-#### Norwegian Wordnet (Bokmål)
+#### Norwegian Wordnet (Bokmal)
 - Repository: https://github.com/omwn/omw-data (omw-nb)
 - License: WordNet-style (commercial-safe)
 - Attribution: "Norwegian Wordnet"
@@ -149,24 +174,11 @@ and for pronunciation audio + example sentences.
 
 ### PanLex (CC0)
 
-Used for language pairs not covered by WikDict or omw-data.
+Used for language pairs not covered by other sources.
 
 - Website: https://panlex.org
 - License: CC0 1.0 (Public Domain)
 - Attribution: "PanLex — CC0 1.0"
-
-## Planned Sources (Phase 2)
-
-### Kaikki.org / Wiktextract (CC-BY-SA 4.0) — Phase 2
-
-Will replace WikDict for all 20 languages with higher-quality extraction
-(Lua template expansion, LREC 2022 paper). Currently pending build pipeline.
-
-- Website: https://kaikki.org
-- Source: https://github.com/tatuylonen/wiktextract
-- License: CC-BY-SA 4.0
-- Citation: Tatu Ylonen (2022), "Wiktextract: Wiktionary as Machine-Readable
-  Structured Data", LREC 2022, pp. 1317-1325.
 
 ## How Attribution Is Surfaced
 
