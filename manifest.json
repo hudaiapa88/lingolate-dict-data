@@ -1,5 +1,5 @@
 {
-  "version": "2026.08.5",
+  "version": "2026.08.6",
   "updated": "2026-08-16",
   "license": "mixed (CC-BY-SA-3.0 for WikDict, CC-BY-4.0/CC0/WordNet for others)",
   "source_repo": "https://github.com/hudaiapa88/lingolate-dict-data",
@@ -17,13 +17,13 @@
     },
     {
       "code": "ar-en",
-      "size": 274432,
-      "sha256": "9def37c465218e50dc5544f7850a37b3676938786d68e8c090b51a41376d00eb",
-      "source": "TUFS Basic Vocabulary ÔÇö CC BY 4.0",
-      "license": "CC-BY-4.0",
-      "entry_count": 542,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/ar-en.sqlite3",
-      "attribution": "TUFS Basic Vocabulary ÔÇö CC BY 4.0 + OMW English Wordnet (WordNet 3.0) ÔÇö Princeton WordNet 3.0 License"
+      "size": 3223552,
+      "sha256": "e2354b782151500e20728ed5d77e8a6aa559fb93835f45e13065836b0247fe84",
+      "source": "Kaikki.org/Wiktextract",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 26141,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/ar-en.sqlite3",
+      "attribution": "Kaikki.org (Wiktextract) by Tatu Ylonen — CC BY-SA 4.0"
     },
     {
       "code": "ar-es",
@@ -717,13 +717,13 @@
     },
     {
       "code": "en-ar",
-      "size": 339968,
-      "sha256": "0c99cd49efb801b0bfa721049a3d94821bf453c3c575380439ee0a7153d96d7c",
-      "source": "OMW English Wordnet (WordNet 3.0) ÔÇö Princeton WordNet 3.0 License",
-      "license": "WordNet-3.0",
-      "entry_count": 1161,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/en-ar.sqlite3",
-      "attribution": "OMW English Wordnet (WordNet 3.0) ÔÇö Princeton WordNet 3.0 License + TUFS Basic Vocabulary ÔÇö CC BY 4.0"
+      "size": 3678208,
+      "sha256": "5f2efbd8a70b959c3cc07fd63442aba4dd9ff4d5d8ceb6f0cfd7fe5dedee8e28",
+      "source": "Kaikki.org/Wiktextract",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 41121,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/en-ar.sqlite3",
+      "attribution": "Kaikki.org (Wiktextract) by Tatu Ylonen — CC BY-SA 4.0"
     },
     {
       "code": "en-bg",
@@ -807,13 +807,13 @@
     },
     {
       "code": "en-hi",
-      "size": 22134784,
-      "sha256": "3cd52525bdfa1089bc34b7124fdd43c7aef0a097e62c6dc6ab2f5a119f4f91d0",
-      "source": "PanLex (CC0)",
-      "license": "CC0-1.0",
-      "entry_count": 101105,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/en-hi.sqlite3",
-      "attribution": "PanLex Database (CC0 1.0) ÔÇö The Long Now Foundation"
+      "size": 3608576,
+      "sha256": "b4bf71c53eb3480ae9b09711967d21093ccfb27d28830388dfc8189082046eff",
+      "source": "Kaikki.org/Wiktextract",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 31568,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/en-hi.sqlite3",
+      "attribution": "Kaikki.org (Wiktextract) by Tatu Ylonen — CC BY-SA 4.0"
     },
     {
       "code": "en-id",
@@ -927,13 +927,13 @@
     },
     {
       "code": "en-th",
-      "size": 30576640,
-      "sha256": "820459ca89b9bded26330c407d8d6b5b50383ea15e4c1f3d5fc2230a9ba4d0f7",
-      "source": "OMW English Wordnet (WordNet 3.0) ÔÇö Princeton WordNet 3.0 License",
-      "license": "WordNet-3.0",
-      "entry_count": 105736,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/en-th.sqlite3",
-      "attribution": "OMW English Wordnet (WordNet 3.0) ÔÇö Princeton WordNet 3.0 License + Thai Wordnet ÔÇö WordNet-style License (NICT/DanNet/etc.)"
+      "size": 2056192,
+      "sha256": "48b463e099a9dbe52ef30f8a90f3de7819ce7b75c7836e7a3169b7b305025d65",
+      "source": "Kaikki.org/Wiktextract",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 21432,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/en-th.sqlite3",
+      "attribution": "Kaikki.org (Wiktextract) by Tatu Ylonen — CC BY-SA 4.0"
     },
     {
       "code": "en-tr",
@@ -947,23 +947,23 @@
     },
     {
       "code": "en-uk",
-      "size": 10895360,
-      "sha256": "3a93aca896de08787716093f9c8eb71548077747ff5ba1b86a7890a7aa4aa3a3",
-      "source": "PanLex (CC0)",
-      "license": "CC0-1.0",
-      "entry_count": 66282,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/en-uk.sqlite3",
-      "attribution": "PanLex Database (CC0 1.0) ÔÇö The Long Now Foundation"
+      "size": 7647232,
+      "sha256": "0835f7ed448f852c248c29d314f74dc7fe6013f9ff8b648d0b6efe8b80cb7c24",
+      "source": "Kaikki.org/Wiktextract",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 59070,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/en-uk.sqlite3",
+      "attribution": "Kaikki.org (Wiktextract) by Tatu Ylonen — CC BY-SA 4.0"
     },
     {
       "code": "en-vi",
-      "size": 331776,
-      "sha256": "bf193aa9a33efd1f843710abeb690cf70cbc14a66098c23dca841cb41ad0be76",
-      "source": "OMW English Wordnet (WordNet 3.0) ÔÇö Princeton WordNet 3.0 License",
-      "license": "WordNet-3.0",
-      "entry_count": 1214,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/en-vi.sqlite3",
-      "attribution": "OMW English Wordnet (WordNet 3.0) ÔÇö Princeton WordNet 3.0 License + TUFS Basic Vocabulary ÔÇö CC BY 4.0"
+      "size": 4067328,
+      "sha256": "dbc88d8b0b16b79a9b510a6a17eb2b65ca37776af2739a57bc6a561f864220d4",
+      "source": "Kaikki.org/Wiktextract",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 43390,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/en-vi.sqlite3",
+      "attribution": "Kaikki.org (Wiktextract) by Tatu Ylonen — CC BY-SA 4.0"
     },
     {
       "code": "en-zh",
@@ -1597,13 +1597,13 @@
     },
     {
       "code": "hi-en",
-      "size": 30396416,
-      "sha256": "208d6966a84440edea014a90217dee4dde26a4e50c8c671407f6975d9a588e01",
-      "source": "PanLex (CC0)",
-      "license": "CC0-1.0",
-      "entry_count": 149447,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/hi-en.sqlite3",
-      "attribution": "PanLex Database (CC0 1.0) ÔÇö The Long Now Foundation"
+      "size": 4513792,
+      "sha256": "f10037cc3465668b9c45207497bbf8ed9f7de01641ad4f9fc055c3de926b2081",
+      "source": "Kaikki.org/Wiktextract",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 35645,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/hi-en.sqlite3",
+      "attribution": "Kaikki.org (Wiktextract) by Tatu Ylonen — CC BY-SA 4.0"
     },
     {
       "code": "hi-es",
@@ -3387,13 +3387,13 @@
     },
     {
       "code": "th-en",
-      "size": 25210880,
-      "sha256": "19f3833fec06957e9bd363eacaf92ffabb7bc3a63a962ef434fd2e5adf419c91",
-      "source": "Thai Wordnet ÔÇö WordNet-style License (NICT/DanNet/etc.)",
-      "license": "wordnet",
-      "entry_count": 82504,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/th-en.sqlite3",
-      "attribution": "Thai Wordnet ÔÇö WordNet-style License (NICT/DanNet/etc.) + OMW English Wordnet (WordNet 3.0) ÔÇö Princeton WordNet 3.0 License"
+      "size": 2211840,
+      "sha256": "47bf7d5410ce79cc577bc50a3104a55343005a30cafe77ed8b1665f44ada93cf",
+      "source": "Kaikki.org/Wiktextract",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 17570,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/th-en.sqlite3",
+      "attribution": "Kaikki.org (Wiktextract) by Tatu Ylonen — CC BY-SA 4.0"
     },
     {
       "code": "th-es",
@@ -3737,13 +3737,13 @@
     },
     {
       "code": "uk-en",
-      "size": 11448320,
-      "sha256": "318d0eb517203e6c0a88a9c331c5cbafd7438efc1140f7c25aafa4bed90805d7",
-      "source": "PanLex (CC0)",
-      "license": "CC0-1.0",
-      "entry_count": 63403,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/uk-en.sqlite3",
-      "attribution": "PanLex Database (CC0 1.0) ÔÇö The Long Now Foundation"
+      "size": 7143424,
+      "sha256": "2bf158e87d2a3748149a78eafa5f9c32c3f6ba24c784bc4d96494713728c4581",
+      "source": "Kaikki.org/Wiktextract",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 55175,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/uk-en.sqlite3",
+      "attribution": "Kaikki.org (Wiktextract) by Tatu Ylonen — CC BY-SA 4.0"
     },
     {
       "code": "uk-es",
@@ -3857,13 +3857,13 @@
     },
     {
       "code": "vi-en",
-      "size": 233472,
-      "sha256": "b8adc7fae379162ca3dc2fe62e4e1429f2e00798c9d617b1b81b9bb289fdbba0",
-      "source": "TUFS Basic Vocabulary ÔÇö CC BY 4.0",
-      "license": "CC-BY-4.0",
-      "entry_count": 444,
-      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.2/vi-en.sqlite3",
-      "attribution": "TUFS Basic Vocabulary ÔÇö CC BY 4.0 + OMW English Wordnet (WordNet 3.0) ÔÇö Princeton WordNet 3.0 License"
+      "size": 3751936,
+      "sha256": "a77e7cc788635fc0fe69e6a8f722d4ffec94334d59260e85cb5418e92e63361e",
+      "source": "Kaikki.org/Wiktextract",
+      "license": "CC-BY-SA-4.0",
+      "entry_count": 39881,
+      "downloadUrl": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/v2026.08.4/vi-en.sqlite3",
+      "attribution": "Kaikki.org (Wiktextract) by Tatu Ylonen — CC BY-SA 4.0"
     },
     {
       "code": "vi-es",
