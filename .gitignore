@@ -2,6 +2,8 @@
 dictionaries/
 sources_cache/
 *.sqlite3
+packs/
+examples/
 *.sqlite3.sha256
 
 # Python

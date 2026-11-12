@@ -180,6 +180,21 @@ Used for language pairs not covered by other sources.
 - License: CC0 1.0 (Public Domain)
 - Attribution: "PanLex — CC0 1.0"
 
+## PanLex (CC0 1.0)
+
+Translations from **PanLex** (https://panlex.org) are used as a filtered,
+low-confidence gap filler. Source copy: Hugging Face dataset
+`cointegrated/panlex-meanings` (tagged `cc0-1.0`), itself derived from the
+PanLex CC0 snapshot. Note: panlex.org/license currently describes the live
+database as CC BY-NC-SA 4.0; the CC0 snapshot release is irrevocable, and the
+build keeps the dataset id/tag above as provenance.
+
+## Tatoeba (CC BY 2.0 FR)
+
+Example sentences come from **Tatoeba** (https://tatoeba.org), licensed under
+Creative Commons Attribution 2.0 France (some sentences CC0). Each sentence
+keeps its Tatoeba id (`a_src`, `b_src`) for attribution.
+
 ## How Attribution Is Surfaced
 
 The Lingolate app reads `manifest.json` and renders an "About / Licenses"
