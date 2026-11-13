@@ -170,7 +170,11 @@ class Builder:
                 if len(txt.split()) > PANLEX_MAX_WORDS:
                     continue
                 by_meaning[int(m)].append(txt)
-        kept = 0
+        # Per-language lemma cache, freed afterwards: keeping every language's
+        # PanLex lemmas in one dict does not fit a 12 GB Colab runtime.
+        local = {w: i for i, w in self.db.execute(
+            'SELECT id, written FROM lemma WHERE lang = ? AND pos IS NULL', (lang,))}
+        kept = n_rows = 0
         rows = []
         for m, words in by_meaning.items():
             words = list(dict.fromkeys(words))
@@ -181,12 +185,27 @@ class Builder:
                 cid = self.db.execute('INSERT INTO concept (panlex) VALUES (?)', (m,)).lastrowid
                 self.panlex_concept[m] = cid
             for w in words:
-                rows.append((self.lemma(lang, w, None), cid, source_id, BASE_CONF['panlex']))
+                lid = local.get(w)
+                if lid is None:
+                    lid = self.db.execute(
+                        'INSERT INTO lemma (lang, written, norm, pos) VALUES (?,?,?,NULL)',
+                        (lang, w, w.casefold())).lastrowid
+                    local[w] = lid
+                rows.append((lid, cid, source_id, BASE_CONF['panlex']))
             kept += 1
+            if len(rows) >= 200_000:
+                self.flush_senses(rows)
+                n_rows += len(rows)
+                rows = []
+        self.flush_senses(rows)
+        n_rows += len(rows)
+        del by_meaning, local
+        log(f'  panlex {iso3}: {kept:,} meanings, {n_rows:,} senses')
+
+    def flush_senses(self, rows: list) -> None:
         self.db.executemany(
             'INSERT OR IGNORE INTO sense (lemma_id, concept_id, source_id, confidence) VALUES (?,?,?,?)',
             rows)
-        log(f'  panlex {iso3}: {kept:,} meanings, {len(rows):,} senses')
 
 
 def main() -> None:
@@ -227,6 +246,7 @@ def main() -> None:
                        'https://github.com/omwn/tufs', 'tufs')
         b.add_wordnet(xmls[-1], lang, sid, BASE_CONF['tufs'])
 
+    b.lemma_ids.clear()  # wordnet lemmas are no longer needed in memory
     if not args.no_panlex:
         log('PanLex (filtered)')
         sid = b.source('panlex', 'PanLex', 'CC0-1.0',
