@@ -66,6 +66,7 @@ def ensure_schema(db: sqlite3.Connection) -> None:
         param_name TEXT NOT NULL, value TEXT NOT NULL,
         PRIMARY KEY (lang, dataset, param_id));
       CREATE INDEX IF NOT EXISTS form_lemma ON form(lemma_id);
+      CREATE INDEX IF NOT EXISTS concept_qid ON concept(qid);
       CREATE INDEX IF NOT EXISTS sense_lemma ON sense(lemma_id);
     """)
     db.commit()
