@@ -33,6 +33,26 @@ def is_phrase(lang: str, text: str) -> bool:
     return len(text.split()) >= 3
 
 
+BACK_VOWELS = set('aıou')
+FRONT_VOWELS = set('eiöü')
+
+
+def fix_tr_verb_stems(p: sqlite3.Connection) -> None:
+    """TUFS writes Turkish verbs as stems ('yap-', 'git-'); dictionaries and
+    learners use the infinitive ('yapmak', 'gitmek'). The suffix follows
+    vowel harmony: -mak after a back vowel, -mek after a front vowel."""
+    rows = p.execute("SELECT id, written FROM lemma WHERE lang = 'tr' AND written LIKE '%-'").fetchall()
+    fixed = []
+    for lid, w in rows:
+        stem = w[:-1].strip()
+        last = next((ch for ch in reversed(stem.lower()) if ch in BACK_VOWELS | FRONT_VOWELS), None)
+        if not stem or last is None:
+            continue
+        inf = stem + ('mak' if last in BACK_VOWELS else 'mek')
+        fixed.append((inf, inf.replace('I', 'ı').replace('İ', 'i').lower(), lid))
+    p.executemany('UPDATE lemma SET written = ?, norm = ? WHERE id = ?', fixed)
+
+
 def prune_pack(path: Path) -> tuple[int, int, int, int]:
     """Returns (lemmas before, after, translations before, after)."""
     p = sqlite3.connect(path)
@@ -51,6 +71,7 @@ def prune_pack(path: Path) -> tuple[int, int, int, int]:
             drop.append((rid,))
     p.executemany('DELETE FROM trans WHERE rowid = ?', drop)
 
+    fix_tr_verb_stems(p)
     p.executescript("""
       CREATE TEMP TABLE keep AS
         SELECT a_lemma AS id FROM trans UNION SELECT b_lemma FROM trans;

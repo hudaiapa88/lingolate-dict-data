@@ -25,6 +25,10 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument('--tag', required=True)
     ap.add_argument('--version', required=True)
+    ap.add_argument('--review', action='store_true',
+                    help='upload as a pre-release and do NOT publish manifest-v3.json on '
+                         'main; the app keeps using the previous data until a reviewer '
+                         'commits the manifest')
     args = ap.parse_args()
 
     token = os.environ.get('GH_TOKEN')
@@ -42,7 +46,7 @@ def main() -> None:
             'body': ('Pair packs (schema pack-v3): dictionary both ways, forms, '
                      'definitions and Tatoeba example sentences. See SCHEMA_V3.md '
                      'and ATTRIBUTIONS.md.'),
-            'prerelease': False,
+            'prerelease': args.review,
             'make_latest': 'false',  # keep the v2 dictionary release as "latest" for old apps
         })
     r.raise_for_status()
@@ -62,6 +66,10 @@ def main() -> None:
                        headers={'Content-Type': ctype}, timeout=600)
         r.raise_for_status()
         print(f'[{i}/{len(files)}] {path.name} ({path.stat().st_size / 1e6:.1f} MB)', flush=True)
+    if args.review:
+        print('review mode: manifest-v3.json NOT published (asset on the release only)')
+        print('done:', release['html_url'])
+        return
     # Publish manifest-v3.json on main too: the app reads it via jsDelivr/raw.
     import base64
     manifest = (ROOT / 'manifest-v3.json').read_bytes()

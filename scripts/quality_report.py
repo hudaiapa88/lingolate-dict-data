@@ -11,12 +11,18 @@ Usage:  python scripts/quality_report.py [--out quality_report.md]
 from __future__ import annotations
 
 import argparse
+import hashlib
+import json
 import sqlite3
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 PACKS = ROOT / 'packs'
-SHOWCASE = ['en-tr', 'de-tr', 'ko-tr', 'en-ja', 'es-ru']
+SHOWCASE = ['en-tr', 'de-tr', 'ko-tr', 'ar-tr', 'en-ja', 'es-ru', 'fr-zh']
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from export_packs import clean_headword  # noqa: E402
+from prune_packs import is_phrase  # noqa: E402
 LOW = 0.5
 
 
@@ -68,6 +74,61 @@ def showcase(path: Path, n: int = 25) -> list[str]:
     return out
 
 
+def gates(packs: list[Path]) -> tuple[list[str], bool]:
+    """Release gates. Every pack must pass; the release is held otherwise."""
+    out, ok_all = [], True
+    manifest = ROOT / 'manifest-v3.json'
+    listed = {}
+    if manifest.exists():
+        m = json.loads(manifest.read_text(encoding='utf-8'))
+        items = m.get('packs', m) if isinstance(m, dict) else m
+        for it in (items.values() if isinstance(items, dict) else items):
+            if isinstance(it, dict) and 'file' in it:
+                listed[it['file']] = it
+    fails: dict[str, list[str]] = {}
+    for path in packs:
+        p = sqlite3.connect(f'file:{path}?mode=ro', uri=True)
+        f = []
+        if p.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
+            f.append('integrity_check')
+        if p.execute("SELECT value FROM _meta WHERE key = 'schema'").fetchone() != ('pack-v3',):
+            f.append('schema')
+        bad = sum(1 for lang, w in p.execute('SELECT lang, written FROM lemma')
+                  if not clean_headword(lang, w) and not w.endswith('-'))
+        if bad:
+            f.append(f'{bad} unclean headwords')
+        phrases = p.execute('SELECT t.confidence, la.lang, la.written, lb.lang, lb.written FROM trans t '
+                            'JOIN lemma la ON la.id = t.a_lemma JOIN lemma lb ON lb.id = t.b_lemma '
+                            'WHERE t.confidence < ?', (LOW,)).fetchall()
+        n_ph = sum(1 for _, a1, w1, b1, w2 in phrases if is_phrase(a1, w1) or is_phrase(b1, w2))
+        if n_ph:
+            f.append(f'{n_ph} low-confidence phrase links')
+        if p.execute("SELECT count(*) FROM lemma WHERE lang = 'tr' AND written LIKE '%-'").fetchone()[0]:
+            f.append('Turkish verb stems')
+        if p.execute('SELECT count(*) FROM trans').fetchone()[0] == 0:
+            f.append('empty')
+        p.close()
+        it = listed.get(path.name)
+        if listed and it is None:
+            f.append('not in manifest')
+        elif it is not None:
+            if it.get('bytes') != path.stat().st_size:
+                f.append('manifest size mismatch')
+            elif it.get('sha256') != hashlib.sha256(path.read_bytes()).hexdigest():
+                f.append('manifest sha256 mismatch')
+        if f:
+            fails[path.name] = f
+    out.append(f'- packs checked: {len(packs)}; manifest entries: {len(listed)}')
+    if fails:
+        ok_all = False
+        out.append(f'- **FAIL** in {len(fails)} packs:')
+        out += [f'  - {k}: {", ".join(v)}' for k, v in sorted(fails.items())[:40]]
+    else:
+        out.append('- **PASS**: integrity, schema, headword cleanliness, no low-confidence '
+                   'phrase links, no Turkish stems, manifest size + sha256')
+    return out, ok_all
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument('--out', default=str(ROOT / 'quality_report.md'))
@@ -85,6 +146,8 @@ def main() -> None:
                  f'{pct(r["freq"], r["lemmas"])} | {pct(r["with_forms"], r["lemmas"])} | '
                  f'{pct(r["with_def"], r["lemmas"])} | {r["usage"]:,} | {r["examples"]:,} | '
                  f'{r["grammar"]} |')
+    g, ok = gates(packs)
+    L += ['', '## Release gates', ''] + g
     L += ['', '## Showcase', '']
     for pair in SHOWCASE:
         path = PACKS / f'pack-{pair}.sqlite3'
@@ -93,7 +156,7 @@ def main() -> None:
             L += showcase(path)
             L.append('')
     Path(args.out).write_text('\n'.join(L), encoding='utf-8')
-    print(f'wrote {args.out}')
+    print(f'wrote {args.out}; gates {"PASS" if ok else "FAIL"}')
 
 
 if __name__ == '__main__':
