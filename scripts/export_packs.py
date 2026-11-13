@@ -311,6 +311,24 @@ def build_aux() -> None:
             JOIN m.source x ON x.id = sl.source_id
             WHERE x.key LIKE 'omw-%')""").rowcount
         log(f'dropped {n:,} wordnet senses on closed-class words')
+        # Abbreviation traps: automatic wordnets translated the English
+        # members 'AN' (Associate in Nursing), 'In' (indium), 'At' (astatine)
+        # as if they were 'an', 'in', 'at' — 'un' → nursing degree. Short
+        # lowercase non-English wordnet senses on such concepts go.
+        n = db.execute("""
+          DELETE FROM sl WHERE rowid IN (
+            SELECT t.rowid FROM sl t
+            JOIN m.lemma l ON l.id = t.lemma_id
+            JOIN m.source x ON x.id = t.source_id
+            WHERE x.key LIKE 'omw-%' AND t.lang != 'en'
+              AND length(l.written) <= 3 AND l.written = lower(l.written)
+              AND t.concept_id IN (
+                SELECT e.concept_id FROM sl e
+                JOIN m.lemma le ON le.id = e.lemma_id
+                JOIN m.closed_class cc ON cc.lang = 'en' AND cc.written = lower(le.written)
+                WHERE e.lang = 'en' AND le.written != lower(le.written)
+                  AND length(le.written) <= 3))""").rowcount
+        log(f'dropped {n:,} wordnet senses on abbreviation concepts')
     db.commit()
     db.close()
     log('aux index ready')

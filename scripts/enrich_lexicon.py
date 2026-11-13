@@ -451,12 +451,16 @@ def step_freq(db: sqlite3.Connection) -> None:
         for lid, norm in db.execute('SELECT id, norm FROM lemma WHERE lang = ?', (lang,)):
             if norm in c:
                 score[lid] += c[norm]
-        # Headwords a real dictionary lists (any non-PanLex sense): a token
-        # equal to one of them is that word, not an inflected form of another
-        # ('var' is not 'varmak', 'are' the unit keeps its own count).
+        # Headwords a real dictionary lists (any non-PanLex sense, or a
+        # function word from Wikidata): a token equal to one of them is that
+        # word, not an inflected form of another ('var' is not 'varmak',
+        # 'para' is not 'parar').
         real = {w for (w,) in db.execute(
             'SELECT DISTINCT l.written FROM lemma l JOIN sense s ON s.lemma_id = l.id '
             'JOIN source x ON x.id = s.source_id WHERE l.lang = ? AND x.key != ?', (lang, 'panlex'))}
+        if db.execute("SELECT 1 FROM sqlite_master WHERE name = 'closed_class'").fetchone():
+            real |= {w for (w,) in db.execute('SELECT written FROM closed_class WHERE lang = ?', (lang,))}
+        owners: dict[str, list[tuple[int, str]]] = defaultdict(list)
         for lid, form, norm, tags, lwritten, lnorm in db.execute(
                 'SELECT f.lemma_id, f.form, f.norm, f.tags, l.written, l.norm FROM form f '
                 'JOIN lemma l ON l.id = f.lemma_id WHERE l.lang = ?', (lang,)):
@@ -465,7 +469,13 @@ def step_freq(db: sqlite3.Connection) -> None:
             # 'IS' (USPS abbreviation of island) is not the token 'is'
             if 'abbreviation' in (tags or '').lower() or (form != form.lower() and lwritten == lwritten.lower()):
                 continue
-            score[lid] += c[norm]
+            owners[norm].append((lid, lnorm))
+        # A form shared by several words ('suis': être, suivre) goes to the
+        # most frequent of them only.
+        for norm, cands in owners.items():
+            top = max(c.get(ln, 0) for _, ln in cands)
+            for lid in {lid for lid, ln in cands if c.get(ln, 0) == top}:
+                score[lid] += c[norm]
         # Rank written forms, not rows: 'o' (pronoun) and 'o' (that) share a rank.
         norm_of = dict(db.execute('SELECT id, norm FROM lemma WHERE lang = ?', (lang,)).fetchall())             if score else {}
         best: dict[str, int] = {}
@@ -596,7 +606,7 @@ def step_closed(db: sqlite3.Connection) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument('--steps', default='wikidata,ipa,freq,grammar,closed')
+    ap.add_argument('--steps', default='wikidata,ipa,closed,freq,grammar')
     ap.add_argument('--force', action='store_true', help='redo the wikidata merge')
     ap.add_argument('--jobs', type=int, default=os.cpu_count() or 1)
     ap.add_argument('--db', default=str(MASTER))
