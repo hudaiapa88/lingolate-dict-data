@@ -55,11 +55,11 @@ def log(msg: str) -> None:
 
 def ensure_schema(db: sqlite3.Connection) -> None:
     cols = {r[1] for r in db.execute('PRAGMA table_info(lemma)')}
-    # TUFS stores an audio URL in the pronunciation field — not IPA.
-    db.execute("UPDATE lemma SET ipa = NULL, ipa_src = NULL WHERE ipa LIKE 'http%'")
     if 'ipa_src' not in cols:
         db.execute('ALTER TABLE lemma ADD COLUMN ipa_src TEXT')
         db.execute("UPDATE lemma SET ipa_src = 'wordnet' WHERE ipa IS NOT NULL")
+    # TUFS stores an audio URL in the pronunciation field — not IPA.
+    db.execute("UPDATE lemma SET ipa = NULL, ipa_src = NULL WHERE ipa LIKE 'http%'")
     db.executescript("""
       CREATE TABLE IF NOT EXISTS grammar (
         lang TEXT NOT NULL, dataset TEXT NOT NULL, param_id TEXT NOT NULL,
