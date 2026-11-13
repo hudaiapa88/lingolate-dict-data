@@ -300,6 +300,17 @@ def build_aux() -> None:
         WHERE s.concept_id IS NOT NULL;
       CREATE INDEX sl_lang_concept ON sl(lang, concept_id);
     """)
+    # Wordnets list no function words: a wordnet sense on 'à', 'un', 'I' is
+    # noise from automatic construction ('à' → indium, 'I' → iodine).
+    if db.execute("SELECT 1 FROM m.sqlite_master WHERE name = 'closed_class'").fetchone():
+        n = db.execute("""
+          DELETE FROM sl WHERE rowid IN (
+            SELECT sl.rowid FROM sl
+            JOIN m.lemma l ON l.id = sl.lemma_id
+            JOIN m.closed_class c ON c.lang = l.lang AND c.written = l.written
+            JOIN m.source x ON x.id = sl.source_id
+            WHERE x.key LIKE 'omw-%')""").rowcount
+        log(f'dropped {n:,} wordnet senses on closed-class words')
     db.commit()
     db.close()
     log('aux index ready')

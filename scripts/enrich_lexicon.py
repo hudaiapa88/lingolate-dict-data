@@ -10,11 +10,15 @@
             hiragana reading for Japanese words written with kanji, for every
             lemma that can reach a pack (a sense with confidence >= 0.35).
   freq      Frequency rank per language from Tatoeba sentences (CC BY 2.0 FR),
-            counting inflected forms towards their lemma.
+            counting inflected forms towards their lemma (not abbreviations,
+            and not forms that are dictionary headwords of their own).
+  closed    Closed-class words (articles, adpositions, pronouns, conjunctions,
+            particles) from Wikidata Lexemes. Wordnets have no such words, so
+            a wordnet sense on one is noise ('à' → indium, 'I' → iodine).
   grammar   Grammar features per language from Grambank and WALS (CC BY 4.0).
 
 Run download_extras.py first. Each step can run on its own:
-    python scripts/enrich_lexicon.py --steps wikidata,ipa,freq,grammar
+    python scripts/enrich_lexicon.py --steps wikidata,ipa,freq,grammar,closed
 """
 
 from __future__ import annotations
@@ -447,11 +451,21 @@ def step_freq(db: sqlite3.Connection) -> None:
         for lid, norm in db.execute('SELECT id, norm FROM lemma WHERE lang = ?', (lang,)):
             if norm in c:
                 score[lid] += c[norm]
-        for lid, norm, lnorm in db.execute(
-                'SELECT f.lemma_id, f.norm, l.norm FROM form f JOIN lemma l ON l.id = f.lemma_id '
-                'WHERE l.lang = ?', (lang,)):
-            if norm != lnorm and norm in c:
-                score[lid] += c[norm]
+        # Headwords a real dictionary lists (any non-PanLex sense): a token
+        # equal to one of them is that word, not an inflected form of another
+        # ('var' is not 'varmak', 'are' the unit keeps its own count).
+        real = {w for (w,) in db.execute(
+            'SELECT DISTINCT l.written FROM lemma l JOIN sense s ON s.lemma_id = l.id '
+            'JOIN source x ON x.id = s.source_id WHERE l.lang = ? AND x.key != ?', (lang, 'panlex'))}
+        for lid, form, norm, tags, lwritten, lnorm in db.execute(
+                'SELECT f.lemma_id, f.form, f.norm, f.tags, l.written, l.norm FROM form f '
+                'JOIN lemma l ON l.id = f.lemma_id WHERE l.lang = ?', (lang,)):
+            if norm == lnorm or norm not in c or form in real:
+                continue
+            # 'IS' (USPS abbreviation of island) is not the token 'is'
+            if 'abbreviation' in (tags or '').lower() or (form != form.lower() and lwritten == lwritten.lower()):
+                continue
+            score[lid] += c[norm]
         # Rank written forms, not rows: 'o' (pronoun) and 'o' (that) share a rank.
         norm_of = dict(db.execute('SELECT id, norm FROM lemma WHERE lang = ?', (lang,)).fetchall())             if score else {}
         best: dict[str, int] = {}
@@ -545,9 +559,44 @@ def step_grammar(db: sqlite3.Connection) -> None:
         log(f'grammar {dataset}: {n:,} feature values')
 
 
+# ════════════════════════════════════════════════════════════════════════
+# Closed-class words
+# ════════════════════════════════════════════════════════════════════════
+
+OPEN_CLASS = {'Q1084', 'Q147276', 'Q24905', 'Q34698', 'Q380057'}  # noun, proper noun, verb, adj, adv
+CLOSED_LABEL = re.compile(r'\b(article|preposition|postposition|adposition|determiner|pronoun|'
+                          r'conjunction|particle|circumposition|clitic)\b', re.I)
+
+
+def step_closed(db: sqlite3.Connection) -> None:
+    """closed_class(lang, written): headwords Wikidata only knows as function
+    words. Category labels come from the API, so no hard-coded item ids."""
+    dump = CACHE / 'wikidata' / 'latest-lexemes.json.gz'
+    if not dump.exists():
+        raise SystemExit(f'missing {dump} (run download_extras.py)')
+    cats: dict[tuple[str, str], set[str]] = defaultdict(set)
+    log('closed: reading lexical categories')
+    for e in lexemes(dump):
+        picked = pick_lang(e.get('lemmas', {}))
+        if picked and e.get('lexicalCategory'):
+            cats[(picked[0], picked[1])].add(e['lexicalCategory'])
+    other = {q for qs in cats.values() if not qs & OPEN_CLASS for q in qs}
+    labels = qlabels(other)
+    closed_q = {q for q, name in labels.items() if CLOSED_LABEL.search(name)}
+    log('closed categories: ' + ', '.join(sorted(labels[q] for q in closed_q)))
+    rows = [k for k, qs in cats.items() if not qs & OPEN_CLASS and qs & closed_q]
+    db.executescript("""
+      DROP TABLE IF EXISTS closed_class;
+      CREATE TABLE closed_class (lang TEXT NOT NULL, written TEXT NOT NULL,
+                                 PRIMARY KEY (lang, written));""")
+    db.executemany('INSERT OR IGNORE INTO closed_class VALUES (?, ?)', rows)
+    db.commit()
+    log(f'closed: {len(rows):,} closed-class headwords')
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument('--steps', default='wikidata,ipa,freq,grammar')
+    ap.add_argument('--steps', default='wikidata,ipa,freq,grammar,closed')
     ap.add_argument('--force', action='store_true', help='redo the wikidata merge')
     ap.add_argument('--jobs', type=int, default=os.cpu_count() or 1)
     ap.add_argument('--db', default=str(MASTER))
@@ -567,6 +616,8 @@ def main() -> None:
             step_freq(db)
         elif step == 'grammar':
             step_grammar(db)
+        elif step == 'closed':
+            step_closed(db)
         else:
             raise SystemExit(f'unknown step {step}')
         log(f'step {step} done in {(time.time() - t0) / 60:.1f} min')

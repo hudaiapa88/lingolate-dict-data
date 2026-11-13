@@ -51,6 +51,9 @@ def fix_tr_verb_stems(p: sqlite3.Connection) -> None:
         inf = stem + ('mak' if last in BACK_VOWELS else 'mek')
         fixed.append((inf, inf.replace('I', 'ı').replace('İ', 'i').lower(), lid))
     p.executemany('UPDATE lemma SET written = ?, norm = ? WHERE id = ?', fixed)
+    # no vowel ('DNYT-'): not a word; its links go, the orphan sweep does the rest
+    bad = [(lid,) for lid, w in rows if lid not in {f[2] for f in fixed}]
+    p.executemany('DELETE FROM trans WHERE a_lemma = ? OR b_lemma = ?', ((i, i) for (i,) in bad))
 
 
 IPA_PRIORITY = {'wikidata': 0, 'wordnet': 1, 'espeak': 2, 'pinyin': 2, 'kana': 2, None: 3}
@@ -124,6 +127,22 @@ def merge_duplicates(p: sqlite3.Connection) -> int:
     return len(remap)
 
 
+def drop_case_variants(p: sqlite3.Connection) -> int:
+    """'BE', 'VE', 'Bir' next to 'be', 've', 'bir': a capitalised variant
+    backed only by low-confidence (PanLex) links is noise ('VE' → 'AND').
+    Variants with a reliable translation stay ('Be' → beryllium)."""
+    lower = {(lang, w) for lang, w in p.execute('SELECT lang, written FROM lemma')
+             if w == w.lower()}
+    cand = [lid for lid, lang, w in p.execute('SELECT id, lang, written FROM lemma')
+            if w != w.lower() and (lang, w.lower()) in lower]
+    sure = {lid for (lid,) in p.execute(
+        'SELECT a_lemma FROM trans WHERE confidence >= ? UNION '
+        'SELECT b_lemma FROM trans WHERE confidence >= ?', (SURE, SURE))}
+    drop = [(lid, lid) for lid in cand if lid not in sure]
+    p.executemany('DELETE FROM trans WHERE a_lemma = ? OR b_lemma = ?', drop)
+    return len(drop)
+
+
 def prune_pack(path: Path) -> tuple[int, int, int, int]:
     """Returns (lemmas before, after, translations before, after)."""
     p = sqlite3.connect(path)
@@ -133,6 +152,7 @@ def prune_pack(path: Path) -> tuple[int, int, int, int]:
 
     fix_tr_verb_stems(p)
     merge_duplicates(p)
+    drop_case_variants(p)
     info = {lid: (lang, w) for lid, lang, w in p.execute('SELECT id, lang, written FROM lemma')}
     sure = set()
     for a, b in p.execute('SELECT a_lemma, b_lemma FROM trans WHERE confidence >= ?', (SURE,)):
