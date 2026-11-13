@@ -53,6 +53,77 @@ def fix_tr_verb_stems(p: sqlite3.Connection) -> None:
     p.executemany('UPDATE lemma SET written = ?, norm = ? WHERE id = ?', fixed)
 
 
+IPA_PRIORITY = {'wikidata': 0, 'wordnet': 1, 'espeak': 2, 'pinyin': 2, 'kana': 2, None: 3}
+
+
+def _min(x, y):
+    return y if x is None else (x if y is None else min(x, y))
+
+
+def merge_duplicates(p: sqlite3.Connection) -> int:
+    """One headword per (language, written form): the same word arrives from
+    several sources, with and without a part of speech. Attributes merge into
+    the lowest id; translations, forms, definitions and usage follow it."""
+    cols = [r[1] for r in p.execute('PRAGMA table_info(lemma)')]
+    has_src = 'ipa_src' in cols
+    rows = p.execute('SELECT id, lang, written, pos, gender, ipa, freq, '
+                     f'{"ipa_src" if has_src else "NULL"} FROM lemma ORDER BY id').fetchall()
+    groups: dict[tuple, list] = {}
+    for r in rows:
+        groups.setdefault((r[1], r[2]), []).append(r)
+    remap: dict[int, int] = {}
+    updates = []
+    for g in groups.values():
+        if len(g) < 2:
+            continue
+        keep = g[0][0]
+        pos = next((r[3] for r in g if r[3]), None)
+        gender = next((r[4] for r in g if r[4]), None)
+        best_ipa = min((r for r in g if r[5]), key=lambda r: IPA_PRIORITY.get(r[7], 3), default=None)
+        freqs = [r[6] for r in g if r[6] is not None]
+        updates.append((pos, gender, best_ipa[5] if best_ipa else None,
+                        best_ipa[7] if best_ipa else None, min(freqs) if freqs else None, keep))
+        for r in g[1:]:
+            remap[r[0]] = keep
+    if not remap:
+        return 0
+    if has_src:
+        p.executemany('UPDATE lemma SET pos = ?, gender = ?, ipa = ?, ipa_src = ?, freq = ? WHERE id = ?', updates)
+    else:
+        p.executemany('UPDATE lemma SET pos = ?, gender = ?, ipa = ?, freq = ? WHERE id = ?',
+                      [(u[0], u[1], u[2], u[4], u[5]) for u in updates])
+
+    # translations: remap, then fold duplicate (a, b) links together
+    tcols = [r[1] for r in p.execute('PRAGMA table_info(trans)')]
+    ranked = 'a_rank' in tcols
+    merged: dict[tuple, list] = {}
+    for row in p.execute(f'SELECT a_lemma, b_lemma, confidence, sources, concept'
+                         f'{", a_rank, b_rank" if ranked else ""} FROM trans'):
+        a, b = remap.get(row[0], row[0]), remap.get(row[1], row[1])
+        cur = merged.get((a, b))
+        if cur is None:
+            merged[(a, b)] = [row[2], set(row[3].split(';')), row[4]] + (list(row[5:7]) if ranked else [])
+            continue
+        if row[2] > cur[0]:
+            cur[0], cur[2] = row[2], row[4]
+        cur[1].update(row[3].split(';'))
+        if ranked:
+            cur[3], cur[4] = _min(cur[3], row[5]), _min(cur[4], row[6])
+    p.execute('DELETE FROM trans')
+    p.executemany(f'INSERT INTO trans VALUES ({",".join("?" * (7 if ranked else 5))})',
+                  ((a, b, v[0], ';'.join(sorted(v[1])), v[2], *v[3:]) for (a, b), v in merged.items()))
+    for table in ('form', 'definition', 'usage'):
+        p.executemany(f'UPDATE {table} SET lemma_id = ? WHERE lemma_id = ?',
+                      ((k, v) for v, k in remap.items()))
+    p.executescript("""
+      DELETE FROM form WHERE rowid NOT IN (SELECT min(rowid) FROM form GROUP BY lemma_id, form, tags);
+      DELETE FROM definition WHERE rowid NOT IN (SELECT min(rowid) FROM definition GROUP BY lemma_id, text);
+      DELETE FROM usage WHERE rowid NOT IN (SELECT min(rowid) FROM usage GROUP BY lemma_id, text);
+    """)
+    p.executemany('DELETE FROM lemma WHERE id = ?', ((i,) for i in remap))
+    return len(remap)
+
+
 def prune_pack(path: Path) -> tuple[int, int, int, int]:
     """Returns (lemmas before, after, translations before, after)."""
     p = sqlite3.connect(path)
@@ -60,6 +131,8 @@ def prune_pack(path: Path) -> tuple[int, int, int, int]:
     lem0 = p.execute('SELECT count(*) FROM lemma').fetchone()[0]
     tr0 = p.execute('SELECT count(*) FROM trans').fetchone()[0]
 
+    fix_tr_verb_stems(p)
+    merge_duplicates(p)
     info = {lid: (lang, w) for lid, lang, w in p.execute('SELECT id, lang, written FROM lemma')}
     sure = set()
     for a, b in p.execute('SELECT a_lemma, b_lemma FROM trans WHERE confidence >= ?', (SURE,)):
@@ -70,8 +143,6 @@ def prune_pack(path: Path) -> tuple[int, int, int, int]:
         if (is_phrase(*info[a]) or is_phrase(*info[b])) or (a in sure and b in sure):
             drop.append((rid,))
     p.executemany('DELETE FROM trans WHERE rowid = ?', drop)
-
-    fix_tr_verb_stems(p)
     p.executescript("""
       CREATE TEMP TABLE keep AS
         SELECT a_lemma AS id FROM trans UNION SELECT b_lemma FROM trans;

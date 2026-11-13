@@ -35,6 +35,9 @@ TOP_PER_LEMMA = 8        # translations kept per headword (each direction)
 MIN_CONF = 0.35          # below this a translation is dropped
 MAX_DEFS_PER_LEMMA = 3
 MAX_USAGE_PER_LEMMA = 2
+SURE = 0.5               # at or above: a reliable translation (not PanLex alone)
+UNRANKED = 99            # sense rank when no source orders the senses
+PANLEX_CAP = 0.45        # PanLex-only links stay below SURE
 
 # Script every letter of a headword must belong to. PanLex in particular has
 # Latin transliterations listed as Russian, Thai, Arabic... words.
@@ -72,7 +75,8 @@ CREATE TABLE source (id INTEGER PRIMARY KEY, key TEXT, name TEXT, license TEXT,
 CREATE TABLE lemma (id INTEGER PRIMARY KEY, lang TEXT, written TEXT, norm TEXT,
                     pos TEXT, gender TEXT, ipa TEXT, freq INTEGER, ipa_src TEXT);
 CREATE TABLE trans (a_lemma INTEGER NOT NULL, b_lemma INTEGER NOT NULL,
-                    confidence REAL NOT NULL, sources TEXT NOT NULL, concept INTEGER);
+                    confidence REAL NOT NULL, sources TEXT NOT NULL, concept INTEGER,
+                    a_rank INTEGER, b_rank INTEGER);
 CREATE TABLE definition (lemma_id INTEGER, concept INTEGER, text TEXT, source TEXT);
 CREATE TABLE form (lemma_id INTEGER, form TEXT, norm TEXT, tags TEXT);
 CREATE TABLE gloss (concept INTEGER PRIMARY KEY, gloss_en TEXT);
@@ -105,24 +109,39 @@ def export_pair(m: sqlite3.Connection, a: str, b: str, version: str) -> dict:
     agg: dict[tuple[int, int], dict] = {}
     # sl = sense + lemma.lang, indexed by (lang, concept): reads only the two
     # languages' senses instead of scanning all ~55M senses for every pair.
+    # rnk: position of the sense among its lemma's senses in that source.
+    # Wordnets and Wikidata list the most common sense first, so the
+    # translation of sense 1 ('can' → 'kutu') beats a rare one ('tuvalet').
     q = """
       SELECT sa.lemma_id, sb.lemma_id, sa.concept_id,
-             min(sa.confidence, sb.confidence), sa.source_id, sb.source_id
+             min(sa.confidence, sb.confidence), sa.source_id, sb.source_id, sa.rnk, sb.rnk
       FROM aux.sl sa
       JOIN aux.sl sb ON sb.lang = ? AND sb.concept_id = sa.concept_id
       WHERE sa.lang = ?
     """
-    for la, lb, cid, conf, sa, sb in m.execute(q, (b, a)):
+    for la, lb, cid, conf, sa, sb, ra, rb in m.execute(q, (b, a)):
         r = agg.get((la, lb))
         if r is None:
-            r = agg[(la, lb)] = {'miss': 1.0, 'src': set(), 'concept': cid, 'best': 0.0}
+            r = agg[(la, lb)] = {'miss': 1.0, 'src': set(), 'concept': cid, 'best': 0.0,
+                                 'ra': UNRANKED, 'rb': UNRANKED}
         r['miss'] *= 1.0 - conf
+        if keys[sa] != 'panlex':  # PanLex has no sense order
+            r['ra'] = min(r['ra'], ra)
+        if keys[sb] != 'panlex':
+            r['rb'] = min(r['rb'], rb)
         r['src'].update((keys[sa], keys[sb]))
         if conf > r['best']:
             r['best'], r['concept'] = conf, cid
 
-    rows = [(la, lb, 1.0 - r['miss'], r) for (la, lb), r in agg.items()
-            if 1.0 - r['miss'] >= MIN_CONF]
+    # Several PanLex meanings agreeing still come from one noisy source: a
+    # link only PanLex supports never counts as reliable.
+    rows = []
+    for (la, lb), r in agg.items():
+        conf = 1.0 - r['miss']
+        if r['src'] <= {'panlex'}:
+            conf = min(conf, PANLEX_CAP)
+        if conf >= MIN_CONF:
+            rows.append((la, lb, conf, r))
     # drop headwords in the wrong script, with digits, URLs... (mostly PanLex)
     cand = {r[0] for r in rows} | {r[1] for r in rows}
     m.execute('CREATE TEMP TABLE IF NOT EXISTS want (id INTEGER PRIMARY KEY)')
@@ -138,9 +157,9 @@ def export_pair(m: sqlite3.Connection, a: str, b: str, version: str) -> dict:
         by_a[row[0]].append(row)
         by_b[row[1]].append(row)
     keep = set()
-    for group in (by_a, by_b):
+    for group, side in ((by_a, 'ra'), (by_b, 'rb')):
         for lst in group.values():
-            lst.sort(key=lambda r: -r[2])
+            lst.sort(key=lambda r: (r[2] < SURE, r[3][side], -r[2]))
             keep.update((r[0], r[1]) for r in lst[:TOP_PER_LEMMA])
     trans = [r for r in rows if (r[0], r[1]) in keep]
     if not trans:
@@ -165,8 +184,8 @@ def export_pair(m: sqlite3.Connection, a: str, b: str, version: str) -> dict:
         'SELECT l.id, l.lang, l.written, l.norm, l.pos, l.gender, l.ipa, l.freq, '
         f"{'l.ipa_src' if has_ipa_src else 'NULL'} FROM lemma l JOIN want w ON w.id = l.id"))
     used: set[str] = set()
-    p.executemany('INSERT INTO trans VALUES (?,?,?,?,?)', (
-        (la, lb, round(c, 3), ';'.join(sorted(r['src'])), r['concept'])
+    p.executemany('INSERT INTO trans VALUES (?,?,?,?,?,?,?)', (
+        (la, lb, round(c, 3), ';'.join(sorted(r['src'])), r['concept'], r['ra'], r['rb'])
         for la, lb, c, r in trans))
 
     defs: dict[int, list] = defaultdict(list)
@@ -263,7 +282,9 @@ def build_aux() -> None:
     """One-time helper table: every sense with its lemma's language, indexed
     by (lang, concept). Built once per master DB (a few minutes)."""
     if AUX.exists() and AUX.stat().st_mtime > MASTER.stat().st_mtime:
-        return
+        cols = [r[1] for r in sqlite3.connect(AUX).execute('PRAGMA table_info(sl)')]
+        if 'rnk' in cols:
+            return
     if AUX.exists():
         AUX.unlink()
     log('building aux sense/lang index')
@@ -273,7 +294,8 @@ def build_aux() -> None:
     db.executescript("""
       CREATE TABLE sl AS
         SELECT l.lang AS lang, s.concept_id AS concept_id, s.lemma_id AS lemma_id,
-               s.confidence AS confidence, s.source_id AS source_id
+               s.confidence AS confidence, s.source_id AS source_id,
+               row_number() OVER (PARTITION BY s.lemma_id, s.source_id ORDER BY s.id) AS rnk
         FROM m.sense s JOIN m.lemma l ON l.id = s.lemma_id
         WHERE s.concept_id IS NOT NULL;
       CREATE INDEX sl_lang_concept ON sl(lang, concept_id);
