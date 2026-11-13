@@ -16,6 +16,7 @@ import os
 import sqlite3
 import sys
 import time
+import unicodedata
 from collections import defaultdict
 from datetime import date
 from itertools import combinations
@@ -33,6 +34,33 @@ TOP_PER_LEMMA = 8        # translations kept per headword (each direction)
 MIN_CONF = 0.35          # below this a translation is dropped
 MAX_DEFS_PER_LEMMA = 3
 MAX_USAGE_PER_LEMMA = 2
+
+# Script every letter of a headword must belong to. PanLex in particular has
+# Latin transliterations listed as Russian, Thai, Arabic... words.
+SCRIPT = {
+    **dict.fromkeys(['cs', 'da', 'de', 'en', 'es', 'fi', 'fr', 'id', 'it', 'lt', 'nl',
+                     'no', 'pl', 'pt', 'sv', 'tr', 'vi'], ('LATIN',)),
+    **dict.fromkeys(['ru', 'uk', 'bg'], ('CYRILLIC',)),
+    'el': ('GREEK',), 'ar': ('ARABIC',), 'hi': ('DEVANAGARI',), 'th': ('THAI',),
+    'ko': ('HANGUL',), 'zh': ('CJK',),
+    'ja': ('HIRAGANA', 'KATAKANA', 'CJK'),
+}
+
+
+def clean_headword(lang: str, text: str) -> bool:
+    """Letters in the language's script, no digits/URLs, sane length."""
+    if not text or len(text) > 40 or 'http' in text or '@' in text:
+        return False
+    scripts = SCRIPT.get(lang)
+    letters = 0
+    for ch in text:
+        if ch.isdigit():
+            return False
+        if ch.isalpha():
+            letters += 1
+            if scripts and not unicodedata.name(ch, '').startswith(scripts):
+                return False
+    return letters > 0
 
 PACK_SCHEMA = """
 PRAGMA journal_mode = OFF;
@@ -94,6 +122,15 @@ def export_pair(m: sqlite3.Connection, a: str, b: str, version: str) -> dict:
 
     rows = [(la, lb, 1.0 - r['miss'], r) for (la, lb), r in agg.items()
             if 1.0 - r['miss'] >= MIN_CONF]
+    # drop headwords in the wrong script, with digits, URLs... (mostly PanLex)
+    cand = {r[0] for r in rows} | {r[1] for r in rows}
+    m.execute('CREATE TEMP TABLE IF NOT EXISTS want (id INTEGER PRIMARY KEY)')
+    m.execute('DELETE FROM want')
+    m.executemany('INSERT INTO want VALUES (?)', ((i,) for i in cand))
+    good = {lid for lid, lang, w in m.execute(
+        'SELECT l.id, l.lang, l.written FROM lemma l JOIN want w ON w.id = l.id')
+        if clean_headword(lang, w)}
+    rows = [r for r in rows if r[0] in good and r[1] in good]
     # keep the best TOP_PER_LEMMA links per headword on either side
     by_a, by_b = defaultdict(list), defaultdict(list)
     for row in rows:
