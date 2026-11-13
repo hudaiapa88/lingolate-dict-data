@@ -195,6 +195,30 @@ Example sentences come from **Tatoeba** (https://tatoeba.org), licensed under
 Creative Commons Attribution 2.0 France (some sentences CC0). Each sentence
 keeps its Tatoeba id (`a_src`, `b_src`) for attribution.
 
+## Wikidata Lexemes (CC0 1.0)
+
+Lemmas, inflected forms with grammatical tags, IPA (P898), grammatical gender,
+sense definitions, translation links (P5972) and usage examples come from
+**Wikidata's lexicographical data** (https://www.wikidata.org/wiki/Wikidata:Lexicographical_data),
+dedicated to the public domain under CC0 1.0. Senses are linked to WordNet
+synsets through the **Collaborative Interlingual Index** (globalwordnet/cili,
+CC BY 4.0).
+
+## Grambank and WALS (CC BY 4.0)
+
+Grammar features per language come from:
+- **Grambank** — Skirgård et al. (2023), Grambank v1.0, https://grambank.clld.org — CC BY 4.0
+- **WALS Online** — Dryer & Haspelmath (eds.) (2013), The World Atlas of Language
+  Structures Online, https://wals.info — CC BY 4.0
+  (CLDF: https://github.com/cldf-datasets/wals)
+
+## Generated data
+
+- Pronunciations marked `ipa_src = 'espeak'` are generated with espeak-ng; `pinyin`
+  readings with pypinyin; `kana` readings with pykakasi. Generated output carries
+  no third-party copyright.
+- Frequency ranks (`lemma.freq`) are counted from Tatoeba sentences (CC BY 2.0 FR).
+
 ## How Attribution Is Surfaced
 
 The Lingolate app reads `manifest.json` and renders an "About / Licenses"

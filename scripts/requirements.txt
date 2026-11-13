@@ -1,2 +1,5 @@
 requests>=2.31.0
 jsonschema>=4.20.0
+phonemizer>=3.3
+pypinyin>=0.53
+pykakasi>=2.3

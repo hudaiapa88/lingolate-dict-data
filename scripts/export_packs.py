@@ -32,6 +32,7 @@ OUT = ROOT / 'packs'
 TOP_PER_LEMMA = 8        # translations kept per headword (each direction)
 MIN_CONF = 0.35          # below this a translation is dropped
 MAX_DEFS_PER_LEMMA = 3
+MAX_USAGE_PER_LEMMA = 2
 
 PACK_SCHEMA = """
 PRAGMA journal_mode = OFF;
@@ -40,12 +41,14 @@ CREATE TABLE _meta (key TEXT PRIMARY KEY, value TEXT NOT NULL);
 CREATE TABLE source (id INTEGER PRIMARY KEY, key TEXT, name TEXT, license TEXT,
                      url TEXT, attribution TEXT);
 CREATE TABLE lemma (id INTEGER PRIMARY KEY, lang TEXT, written TEXT, norm TEXT,
-                    pos TEXT, gender TEXT, ipa TEXT, freq INTEGER);
+                    pos TEXT, gender TEXT, ipa TEXT, freq INTEGER, ipa_src TEXT);
 CREATE TABLE trans (a_lemma INTEGER NOT NULL, b_lemma INTEGER NOT NULL,
                     confidence REAL NOT NULL, sources TEXT NOT NULL, concept INTEGER);
 CREATE TABLE definition (lemma_id INTEGER, concept INTEGER, text TEXT, source TEXT);
 CREATE TABLE form (lemma_id INTEGER, form TEXT, norm TEXT, tags TEXT);
 CREATE TABLE gloss (concept INTEGER PRIMARY KEY, gloss_en TEXT);
+CREATE TABLE usage (lemma_id INTEGER, concept INTEGER, text TEXT, source TEXT);
+CREATE TABLE grammar (lang TEXT, dataset TEXT, param_id TEXT, param_name TEXT, value TEXT);
 CREATE TABLE example (id INTEGER PRIMARY KEY, a TEXT, b TEXT, a_norm TEXT,
                       b_norm TEXT, a_src INTEGER, b_src INTEGER, score REAL,
                       via_en INTEGER);
@@ -57,6 +60,8 @@ CREATE INDEX trans_b ON trans(b_lemma);
 CREATE INDEX def_lemma ON definition(lemma_id);
 CREATE INDEX form_lookup ON form(norm);
 CREATE INDEX form_lemma ON form(lemma_id);
+CREATE INDEX usage_lemma ON usage(lemma_id);
+CREATE INDEX grammar_lang ON grammar(lang);
 """
 
 
@@ -117,9 +122,11 @@ def export_pair(m: sqlite3.Connection, a: str, b: str, version: str) -> dict:
     m.execute('DELETE FROM want')
     m.executemany('INSERT INTO want VALUES (?)', ((i,) for i in lemma_ids))
 
-    p.executemany('INSERT INTO lemma VALUES (?,?,?,?,?,?,?,?)', m.execute(
-        'SELECT l.id, l.lang, l.written, l.norm, l.pos, l.gender, l.ipa, l.freq '
-        'FROM lemma l JOIN want w ON w.id = l.id'))
+    has_ipa_src = any(r[1] == 'ipa_src' for r in m.execute('PRAGMA table_info(lemma)'))
+    p.executemany('INSERT INTO lemma VALUES (?,?,?,?,?,?,?,?,?)', m.execute(
+        'SELECT l.id, l.lang, l.written, l.norm, l.pos, l.gender, l.ipa, l.freq, '
+        f"{'l.ipa_src' if has_ipa_src else 'NULL'} FROM lemma l JOIN want w ON w.id = l.id"))
+    used: set[str] = set()
     p.executemany('INSERT INTO trans VALUES (?,?,?,?,?)', (
         (la, lb, round(c, 3), ';'.join(sorted(r['src'])), r['concept'])
         for la, lb, c, r in trans))
@@ -134,8 +141,34 @@ def export_pair(m: sqlite3.Connection, a: str, b: str, version: str) -> dict:
             lst.append((lid, cid, text, keys[sid]))
     p.executemany('INSERT INTO definition VALUES (?,?,?,?)',
                   (d for lst in defs.values() for d in lst))
-    p.executemany('INSERT INTO form VALUES (?,?,?,?)', m.execute(
-        'SELECT f.lemma_id, f.form, f.norm, f.tags FROM form f JOIN want w ON w.id = f.lemma_id'))
+    used.update(d[3] for lst in defs.values() for d in lst)
+    forms = m.execute('SELECT f.lemma_id, f.form, f.norm, f.tags, f.source_id FROM form f '
+                      'JOIN want w ON w.id = f.lemma_id').fetchall()
+    p.executemany('INSERT INTO form VALUES (?,?,?,?)', (f[:4] for f in forms))
+    used.update(keys[f[4]] for f in forms)
+
+    usage: dict[int, list] = defaultdict(list)
+    lang_of = {lid: lang for lid, lang in p.execute('SELECT id, lang FROM lemma')}
+    for lid, cid, text, sid in m.execute(
+            'SELECT s.lemma_id, s.concept_id, e.text, e.source_id FROM sense_example e '
+            'JOIN sense s ON s.id = e.sense_id JOIN want w ON w.id = s.lemma_id '
+            'ORDER BY s.confidence DESC, length(e.text)'):
+        # a usage example is a sentence, not a bare phrase ("Siyah.")
+        if (len(text) < 8 if lang_of.get(lid) in ('ja', 'zh', 'th') else len(text.split()) < 3):
+            continue
+        lst = usage[lid]
+        if len(lst) < MAX_USAGE_PER_LEMMA and all(text != u[2] for u in lst):
+            lst.append((lid, cid, text, keys[sid]))
+    p.executemany('INSERT INTO usage VALUES (?,?,?,?)', (u for lst in usage.values() for u in lst))
+    used.update(u[3] for lst in usage.values() for u in lst)
+    if p.execute('SELECT 1 FROM lemma WHERE freq IS NOT NULL LIMIT 1').fetchone():
+        used.add('tatoeba-freq')
+
+    if m.execute("SELECT 1 FROM sqlite_master WHERE name = 'grammar'").fetchone():
+        g = m.execute('SELECT lang, dataset, param_id, param_name, value FROM grammar '
+                      'WHERE lang IN (?, ?)', (a, b)).fetchall()
+        p.executemany('INSERT INTO grammar VALUES (?,?,?,?,?)', g)
+        used.update(r[1] for r in g)
 
     m.execute('DELETE FROM want')
     m.executemany('INSERT INTO want VALUES (?)', ((c,) for c in concepts))
@@ -143,7 +176,6 @@ def export_pair(m: sqlite3.Connection, a: str, b: str, version: str) -> dict:
         'SELECT c.id, c.gloss_en FROM concept c JOIN want w ON w.id = c.id '
         'WHERE c.gloss_en IS NOT NULL'))
 
-    used = set()
     for _, _, _, r in trans:
         used.update(r['src'])
     n_ex = 0
@@ -173,6 +205,8 @@ def export_pair(m: sqlite3.Connection, a: str, b: str, version: str) -> dict:
         'lemmas': str(len(lemma_ids)),
         'translations': str(len(trans)),
         'examples': str(n_ex),
+        'forms': str(len(forms)),
+        'usage': str(sum(len(v) for v in usage.values())),
         'licenses': json.dumps(sorted({r[3] for r in src_rows})),
     }
     p.executemany('INSERT INTO _meta VALUES (?,?)', meta.items())

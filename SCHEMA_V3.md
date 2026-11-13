@@ -43,6 +43,7 @@ CREATE TABLE lemma (
   pos      TEXT,
   gender   TEXT,
   ipa      TEXT,
+  ipa_src  TEXT,                      -- 'wikidata' | 'wordnet' | 'espeak' | 'pinyin' | 'kana'
   freq     INTEGER,                   -- rank (1 = most frequent), NULL = unknown
   UNIQUE (lang, written, pos)
 );
@@ -113,6 +114,11 @@ CREATE TABLE definition (lemma_id INTEGER, concept INTEGER, text TEXT, source TE
 CREATE TABLE form (lemma_id INTEGER, form TEXT, norm TEXT, tags TEXT);
 CREATE INDEX form_lookup ON form(norm);
 CREATE TABLE gloss (concept INTEGER PRIMARY KEY, gloss_en TEXT);
+-- usage examples of a word in its own language (Wikidata P5831, wordnets)
+CREATE TABLE usage (lemma_id INTEGER, concept INTEGER, text TEXT, source TEXT);
+-- grammar features of both languages (Grambank, WALS), e.g.
+-- ('tr','wals','81A','Order of Subject, Object and Verb','SOV')
+CREATE TABLE grammar (lang TEXT, dataset TEXT, param_id TEXT, param_name TEXT, value TEXT);
 
 -- Tatoeba (CC BY 2.0 FR): see build_tatoeba_examples.py
 CREATE TABLE example (id INTEGER PRIMARY KEY, a TEXT, b TEXT, a_norm TEXT,
@@ -127,3 +133,19 @@ Lookups the app performs:
 4. word → `example` rows whose `a_norm`/`b_norm` contain the word, best score
    first (the app re-checks word boundaries / stems);
 5. AI grounding: the same rows, formatted as a short `DATA:` block.
+
+## Enrichment (enrich_lexicon.py)
+
+Runs on an existing master DB, in place:
+
+| step | adds | source |
+|---|---|---|
+| wikidata | lemmas, forms + tags, IPA, gender, definitions, concept links, usage examples | Wikidata Lexemes (CC0), CILI |
+| ipa | IPA for reliable lemmas (confidence >= 0.85) still without one | espeak-ng, pypinyin, pykakasi |
+| freq | `lemma.freq` rank, inflected forms count towards the lemma | Tatoeba |
+| grammar | `grammar` table | Grambank, WALS (CC BY 4.0) |
+
+Wikidata senses are grouped into concepts by union-find over P5972
+(translation), P5137 (item for this sense) and P8814 (WordNet 3.1 synset → ILI).
+Groups with more than 15 senses of one language or more than two synsets are
+treated as chained by a wrong link; their senses keep only their own item/synset.
