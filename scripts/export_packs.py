@@ -24,6 +24,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import SUPPORTED_LANGS  # noqa: E402
+from prune_packs import prune_pack  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 MASTER = ROOT / 'lexicon.sqlite3'
@@ -291,6 +292,9 @@ def worker(args: tuple) -> list:
     for a, b in pairs:
         r = export_pair(m, a, b, version)
         if r:
+            path = OUT / f'pack-{a}-{b}.sqlite3'
+            _, r['lemmas'], _, r['translations'] = prune_pack(path)
+            r['bytes'] = path.stat().st_size
             report.append(r)
             log(f"{r['pair']}: {r['lemmas']:,} lemmas, {r['translations']:,} trans, "
                 f"{r['examples']:,} examples, {r['bytes'] / 1e6:.1f} MB")
