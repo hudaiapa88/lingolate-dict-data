@@ -337,7 +337,10 @@ def step_wikidata(db: sqlite3.Connection, force: bool) -> None:
             if row and qid:
                 db.execute('UPDATE concept SET qid = coalesce(qid, ?) WHERE id = ?', (qid, cid))
         elif qid:
-            row = db.execute('SELECT id FROM concept WHERE qid = ? AND ili IS NULL', (qid,)).fetchone()
+            # qid only: 'ili IS NULL' would make SQLite pick the ili index and
+            # walk all ~27M PanLex concepts.
+            rows = db.execute('SELECT id, ili FROM concept WHERE qid = ?', (qid,)).fetchall()
+            row = next((r for r in rows if r[1] is None), None)
             cid = row[0] if row else db.execute('INSERT INTO concept (qid) VALUES (?)', (qid,)).lastrowid
         elif anon_key is not None:
             cid = db.execute('INSERT INTO concept (qid) VALUES (NULL)').lastrowid
