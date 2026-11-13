@@ -7,8 +7,8 @@
             they become translations of every other wordnet/PanLex lemma there.
   ipa       Pronunciation for lemmas still without one: espeak-ng (via
             phonemizer) for alphabetic languages, pinyin for Chinese and a
-            hiragana reading for Japanese words written with kanji. Only for
-            lemmas backed by a reliable source (confidence >= 0.85).
+            hiragana reading for Japanese words written with kanji, for every
+            lemma that can reach a pack (a sense with confidence >= 0.35).
   freq      Frequency rank per language from Tatoeba sentences (CC BY 2.0 FR),
             counting inflected forms towards their lemma.
   grammar   Grammar features per language from Grambank and WALS (CC BY 4.0).
@@ -45,7 +45,8 @@ LANGS = set(SUPPORTED_LANGS)
 UA = {'User-Agent': 'lingolate-dict-data build (https://github.com/hudaiapa88/lingolate-dict-data)'}
 
 WIKIDATA_CONF = 0.85
-RELIABLE_CONF = 0.85     # lemmas at or above this get a generated IPA
+IPA_MIN_CONF = 0.35      # lemmas with a sense at or above this get a generated IPA
+                         # (= the export threshold: every lemma that can reach a pack)
 MAX_EXAMPLES_PER_SENSE = 3
 
 
@@ -381,7 +382,7 @@ KANJI = re.compile(r'[一-鿿]')
 WORDISH = re.compile(r'^[^\d\W][\w\s\'’.-]*$')
 
 
-def step_ipa(db: sqlite3.Connection, jobs: int) -> None:
+def step_ipa(db: sqlite3.Connection, jobs: int, min_conf: float = IPA_MIN_CONF) -> None:
     from phonemizer.backend import EspeakBackend
     from phonemizer.separator import Separator
 
@@ -392,7 +393,7 @@ def step_ipa(db: sqlite3.Connection, jobs: int) -> None:
           SELECT l.id, l.written FROM lemma l
           WHERE l.lang = ? AND l.ipa IS NULL AND length(l.written) <= 40
             AND EXISTS (SELECT 1 FROM sense s WHERE s.lemma_id = l.id AND s.confidence >= ?)
-        """, (lang, RELIABLE_CONF)).fetchall()
+        """, (lang, min_conf)).fetchall()
         rows = [(i, w) for i, w in rows if len(w.split()) <= 3 and WORDISH.match(w)]
         if not rows:
             continue
@@ -550,6 +551,7 @@ def main() -> None:
     ap.add_argument('--force', action='store_true', help='redo the wikidata merge')
     ap.add_argument('--jobs', type=int, default=os.cpu_count() or 1)
     ap.add_argument('--db', default=str(MASTER))
+    ap.add_argument('--ipa-min-conf', type=float, default=IPA_MIN_CONF)
     args = ap.parse_args()
 
     db = sqlite3.connect(args.db)
@@ -560,7 +562,7 @@ def main() -> None:
         if step == 'wikidata':
             step_wikidata(db, args.force)
         elif step == 'ipa':
-            step_ipa(db, args.jobs)
+            step_ipa(db, args.jobs, args.ipa_min_conf)
         elif step == 'freq':
             step_freq(db)
         elif step == 'grammar':
