@@ -11,6 +11,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import multiprocessing
+import os
 import sqlite3
 import sys
 import time
@@ -67,16 +69,16 @@ def export_pair(m: sqlite3.Connection, a: str, b: str, version: str) -> dict:
 
     # ── translations: senses of a and b sharing a concept, noisy-OR ──
     agg: dict[tuple[int, int], dict] = {}
+    # sl = sense + lemma.lang, indexed by (lang, concept): reads only the two
+    # languages' senses instead of scanning all ~55M senses for every pair.
     q = """
       SELECT sa.lemma_id, sb.lemma_id, sa.concept_id,
              min(sa.confidence, sb.confidence), sa.source_id, sb.source_id
-      FROM sense sa
-      JOIN lemma la ON la.id = sa.lemma_id AND la.lang = ?
-      JOIN sense sb ON sb.concept_id = sa.concept_id
-      JOIN lemma lb ON lb.id = sb.lemma_id AND lb.lang = ?
-      WHERE sa.concept_id IS NOT NULL
+      FROM aux.sl sa
+      JOIN aux.sl sb ON sb.lang = ? AND sb.concept_id = sa.concept_id
+      WHERE sa.lang = ?
     """
-    for la, lb, cid, conf, sa, sb in m.execute(q, (a, b)):
+    for la, lb, cid, conf, sa, sb in m.execute(q, (b, a)):
         r = agg.get((la, lb))
         if r is None:
             r = agg[(la, lb)] = {'miss': 1.0, 'src': set(), 'concept': cid, 'best': 0.0}
@@ -182,26 +184,68 @@ def export_pair(m: sqlite3.Connection, a: str, b: str, version: str) -> dict:
             'examples': n_ex, 'bytes': path.stat().st_size}
 
 
-def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument('--pairs', help='comma list like en-tr,de-tr (default: all)')
-    ap.add_argument('--version', default=date.today().strftime('%Y.%m.1'))
-    args = ap.parse_args()
-    pairs = ([tuple(p.split('-')) for p in args.pairs.split(',')] if args.pairs
-             else list(combinations(sorted(SUPPORTED_LANGS), 2)))
+AUX = ROOT / 'lexicon-aux.sqlite3'
 
+
+def build_aux() -> None:
+    """One-time helper table: every sense with its lemma's language, indexed
+    by (lang, concept). Built once per master DB (a few minutes)."""
+    if AUX.exists() and AUX.stat().st_mtime > MASTER.stat().st_mtime:
+        return
+    if AUX.exists():
+        AUX.unlink()
+    log('building aux sense/lang index')
+    db = sqlite3.connect(f'file:{AUX.as_posix()}', uri=True)  # uri: ATTACH below uses ?mode=ro
+    db.executescript('PRAGMA journal_mode = OFF; PRAGMA synchronous = OFF;')
+    db.execute(f"ATTACH DATABASE 'file:{MASTER.as_posix()}?mode=ro' AS m")
+    db.executescript("""
+      CREATE TABLE sl AS
+        SELECT l.lang AS lang, s.concept_id AS concept_id, s.lemma_id AS lemma_id,
+               s.confidence AS confidence, s.source_id AS source_id
+        FROM m.sense s JOIN m.lemma l ON l.id = s.lemma_id
+        WHERE s.concept_id IS NOT NULL;
+      CREATE INDEX sl_lang_concept ON sl(lang, concept_id);
+    """)
+    db.commit()
+    db.close()
+    log('aux index ready')
+
+
+def worker(args: tuple) -> list:
+    pairs, version = args
     m = sqlite3.connect(f'file:{MASTER}?mode=ro', uri=True)
-    m.execute("PRAGMA temp_store = MEMORY")
+    m.execute('PRAGMA temp_store = MEMORY')
+    m.execute(f"ATTACH DATABASE 'file:{AUX.as_posix()}?mode=ro' AS aux")
     report = []
     for a, b in pairs:
-        a, b = sorted((a, b))
-        r = export_pair(m, a, b, args.version)
+        r = export_pair(m, a, b, version)
         if r:
             report.append(r)
             log(f"{r['pair']}: {r['lemmas']:,} lemmas, {r['translations']:,} trans, "
                 f"{r['examples']:,} examples, {r['bytes'] / 1e6:.1f} MB")
         else:
             log(f'{a}-{b}: no translations, skipped')
+    return report
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--pairs', help='comma list like en-tr,de-tr (default: all)')
+    ap.add_argument('--version', default=date.today().strftime('%Y.%m.1'))
+    ap.add_argument('--jobs', type=int, default=os.cpu_count() or 1)
+    ap.add_argument('--skip-existing', action='store_true',
+                    help='keep packs already in packs/ (resume an interrupted run)')
+    args = ap.parse_args()
+    pairs = ([tuple(sorted(p.split('-'))) for p in args.pairs.split(',')] if args.pairs
+             else list(combinations(sorted(SUPPORTED_LANGS), 2)))
+    if args.skip_existing:
+        pairs = [(a, b) for a, b in pairs if not (OUT / f'pack-{a}-{b}.sqlite3').exists()]
+
+    build_aux()
+    OUT.mkdir(exist_ok=True)
+    chunks = [(pairs[i::args.jobs], args.version) for i in range(args.jobs)]
+    with multiprocessing.Pool(args.jobs) as pool:
+        report = [r for part in pool.map(worker, chunks) for r in part]
     (OUT / 'report.json').write_text(json.dumps(report, indent=1))
     log(f'exported {len(report)} packs, {sum(r["bytes"] for r in report) / 1e9:.2f} GB')
 
