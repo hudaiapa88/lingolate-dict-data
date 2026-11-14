@@ -47,6 +47,7 @@ WORK = Path('/content/bench')
 GPU = subprocess.run('nvidia-smi', shell=True, capture_output=True).returncode == 0
 LLAMA = Path('/content/llama.cpp')
 PORT = 8089
+PAR = 8  # parallel requests (server slots)
 
 
 def sh(cmd: str) -> None:
@@ -113,8 +114,8 @@ def run_model(server: Path, model: str, url: str, data: dict) -> dict:
     gguf = WORK / f'{model}.gguf'
     if not gguf.exists():
         sh(f'curl -sSL --retry 5 -o {gguf} {url}')
-    proc = subprocess.Popen([str(server), '-m', str(gguf), '--port', str(PORT), '-c', '2048',
-                             '-t', str(os.cpu_count()), '--jinja',
+    proc = subprocess.Popen([str(server), '-m', str(gguf), '--port', str(PORT), '-c', str(1024 * PAR),
+                             '-t', str(os.cpu_count()), '--jinja', '-np', str(PAR),
                              *(['-ngl', '99'] if GPU else [])],
                             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     try:
@@ -128,12 +129,14 @@ def run_model(server: Path, model: str, url: str, data: dict) -> dict:
         import sacrebleu
         out = {}
         for lang, pairs in data.items():
-            hyps, secs, ok = [], [], 0
-            for en, _ in pairs:
-                hyp, s = ask(f'Translate into {NAMES[lang]}. Reply with the translation only.\n\n{en}')
-                hyps.append(hyp)
-                secs.append(s)
-                ok += script_ok(lang, hyp)
+            from concurrent.futures import ThreadPoolExecutor
+            prompts = [f'Translate into {NAMES[lang]}. Reply with the translation only.\n\n{en}'
+                       for en, _ in pairs]
+            with ThreadPoolExecutor(PAR) as ex:
+                answers = list(ex.map(ask, prompts))  # keeps input order
+            hyps = [h for h, _ in answers]
+            secs = [t for _, t in answers]
+            ok = sum(script_ok(lang, h) for h in hyps)
             refs = [t for _, t in pairs]
             chrf = sacrebleu.corpus_chrf(hyps, [refs], word_order=2).score
             out[lang] = {'chrf': round(chrf, 1), 'right_lang': round(100 * ok / len(pairs)),
