@@ -42,6 +42,19 @@ MODELS = {  # same files the app downloads (lib/app/services/ai/model_store.dart
         'https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF/resolve/main/gemma-4-E2B-it-Q3_K_M.gguf',
     'qwen3.5-0.8b-q4-k-m':
         'https://huggingface.co/mradermacher/Qwen3.5-0.8B-GGUF/resolve/main/Qwen3.5-0.8B.Q4_K_M.gguf',
+    # candidates (phone-sized, < 3 GB)
+    'ternary-bonsai-2-9b-q2-0':
+        'https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf/resolve/main/Ternary-Bonsai-2-9B-Q2_0.gguf',
+    'hy-mt2-1.8b-q8-0':
+        'https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/resolve/main/Hy-MT2-1.8B-Q8_0.gguf',
+    'hy-mt2-1.8b-q4-k-m':
+        'https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/resolve/main/Hy-MT2-1.8B-Q4_K_M.gguf',
+    'translategemma-4b-q4-k-m':
+        'https://huggingface.co/bullerwins/translategemma-4b-it-GGUF/resolve/main/translategemma-4b-it-Q4_K_M.gguf',
+    'tiny-aya-global-q4-k-m':
+        'https://huggingface.co/CohereLabs/tiny-aya-global-GGUF/resolve/main/tiny-aya-global-q4_k_m.gguf',
+    'qwen3.5-4b-q4-k-m':
+        'https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/main/Qwen3.5-4B-Q4_K_M.gguf',
 }
 WORK = Path('/content/bench')
 GPU = subprocess.run('nvidia-smi', shell=True, capture_output=True).returncode == 0
@@ -99,6 +112,15 @@ def script_ok(lang: str, text: str) -> bool:
 
 
 def ask(prompt: str) -> tuple[str, float]:
+    """One answer; a failed request (e.g. a chat template that rejects the
+    message) counts as an empty answer instead of stopping the run."""
+    try:
+        return _ask(prompt)
+    except Exception:  # noqa: BLE001
+        return '', 0.0
+
+
+def _ask(prompt: str) -> tuple[str, float]:
     t0 = time.time()
     r = requests.post(f'http://127.0.0.1:{PORT}/v1/chat/completions', timeout=300, json={
         'messages': [{'role': 'user', 'content': prompt}],
@@ -159,7 +181,12 @@ def main() -> None:
     WORK.mkdir(parents=True, exist_ok=True)
     server = build_llama()
     data = {lang: sentences(lang, args.n) for lang in LANGS}
-    results = {m: run_model(server, m, MODELS[m], data) for m in args.models.split(',')}
+    results = {}
+    for m in args.models.split(','):
+        try:
+            results[m] = run_model(server, m, MODELS[m], data)
+        except Exception as e:  # noqa: BLE001 — one broken model must not stop the others
+            print(m, 'FAILED', e, flush=True)
     (WORK / 'bench.json').write_text(json.dumps(results, ensure_ascii=False, indent=1))
     L = ['# On-device model benchmark', '',
          f'en → {", ".join(LANGS)}; {args.n} Tatoeba pairs per language; greedy, thinking off.',
