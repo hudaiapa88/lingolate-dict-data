@@ -29,8 +29,11 @@ from pathlib import Path
 import requests
 
 RELEASE = 'https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2'
-LANGS = ['tr', 'de', 'ja', 'ar', 'ru']
-NAMES = {'tr': 'Turkish', 'de': 'German', 'ja': 'Japanese', 'ar': 'Arabic', 'ru': 'Russian'}
+LANGS = ['tr', 'de', 'ja', 'ar', 'ru']  # --langs overrides
+NAMES = {'tr': 'Turkish', 'de': 'German', 'ja': 'Japanese', 'ar': 'Arabic', 'ru': 'Russian',
+         'es': 'Spanish', 'fr': 'French', 'it': 'Italian', 'pt': 'Portuguese', 'nl': 'Dutch',
+         'pl': 'Polish', 'sv': 'Swedish', 'uk': 'Ukrainian', 'hi': 'Hindi', 'id': 'Indonesian',
+         'ko': 'Korean', 'th': 'Thai', 'vi': 'Vietnamese', 'zh': 'Simplified Chinese'}
 MODELS = {  # same files the app downloads (lib/app/services/ai/model_store.dart)
     'ternary-bonsai-2-4b-q2-0':
         'https://huggingface.co/prism-ml/Ternary-Bonsai-2-4B-gguf/resolve/main/Ternary-Bonsai-2-4B-Q2_0.gguf',
@@ -66,11 +69,11 @@ MODELS = {  # same files the app downloads (lib/app/services/ai/model_store.dart
     'qwen3.5-4b-q4-k-m':
         'https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/main/Qwen3.5-4B-Q4_K_M.gguf',
 }
-WORK = Path('/content/bench')
+WORK = Path(os.environ.get('BENCH_WORK', '/content/bench'))
 GPU = subprocess.run('nvidia-smi', shell=True, capture_output=True).returncode == 0
 LLAMA = Path('/content/llama.cpp')
 PORT = 8089
-PAR = 8  # parallel requests (server slots)
+PAR = int(os.environ.get('BENCH_PAR', '8'))  # parallel requests (server slots)
 
 
 def sh(cmd: str) -> None:
@@ -111,10 +114,26 @@ def sentences(lang: str, n: int, seed: int = 7) -> list[tuple[str, str]]:
 # IWSLT talks, fetched by sacrebleu. Tatoeba sentences are in the training
 # data of Opus-MT, so only this set compares Opus-MT fairly.
 HELDOUT = {'tr': 'wmt18', 'de': 'wmt20', 'ja': 'wmt20', 'ru': 'wmt20', 'ar': 'iwslt17'}
+# Every other app language: WMT24++ (Google, 2025; news/social/literary/speech,
+# human references). Too new to be in the training data of these models.
+WMT24PP = {'es': 'es_MX', 'fr': 'fr_FR', 'it': 'it_IT', 'pt': 'pt_BR', 'nl': 'nl_NL', 'pl': 'pl_PL',
+           'sv': 'sv_SE', 'uk': 'uk_UA', 'hi': 'hi_IN', 'id': 'id_ID', 'ko': 'ko_KR', 'th': 'th_TH',
+           'vi': 'vi_VN', 'zh': 'zh_CN'}
 
 
 def sentences_heldout(lang: str, n: int, seed: int = 7) -> list[tuple[str, str]]:
     """n (English, lang) pairs, 5-30 words, from the held-out test set."""
+    if lang not in HELDOUT:
+        url = f'https://huggingface.co/datasets/google/wmt24pp/resolve/main/en-{WMT24PP[lang]}.jsonl'
+        r = requests.get(url, timeout=120)
+        r.raise_for_status()
+        rows = [json.loads(x) for x in r.content.decode('utf-8').splitlines() if x.strip()]
+        pairs = [(o['source'], o['target']) for o in rows
+                 if not o['is_bad_source'] and o['domain'] != 'canary'
+                 and '\n' not in o['source'] and '\n' not in o['target']
+                 and 5 <= len(o['source'].split()) <= 30]
+        random.Random(seed).shuffle(pairs)
+        return pairs[:n]
     def echo(side: str) -> list[str]:
         r = subprocess.run(['sacrebleu', '-t', HELDOUT[lang], '-l', f'en-{lang}', '--echo', side],
                            capture_output=True, encoding='utf-8', errors='replace', check=True,
@@ -200,12 +219,22 @@ def script_ok(lang: str, text: str) -> bool:
     letters = [c for c in text if c.isalpha()]
     if not letters:
         return False
-    want = {'ja': ('CJK', 'HIRAGANA', 'KATAKANA'), 'ar': ('ARABIC',), 'ru': ('CYRILLIC',)}.get(lang)
+    want = {'ja': ('CJK', 'HIRAGANA', 'KATAKANA'), 'zh': ('CJK',), 'ar': ('ARABIC',),
+            'ru': ('CYRILLIC',), 'uk': ('CYRILLIC',), 'hi': ('DEVANAGARI',),
+            'ko': ('HANGUL',), 'th': ('THAI',)}.get(lang)
+    import langid
     if want:
         good = sum(1 for c in letters if unicodedata.name(c, '').startswith(want))
-        return good / len(letters) >= 0.6
-    import langid
-    langid.set_languages(['en', 'tr', 'de', 'fr', 'es', 'it', 'nl', 'az'])
+        if good / len(letters) < 0.6:
+            return False
+        if lang == 'zh':  # Japanese kana means the answer is Japanese
+            return not any(unicodedata.name(c, '').startswith(('HIRAGANA', 'KATAKANA')) for c in letters)
+        if lang in ('ru', 'uk'):  # same script: tell them apart
+            langid.set_languages(['ru', 'uk', 'bg'])
+            return langid.classify(text)[0] == lang
+        return True
+    langid.set_languages(['en', 'tr', 'de', 'fr', 'es', 'it', 'nl', 'az', 'pt', 'pl', 'sv', 'no',
+                          'da', 'id', 'ms', 'vi', 'ca', 'gl'])
     return langid.classify(text)[0] == lang
 
 
@@ -303,12 +332,16 @@ def main() -> None:
     ap.add_argument('--opus', action='store_true', help='also run the Opus-MT models')
     ap.add_argument('--madlad', action='store_true', help='also run MADLAD-400 3B MT')
     ap.add_argument('--out', default='/content/bench.md')
+    ap.add_argument('--langs', default=','.join(LANGS))
     args = ap.parse_args()
+    LANGS[:] = args.langs.split(',')
     WORK.mkdir(parents=True, exist_ok=True)
     data = {}
     for lang in LANGS:
         data[f'tatoeba/{lang}'] = sentences(lang, args.n)
         data[f'heldout/{lang}'] = sentences_heldout(lang, args.n)
+    data = {k: v for k, v in data.items() if v}  # a pack without examples must not crash scoring
+    print({k: len(v) for k, v in data.items()}, flush=True)
     results = {}
     if args.opus:
         results['opus-mt (Marian)'] = run_opus(data)
@@ -329,7 +362,7 @@ def main() -> None:
          'LLMs greedy with thinking off, Opus-MT beam 4.',
          'Cells: chrF++ vs human reference (higher is better) / % answers in the right '
          'language / s per answer (GPU, 8 parallel; not phone speed).', '',
-         '## Held-out test set (WMT18 tr, WMT20 de/ja/ru, IWSLT17 ar) — fair for every model', '']
+         '## Held-out test set (WMT18 tr, WMT20 de/ja/ru, IWSLT17 ar, WMT24++ others) — fair for every model', '']
     L += table(results, 'heldout')
     L += ['', '## Tatoeba (short everyday sentences; in Opus-MT training data)', '']
     L += table(results, 'tatoeba')
