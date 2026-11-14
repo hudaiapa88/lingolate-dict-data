@@ -1,0 +1,6999 @@
+{
+ "schema": "pack-v3",
+ "version": "2026.11.2",
+ "release_tag": "packs-v2026.11.2",
+ "updated": "2026-11-14T00:19:20+00:00",
+ "source_repo": "https://github.com/hudaiapa88/lingolate-dict-data",
+ "attributions": "https://github.com/hudaiapa88/lingolate-dict-data/blob/main/ATTRIBUTIONS.md",
+ "packs": [
+  {
+   "pair": "ar-bg",
+   "langs": [
+    "ar",
+    "bg"
+   ],
+   "file": "pack-ar-bg.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-bg.sqlite3",
+   "bytes": 21889024,
+   "sha256": "5dc222c164d340dcca49ead8382a90baba1c74c10430e92d5b2c4c3d4f394468",
+   "lemmas": 45809,
+   "translations": 40751,
+   "examples": 1720,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-cs",
+   "langs": [
+    "ar",
+    "cs"
+   ],
+   "file": "pack-ar-cs.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-cs.sqlite3",
+   "bytes": 52387840,
+   "sha256": "b26bbda61261647c62a5754d077ddbc1eb8958c0a5921522f494e515a50e8520",
+   "lemmas": 66033,
+   "translations": 58533,
+   "examples": 3066,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-da",
+   "langs": [
+    "ar",
+    "da"
+   ],
+   "file": "pack-ar-da.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-da.sqlite3",
+   "bytes": 28213248,
+   "sha256": "c584ba0b49a95bc2b8584c11201cc48d958ec1867ba4a893bd1badb04ee604dc",
+   "lemmas": 50631,
+   "translations": 44724,
+   "examples": 2970,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ar-de",
+   "langs": [
+    "ar",
+    "de"
+   ],
+   "file": "pack-ar-de.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-de.sqlite3",
+   "bytes": 63492096,
+   "sha256": "5beff72666c4eba3a37fa16e15335e590337f82f3a1b2c40083a752954bbc12e",
+   "lemmas": 109863,
+   "translations": 101363,
+   "examples": 15449,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-el",
+   "langs": [
+    "ar",
+    "el"
+   ],
+   "file": "pack-ar-el.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-el.sqlite3",
+   "bytes": 28778496,
+   "sha256": "9fef70b719b339f4fafcb530158dde2edd6f6650ea3375b4ae9cd3cc8b296fd8",
+   "lemmas": 56476,
+   "translations": 58314,
+   "examples": 1997,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-en",
+   "langs": [
+    "ar",
+    "en"
+   ],
+   "file": "pack-ar-en.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-en.sqlite3",
+   "bytes": 80269312,
+   "sha256": "b46a99eaeb2169075d0e0f631c1ad9145fd0995f6eb3b8ec88859dfc76275fc9",
+   "lemmas": 299424,
+   "translations": 322858,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "ar-es",
+   "langs": [
+    "ar",
+    "es"
+   ],
+   "file": "pack-ar-es.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-es.sqlite3",
+   "bytes": 48889856,
+   "sha256": "586bc21e699a3e8c94f00630bfd09669865ab2756a6eb5aa57b87a7a893e4d89",
+   "lemmas": 113377,
+   "translations": 111655,
+   "examples": 12810,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-fi",
+   "langs": [
+    "ar",
+    "fi"
+   ],
+   "file": "pack-ar-fi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-fi.sqlite3",
+   "bytes": 38768640,
+   "sha256": "e3ca7ef84f85e94cab2cbfea9881edf0aef66ee3c42b6a2310c7409e34f6eccc",
+   "lemmas": 83253,
+   "translations": 93542,
+   "examples": 4425,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-fr",
+   "langs": [
+    "ar",
+    "fr"
+   ],
+   "file": "pack-ar-fr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-fr.sqlite3",
+   "bytes": 50286592,
+   "sha256": "ff868476064683394190f14a5be53bf873e3f2a16a0372c26f8bf72e66447331",
+   "lemmas": 126816,
+   "translations": 128774,
+   "examples": 15996,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C"
+   ]
+  },
+  {
+   "pair": "ar-hi",
+   "langs": [
+    "ar",
+    "hi"
+   ],
+   "file": "pack-ar-hi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-hi.sqlite3",
+   "bytes": 18731008,
+   "sha256": "d9d4eff8ccfb6a587c64b40806bee21dee109eb66680a1f68aefb2ce1f4e95d8",
+   "lemmas": 53878,
+   "translations": 41812,
+   "examples": 1064,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-id",
+   "langs": [
+    "ar",
+    "id"
+   ],
+   "file": "pack-ar-id.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-id.sqlite3",
+   "bytes": 21024768,
+   "sha256": "daed80f879921e12fd754fbbd8a282119e4ce0754d22cc15e6e7400214747fb6",
+   "lemmas": 41950,
+   "translations": 61771,
+   "examples": 2158,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "ar-it",
+   "langs": [
+    "ar",
+    "it"
+   ],
+   "file": "pack-ar-it.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-it.sqlite3",
+   "bytes": 43245568,
+   "sha256": "41ccd2b327adcf8396172b1ee65b5701559574bf6209d85c6b47311e19abb38f",
+   "lemmas": 98293,
+   "translations": 102698,
+   "examples": 13620,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-ja",
+   "langs": [
+    "ar",
+    "ja"
+   ],
+   "file": "pack-ar-ja.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-ja.sqlite3",
+   "bytes": 41627648,
+   "sha256": "fe639f1f8197e3c1ab9e34db69d6f7b805ff9386fe61492033de430242a145ab",
+   "lemmas": 100312,
+   "translations": 111444,
+   "examples": 10166,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ar-ko",
+   "langs": [
+    "ar",
+    "ko"
+   ],
+   "file": "pack-ar-ko.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-ko.sqlite3",
+   "bytes": 21434368,
+   "sha256": "029df58b317d379a490b9638e5e01b7dd137626cac271fbe6d580b8568feff4f",
+   "lemmas": 49655,
+   "translations": 42559,
+   "examples": 1097,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-lt",
+   "langs": [
+    "ar",
+    "lt"
+   ],
+   "file": "pack-ar-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-lt.sqlite3",
+   "bytes": 15773696,
+   "sha256": "a4f534875e92f8198bfc80e00c660a2154d48f47c43ac4360c02fa4ce1d5f1e3",
+   "lemmas": 37214,
+   "translations": 28541,
+   "examples": 1260,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-nl",
+   "langs": [
+    "ar",
+    "nl"
+   ],
+   "file": "pack-ar-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-nl.sqlite3",
+   "bytes": 32153600,
+   "sha256": "c4fdc39aecec92b8b4ab97b72a6068662d3b161ef45687cdaa8ddb88d4e24a49",
+   "lemmas": 63199,
+   "translations": 57267,
+   "examples": 8079,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-no",
+   "langs": [
+    "ar",
+    "no"
+   ],
+   "file": "pack-ar-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-no.sqlite3",
+   "bytes": 25878528,
+   "sha256": "559b6807d45ee99f04fe70babecba7448142827ae5e24e1195630614a6fb7515",
+   "lemmas": 51575,
+   "translations": 44516,
+   "examples": 1300,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ar-pl",
+   "langs": [
+    "ar",
+    "pl"
+   ],
+   "file": "pack-ar-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-pl.sqlite3",
+   "bytes": 35860480,
+   "sha256": "521847956f260b8ad20a13fbfaf32412368b78336f3dac34dbb7f2d255ee5775",
+   "lemmas": 100092,
+   "translations": 89336,
+   "examples": 4956,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ar-pt",
+   "langs": [
+    "ar",
+    "pt"
+   ],
+   "file": "pack-ar-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-pt.sqlite3",
+   "bytes": 47734784,
+   "sha256": "fd4c89c5dfd518ee0ae3d3e6187832d3c96c5f0c771f33ad8dfb92ba1addafb9",
+   "lemmas": 92495,
+   "translations": 95356,
+   "examples": 10049,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-ru",
+   "langs": [
+    "ar",
+    "ru"
+   ],
+   "file": "pack-ar-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-ru.sqlite3",
+   "bytes": 56619008,
+   "sha256": "931628b28b156816af6f5bf66a1d7d47e2be8ca1fc914ce006cff86eeb14f4da",
+   "lemmas": 105476,
+   "translations": 90999,
+   "examples": 5897,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-sv",
+   "langs": [
+    "ar",
+    "sv"
+   ],
+   "file": "pack-ar-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-sv.sqlite3",
+   "bytes": 37076992,
+   "sha256": "f388696f4dc58eb3525ca5de12757d430b7ee69b18db0a8b7201811d0a316fc1",
+   "lemmas": 66322,
+   "translations": 60674,
+   "examples": 2426,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-th",
+   "langs": [
+    "ar",
+    "th"
+   ],
+   "file": "pack-ar-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-th.sqlite3",
+   "bytes": 14454784,
+   "sha256": "a1acb386df3e781d9a19a3b1a551739fefbabcd9f29be86eb014feec120b6b6f",
+   "lemmas": 30931,
+   "translations": 31011,
+   "examples": 757,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ar-tr",
+   "langs": [
+    "ar",
+    "tr"
+   ],
+   "file": "pack-ar-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-tr.sqlite3",
+   "bytes": 45895680,
+   "sha256": "65e7ef0aca47ce1ecf27c130d1e723f0ce55d1f3619219361123cc2f250475a9",
+   "lemmas": 64286,
+   "translations": 56961,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-uk",
+   "langs": [
+    "ar",
+    "uk"
+   ],
+   "file": "pack-ar-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-uk.sqlite3",
+   "bytes": 19374080,
+   "sha256": "7cf6a29d4eb931fe85b3de2a8f9881aae3a672fdbdd3449c2fa41e85c841b300",
+   "lemmas": 43070,
+   "translations": 35692,
+   "examples": 8071,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-vi",
+   "langs": [
+    "ar",
+    "vi"
+   ],
+   "file": "pack-ar-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-vi.sqlite3",
+   "bytes": 13660160,
+   "sha256": "652395a10529ef55e9a595c00fd732d3c3b098c366770f93a31c03e88b8e2fac",
+   "lemmas": 24067,
+   "translations": 19527,
+   "examples": 1164,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ar-zh",
+   "langs": [
+    "ar",
+    "zh"
+   ],
+   "file": "pack-ar-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ar-zh.sqlite3",
+   "bytes": 44072960,
+   "sha256": "f289c0d95f4184da8345e11ba97a8450aebd3ab5fd5a56ccf4dbd28d9dc930dc",
+   "lemmas": 143141,
+   "translations": 143278,
+   "examples": 5539,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "bg-cs",
+   "langs": [
+    "bg",
+    "cs"
+   ],
+   "file": "pack-bg-cs.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-cs.sqlite3",
+   "bytes": 38498304,
+   "sha256": "5c5c22474711b844bd13048e79be8bc9285dbb10e154a41d389d6625d4da83f1",
+   "lemmas": 66399,
+   "translations": 54332,
+   "examples": 2213,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-da",
+   "langs": [
+    "bg",
+    "da"
+   ],
+   "file": "pack-bg-da.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-da.sqlite3",
+   "bytes": 18903040,
+   "sha256": "3f04b3557944cb69fa4f15527279d672b21b0a42464931af1b30b94fbb4d0c7e",
+   "lemmas": 56096,
+   "translations": 41318,
+   "examples": 1741,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "bg-de",
+   "langs": [
+    "bg",
+    "de"
+   ],
+   "file": "pack-bg-de.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-de.sqlite3",
+   "bytes": 39489536,
+   "sha256": "2876fdf3efb60dc9457ac45909d14764f978f185246ef5b67a3694e69dfccf5c",
+   "lemmas": 91763,
+   "translations": 82701,
+   "examples": 8896,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-el",
+   "langs": [
+    "bg",
+    "el"
+   ],
+   "file": "pack-bg-el.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-el.sqlite3",
+   "bytes": 14680064,
+   "sha256": "21e8ee25b14aae6f5bf62cdfe699c39b51bf31cf918869664038b53e02762b62",
+   "lemmas": 53088,
+   "translations": 44237,
+   "examples": 1166,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-en",
+   "langs": [
+    "bg",
+    "en"
+   ],
+   "file": "pack-bg-en.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-en.sqlite3",
+   "bytes": 26370048,
+   "sha256": "76a463da2f7e50e3c5d839ff000d696f031a064da2c4b3efa5b375580309a56c",
+   "lemmas": 99254,
+   "translations": 91670,
+   "examples": 15003,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "bg-es",
+   "langs": [
+    "bg",
+    "es"
+   ],
+   "file": "pack-bg-es.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-es.sqlite3",
+   "bytes": 27119616,
+   "sha256": "92b08bce4623b49da13d1c75cc3a9f95ee72cf85d11bf05abdfd19a0da2c5125",
+   "lemmas": 73045,
+   "translations": 67456,
+   "examples": 7181,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-fi",
+   "langs": [
+    "bg",
+    "fi"
+   ],
+   "file": "pack-bg-fi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-fi.sqlite3",
+   "bytes": 17170432,
+   "sha256": "594ba3406aa108d1fdb92ea681a7778c29ef8acdf51c37ad18bf16b8c0ff58a8",
+   "lemmas": 81493,
+   "translations": 76154,
+   "examples": 3634,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-fr",
+   "langs": [
+    "bg",
+    "fr"
+   ],
+   "file": "pack-bg-fr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-fr.sqlite3",
+   "bytes": 24502272,
+   "sha256": "6f1747bd5b65cb3e76ccbdc0222db51f5de3f7ac09bbd673d0f8e2966d68b2c4",
+   "lemmas": 80077,
+   "translations": 75539,
+   "examples": 8184,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C"
+   ]
+  },
+  {
+   "pair": "bg-hi",
+   "langs": [
+    "bg",
+    "hi"
+   ],
+   "file": "pack-bg-hi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-hi.sqlite3",
+   "bytes": 4378624,
+   "sha256": "c81a7ddb2a35dcb3965fa19026d8916fb11f62152ef5ba7ca662e9f669bb56b2",
+   "lemmas": 21986,
+   "translations": 16256,
+   "examples": 632,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-id",
+   "langs": [
+    "bg",
+    "id"
+   ],
+   "file": "pack-bg-id.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-id.sqlite3",
+   "bytes": 23445504,
+   "sha256": "9daf9b0985d9a5d72931d910a556cd5d7edd812eeecc35437422290e992c900f",
+   "lemmas": 37742,
+   "translations": 61493,
+   "examples": 1153,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "bg-it",
+   "langs": [
+    "bg",
+    "it"
+   ],
+   "file": "pack-bg-it.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-it.sqlite3",
+   "bytes": 28069888,
+   "sha256": "cbaed2e0ea23f30477a6bac3f526db98b2677b27acce1b1205f7da0161258bab",
+   "lemmas": 78401,
+   "translations": 80155,
+   "examples": 4918,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-ja",
+   "langs": [
+    "bg",
+    "ja"
+   ],
+   "file": "pack-bg-ja.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-ja.sqlite3",
+   "bytes": 27430912,
+   "sha256": "587e21fad0157092be95195960f1875d0eac2c5a8b40b9f220f786e9a3497c7a",
+   "lemmas": 77326,
+   "translations": 109766,
+   "examples": 7129,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "bg-ko",
+   "langs": [
+    "bg",
+    "ko"
+   ],
+   "file": "pack-bg-ko.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-ko.sqlite3",
+   "bytes": 7610368,
+   "sha256": "bdb37f1c557330a2b1ab9625f238c30e73eb94153e79c09e99d24fac3c7e8848",
+   "lemmas": 47140,
+   "translations": 39779,
+   "examples": 480,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-lt",
+   "langs": [
+    "bg",
+    "lt"
+   ],
+   "file": "pack-bg-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-lt.sqlite3",
+   "bytes": 6205440,
+   "sha256": "0b55173347d3134ec32c7cfce67dac4c4165bdb0ddcfbc07a38a704becad5828",
+   "lemmas": 41043,
+   "translations": 26910,
+   "examples": 612,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-nl",
+   "langs": [
+    "bg",
+    "nl"
+   ],
+   "file": "pack-bg-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-nl.sqlite3",
+   "bytes": 13971456,
+   "sha256": "0bde35c54fd4523e493858818feef8386976de773677523f1fa932f66417cf62",
+   "lemmas": 73882,
+   "translations": 62585,
+   "examples": 4294,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-no",
+   "langs": [
+    "bg",
+    "no"
+   ],
+   "file": "pack-bg-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-no.sqlite3",
+   "bytes": 15581184,
+   "sha256": "a0162a082c6fe9b586347044e4110d1c96ebe87ee9f222bfa48d1757de670306",
+   "lemmas": 52986,
+   "translations": 41389,
+   "examples": 728,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "bg-pl",
+   "langs": [
+    "bg",
+    "pl"
+   ],
+   "file": "pack-bg-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-pl.sqlite3",
+   "bytes": 13848576,
+   "sha256": "cfb6444fc5bdf35b376b2b71073fc866ec6b7f3ba56f6955253918757d8be935",
+   "lemmas": 71506,
+   "translations": 54419,
+   "examples": 4093,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "bg-pt",
+   "langs": [
+    "bg",
+    "pt"
+   ],
+   "file": "pack-bg-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-pt.sqlite3",
+   "bytes": 20295680,
+   "sha256": "acbb2159d63c999bddb480096408bcd03b05ed19c2a3e500ac0843d29b80f963",
+   "lemmas": 71409,
+   "translations": 67451,
+   "examples": 6461,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-ru",
+   "langs": [
+    "bg",
+    "ru"
+   ],
+   "file": "pack-bg-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-ru.sqlite3",
+   "bytes": 33259520,
+   "sha256": "621e9486e3ade16df9403a9bf1c647cce9e939899d4eb112366aecbad39cb58f",
+   "lemmas": 85138,
+   "translations": 80972,
+   "examples": 10927,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-sv",
+   "langs": [
+    "bg",
+    "sv"
+   ],
+   "file": "pack-bg-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-sv.sqlite3",
+   "bytes": 23281664,
+   "sha256": "d44823f1ed97ff603e6fd21ce9bca6939fe9be8bab13ade80b18b87af0025fe7",
+   "lemmas": 72037,
+   "translations": 56736,
+   "examples": 1431,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-th",
+   "langs": [
+    "bg",
+    "th"
+   ],
+   "file": "pack-bg-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-th.sqlite3",
+   "bytes": 6602752,
+   "sha256": "28db20ef1ca86ceb0e3690f2ba62e86cff859a16dba899bc012a0071af159e9a",
+   "lemmas": 25215,
+   "translations": 24254,
+   "examples": 491,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "bg-tr",
+   "langs": [
+    "bg",
+    "tr"
+   ],
+   "file": "pack-bg-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-tr.sqlite3",
+   "bytes": 10833920,
+   "sha256": "66e37ba486cdc3d85ff7c379d846a2aa651fd64b2f2bb3d446ba4859788afeb4",
+   "lemmas": 50210,
+   "translations": 43880,
+   "examples": 13137,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-uk",
+   "langs": [
+    "bg",
+    "uk"
+   ],
+   "file": "pack-bg-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-uk.sqlite3",
+   "bytes": 10461184,
+   "sha256": "05a1c11b522d33ee9e17ae90290c4f0b4723795a721f8eb80b3048574181604d",
+   "lemmas": 47275,
+   "translations": 36513,
+   "examples": 5338,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-vi",
+   "langs": [
+    "bg",
+    "vi"
+   ],
+   "file": "pack-bg-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-vi.sqlite3",
+   "bytes": 3379200,
+   "sha256": "9b0903cae3bf5efc5e30de4d35d1668c525a93f9c9b84fb942ee7a641664b328",
+   "lemmas": 20982,
+   "translations": 15798,
+   "examples": 675,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "bg-zh",
+   "langs": [
+    "bg",
+    "zh"
+   ],
+   "file": "pack-bg-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-bg-zh.sqlite3",
+   "bytes": 15790080,
+   "sha256": "37c53ac35776207f9bc0c10578050af5b0e69dd32ddcff38819a3e583b805a4a",
+   "lemmas": 75666,
+   "translations": 85921,
+   "examples": 4055,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "cs-da",
+   "langs": [
+    "cs",
+    "da"
+   ],
+   "file": "pack-cs-da.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-da.sqlite3",
+   "bytes": 48685056,
+   "sha256": "e5f869cb251dd907ddf722356f96693235acf8da07d9d46b54e42475bcbd6e3c",
+   "lemmas": 79215,
+   "translations": 60475,
+   "examples": 4351,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-de",
+   "langs": [
+    "cs",
+    "de"
+   ],
+   "file": "pack-cs-de.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-de.sqlite3",
+   "bytes": 151519232,
+   "sha256": "b19dc1293ac02303218f7e64c18d35873e5834749559a0a2539eb3266d59c525",
+   "lemmas": 247682,
+   "translations": 261476,
+   "examples": 5646,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-el",
+   "langs": [
+    "cs",
+    "el"
+   ],
+   "file": "pack-cs-el.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-el.sqlite3",
+   "bytes": 48381952,
+   "sha256": "bcec78b5210f6bc6713602d24763d247086b21aee4d242d8701a7cf6c3b1896b",
+   "lemmas": 70130,
+   "translations": 61673,
+   "examples": 2709,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-en",
+   "langs": [
+    "cs",
+    "en"
+   ],
+   "file": "pack-cs-en.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-en.sqlite3",
+   "bytes": 125771776,
+   "sha256": "9195c7a05151d252de60528de3e4ec99d701e2487dd9eb43341147610000ba17",
+   "lemmas": 315818,
+   "translations": 334919,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "cs-es",
+   "langs": [
+    "cs",
+    "es"
+   ],
+   "file": "pack-cs-es.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-es.sqlite3",
+   "bytes": 88985600,
+   "sha256": "6431cadd7aa8c622ea05e3964708418b6479a5dbddc43673757ac43f4e666987",
+   "lemmas": 138853,
+   "translations": 147919,
+   "examples": 19582,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-fi",
+   "langs": [
+    "cs",
+    "fi"
+   ],
+   "file": "pack-cs-fi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-fi.sqlite3",
+   "bytes": 63598592,
+   "sha256": "8e22d2f87f30c504dcc66c31b04e565b33174f6691d6aab872e23d9ed210913a",
+   "lemmas": 124998,
+   "translations": 114931,
+   "examples": 7136,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-fr",
+   "langs": [
+    "cs",
+    "fr"
+   ],
+   "file": "pack-cs-fr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-fr.sqlite3",
+   "bytes": 91262976,
+   "sha256": "e64536b77035792fbc2bae6be6c205a047065da097db130c61d0cea1eb170ce5",
+   "lemmas": 158043,
+   "translations": 169474,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-hi",
+   "langs": [
+    "cs",
+    "hi"
+   ],
+   "file": "pack-cs-hi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-hi.sqlite3",
+   "bytes": 21856256,
+   "sha256": "42ecfb1b88cef4e828311fe4c68816cfb226556cbfe970d9f1c62bea3f2e6675",
+   "lemmas": 44381,
+   "translations": 44434,
+   "examples": 1189,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-id",
+   "langs": [
+    "cs",
+    "id"
+   ],
+   "file": "pack-cs-id.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-id.sqlite3",
+   "bytes": 41672704,
+   "sha256": "298dcbd9cb386da9e0719b14ea84a22439da3268ec30f63bef5473a316a66c52",
+   "lemmas": 49912,
+   "translations": 42092,
+   "examples": 2899,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "cs-it",
+   "langs": [
+    "cs",
+    "it"
+   ],
+   "file": "pack-cs-it.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-it.sqlite3",
+   "bytes": 118820864,
+   "sha256": "0b2e20efc67e4a522a3d7243183a6a4c851028d30fd08895cf8f7da262574977",
+   "lemmas": 218513,
+   "translations": 256571,
+   "examples": 19731,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-ja",
+   "langs": [
+    "cs",
+    "ja"
+   ],
+   "file": "pack-cs-ja.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-ja.sqlite3",
+   "bytes": 45207552,
+   "sha256": "d8c783e549fe3c7f7481f84755fc0fb39d3f2cc07736d5bedd58cfc5de68d482",
+   "lemmas": 90001,
+   "translations": 88958,
+   "examples": 13793,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "cs-ko",
+   "langs": [
+    "cs",
+    "ko"
+   ],
+   "file": "pack-cs-ko.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-ko.sqlite3",
+   "bytes": 56233984,
+   "sha256": "0a37627d5daa231c19cd5ae65a781a56d90e69455f842684993c16b5615d1d05",
+   "lemmas": 94099,
+   "translations": 93985,
+   "examples": 1040,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-lt",
+   "langs": [
+    "cs",
+    "lt"
+   ],
+   "file": "pack-cs-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-lt.sqlite3",
+   "bytes": 29356032,
+   "sha256": "f8e3d4b64c4fe989bb0c4f77ddef75c4347e766cf817839706a8080ac4027b69",
+   "lemmas": 60868,
+   "translations": 43899,
+   "examples": 1310,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-nl",
+   "langs": [
+    "cs",
+    "nl"
+   ],
+   "file": "pack-cs-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-nl.sqlite3",
+   "bytes": 73515008,
+   "sha256": "b63608c2329321d63ae000b72414a0d2480591f6652f050c2aa694e1d21982bd",
+   "lemmas": 130149,
+   "translations": 147195,
+   "examples": 11517,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-no",
+   "langs": [
+    "cs",
+    "no"
+   ],
+   "file": "pack-cs-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-no.sqlite3",
+   "bytes": 51994624,
+   "sha256": "cd5227baaa51821c7e9a1ad7b21bf91534178f6ebc5bf78e331e74ef0b4c94c6",
+   "lemmas": 80796,
+   "translations": 67995,
+   "examples": 1639,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-pl",
+   "langs": [
+    "cs",
+    "pl"
+   ],
+   "file": "pack-cs-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-pl.sqlite3",
+   "bytes": 68472832,
+   "sha256": "5103505932c7d9ddc4674f7fbc0ddee73832c2efcb1998dd7640ea7e67df22c6",
+   "lemmas": 144803,
+   "translations": 124974,
+   "examples": 7819,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-pt",
+   "langs": [
+    "cs",
+    "pt"
+   ],
+   "file": "pack-cs-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-pt.sqlite3",
+   "bytes": 73990144,
+   "sha256": "80ba9a3e192c5be120cbb38a1e2a96acc1cae5b836aa0bc106c0ae2076d06e25",
+   "lemmas": 119116,
+   "translations": 120443,
+   "examples": 16308,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-ru",
+   "langs": [
+    "cs",
+    "ru"
+   ],
+   "file": "pack-cs-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-ru.sqlite3",
+   "bytes": 144928768,
+   "sha256": "6105ababa3f5cbbf941c1951d6270f60f50f03b22e1ffa1c3e52354504f03f45",
+   "lemmas": 207634,
+   "translations": 245151,
+   "examples": 12528,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-sv",
+   "langs": [
+    "cs",
+    "sv"
+   ],
+   "file": "pack-cs-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-sv.sqlite3",
+   "bytes": 73228288,
+   "sha256": "2e77fe7675e5a9530d8d0b134cb69eb5030070461c637c48b854ffddc0b2b365",
+   "lemmas": 118067,
+   "translations": 103390,
+   "examples": 3583,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-th",
+   "langs": [
+    "cs",
+    "th"
+   ],
+   "file": "pack-cs-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-th.sqlite3",
+   "bytes": 26918912,
+   "sha256": "d557e914996465fdec36059f3b369badff610ff58ca51014f301921647f9c977",
+   "lemmas": 29639,
+   "translations": 28594,
+   "examples": 921,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-tr",
+   "langs": [
+    "cs",
+    "tr"
+   ],
+   "file": "pack-cs-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-tr.sqlite3",
+   "bytes": 60530688,
+   "sha256": "6c0e0aede0e000b7c529c82b37ff9914881bebaae7fddfac5c00e28064e25f18",
+   "lemmas": 89605,
+   "translations": 93257,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-uk",
+   "langs": [
+    "cs",
+    "uk"
+   ],
+   "file": "pack-cs-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-uk.sqlite3",
+   "bytes": 63098880,
+   "sha256": "a16f09033e655aa71a709c370922b6adcbb6bb0410e3562b178220557b441bd7",
+   "lemmas": 78722,
+   "translations": 76208,
+   "examples": 14129,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-vi",
+   "langs": [
+    "cs",
+    "vi"
+   ],
+   "file": "pack-cs-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-vi.sqlite3",
+   "bytes": 14905344,
+   "sha256": "3e46503146b006167d68de3ac976d6d3cf772f914756fb070e6423b82e9357b3",
+   "lemmas": 25988,
+   "translations": 19651,
+   "examples": 1857,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "cs-zh",
+   "langs": [
+    "cs",
+    "zh"
+   ],
+   "file": "pack-cs-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-cs-zh.sqlite3",
+   "bytes": 52953088,
+   "sha256": "beb3d5e6aab9b567ad57118715e6dab84c938598423673a145d367d8f827015e",
+   "lemmas": 121666,
+   "translations": 129761,
+   "examples": 6484,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "da-de",
+   "langs": [
+    "da",
+    "de"
+   ],
+   "file": "pack-da-de.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-de.sqlite3",
+   "bytes": 64413696,
+   "sha256": "cc9ff44636a58ac04f2ef5efe957f6a8f595a85ae806efd1357030467cb32a36",
+   "lemmas": 134235,
+   "translations": 111916,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-el",
+   "langs": [
+    "da",
+    "el"
+   ],
+   "file": "pack-da-el.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-el.sqlite3",
+   "bytes": 22151168,
+   "sha256": "62f948d477234fc02b822b0903ee6458e9cbdee77fa34c83b8e8339911086d95",
+   "lemmas": 57600,
+   "translations": 44244,
+   "examples": 2469,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-en",
+   "langs": [
+    "da",
+    "en"
+   ],
+   "file": "pack-da-en.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-en.sqlite3",
+   "bytes": 43962368,
+   "sha256": "f1a7b123cd064381d66ff43770e1b6460cb3818056d7626029b62c5bd951bf2f",
+   "lemmas": 138776,
+   "translations": 113467,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-es",
+   "langs": [
+    "da",
+    "es"
+   ],
+   "file": "pack-da-es.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-es.sqlite3",
+   "bytes": 39075840,
+   "sha256": "f2eb287b3d4395d99642c6643869349c6b6d48f30cf226c667daf74d520d49e5",
+   "lemmas": 93371,
+   "translations": 81098,
+   "examples": 8575,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-fi",
+   "langs": [
+    "da",
+    "fi"
+   ],
+   "file": "pack-da-fi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-fi.sqlite3",
+   "bytes": 28315648,
+   "sha256": "15ca576f45ef27dd2be2f446d11bfcc86070a1a127f76cf62973c8d5c6a41cd3",
+   "lemmas": 100764,
+   "translations": 78115,
+   "examples": 7437,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-fr",
+   "langs": [
+    "da",
+    "fr"
+   ],
+   "file": "pack-da-fr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-fr.sqlite3",
+   "bytes": 37961728,
+   "sha256": "f65261237e562abd2ec25682ed37ba3908dd1dc5b1811967614461d3c3032353",
+   "lemmas": 103353,
+   "translations": 85220,
+   "examples": 18526,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-hi",
+   "langs": [
+    "da",
+    "hi"
+   ],
+   "file": "pack-da-hi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-hi.sqlite3",
+   "bytes": 7155712,
+   "sha256": "55e9ff33eca2110dbe73764e5c3c1ccf9fe1b27f6710186f966b2c4481607af5",
+   "lemmas": 22756,
+   "translations": 16496,
+   "examples": 1102,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "da-id",
+   "langs": [
+    "da",
+    "id"
+   ],
+   "file": "pack-da-id.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-id.sqlite3",
+   "bytes": 24932352,
+   "sha256": "28878cca7300aecdbed55e11225fc4443d217a580881ccade6f9267aeb9c85c1",
+   "lemmas": 36283,
+   "translations": 39833,
+   "examples": 2252,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-it",
+   "langs": [
+    "da",
+    "it"
+   ],
+   "file": "pack-da-it.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-it.sqlite3",
+   "bytes": 39772160,
+   "sha256": "b1a55c41f0c86a395b739b85251e3edc06fb55eeddd6b8866e0307fcb1f0072e",
+   "lemmas": 97119,
+   "translations": 82803,
+   "examples": 15727,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-ja",
+   "langs": [
+    "da",
+    "ja"
+   ],
+   "file": "pack-da-ja.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-ja.sqlite3",
+   "bytes": 32403456,
+   "sha256": "20568d46897235a77f9505d5c6f7820092b839731d3740d85f97e7399d077970",
+   "lemmas": 81446,
+   "translations": 83889,
+   "examples": 11393,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-ko",
+   "langs": [
+    "da",
+    "ko"
+   ],
+   "file": "pack-da-ko.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-ko.sqlite3",
+   "bytes": 12824576,
+   "sha256": "0ef95a35ba99c5349eaaad80acad1f67c9cac3d86ffde98d278f02a0eb8b7125",
+   "lemmas": 49867,
+   "translations": 39117,
+   "examples": 970,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-lt",
+   "langs": [
+    "da",
+    "lt"
+   ],
+   "file": "pack-da-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-lt.sqlite3",
+   "bytes": 11816960,
+   "sha256": "54d595ab72da79a358ca357811db3822046d8d11a325ed4c9edbeda0c828824f",
+   "lemmas": 50503,
+   "translations": 32809,
+   "examples": 1147,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "da-nl",
+   "langs": [
+    "da",
+    "nl"
+   ],
+   "file": "pack-da-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-nl.sqlite3",
+   "bytes": 27377664,
+   "sha256": "c820fca6781cbd6a042aed091fc173330bc6b3e5f0504e7eceb6d241d2b72df7",
+   "lemmas": 103021,
+   "translations": 80008,
+   "examples": 12294,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "da-no",
+   "langs": [
+    "da",
+    "no"
+   ],
+   "file": "pack-da-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-no.sqlite3",
+   "bytes": 48336896,
+   "sha256": "afcd1b0d80d04384e6c8d815eb9f85cf3e2d172c25bedc248e99eab2dd415dc2",
+   "lemmas": 147564,
+   "translations": 97155,
+   "examples": 3175,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-pl",
+   "langs": [
+    "da",
+    "pl"
+   ],
+   "file": "pack-da-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-pl.sqlite3",
+   "bytes": 24506368,
+   "sha256": "0882c85d12fec1c40926ca6b378dc458b7e448aac86edc23eccb594e65287bc7",
+   "lemmas": 88960,
+   "translations": 63184,
+   "examples": 6181,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-pt",
+   "langs": [
+    "da",
+    "pt"
+   ],
+   "file": "pack-da-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-pt.sqlite3",
+   "bytes": 31657984,
+   "sha256": "0a4307180ba57d65f34973f5cc6bfbfff028b2556086089d4ef448e03523aa51",
+   "lemmas": 87604,
+   "translations": 74956,
+   "examples": 13386,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-ru",
+   "langs": [
+    "da",
+    "ru"
+   ],
+   "file": "pack-da-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-ru.sqlite3",
+   "bytes": 40931328,
+   "sha256": "34f899201af9cde60c8bac8c097dbaab3309eaba8018ebc39738229c2acc641a",
+   "lemmas": 82819,
+   "translations": 75809,
+   "examples": 6877,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-sv",
+   "langs": [
+    "da",
+    "sv"
+   ],
+   "file": "pack-da-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-sv.sqlite3",
+   "bytes": 44888064,
+   "sha256": "3f331217774197ee7b39471857c0538a2506657c62db4555bdf0838fe45ea7f2",
+   "lemmas": 111988,
+   "translations": 81766,
+   "examples": 6489,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-th",
+   "langs": [
+    "da",
+    "th"
+   ],
+   "file": "pack-da-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-th.sqlite3",
+   "bytes": 8462336,
+   "sha256": "06acace4a94d95d10d80f1d7183b95ed3e83d0a763e38bc92b5522f02053ae4a",
+   "lemmas": 22293,
+   "translations": 19411,
+   "examples": 847,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-tr",
+   "langs": [
+    "da",
+    "tr"
+   ],
+   "file": "pack-da-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-tr.sqlite3",
+   "bytes": 17260544,
+   "sha256": "a42380aaca8cf840b8ca7e52ea9310dac6193e3eccda210ade84e6055cb20d6e",
+   "lemmas": 56097,
+   "translations": 44637,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-uk",
+   "langs": [
+    "da",
+    "uk"
+   ],
+   "file": "pack-da-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-uk.sqlite3",
+   "bytes": 14974976,
+   "sha256": "522af6da5d2da427623d9fde454e0df07dec2dc77b42564f5d3718e2fd0e3cc6",
+   "lemmas": 44610,
+   "translations": 34382,
+   "examples": 10785,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "da-vi",
+   "langs": [
+    "da",
+    "vi"
+   ],
+   "file": "pack-da-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-vi.sqlite3",
+   "bytes": 5558272,
+   "sha256": "3f3cbebca3c182ade124504ecd23653a44e9ce583b542fea31e34b58e595c016",
+   "lemmas": 21991,
+   "translations": 15460,
+   "examples": 1352,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "da-zh",
+   "langs": [
+    "da",
+    "zh"
+   ],
+   "file": "pack-da-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-da-zh.sqlite3",
+   "bytes": 21360640,
+   "sha256": "6c328b6cfac25f6c232b7934b003fcbdfce6b63a21967f986945d98850dfed9c",
+   "lemmas": 82973,
+   "translations": 76214,
+   "examples": 5601,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "de-el",
+   "langs": [
+    "de",
+    "el"
+   ],
+   "file": "pack-de-el.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-el.sqlite3",
+   "bytes": 48816128,
+   "sha256": "ea24312b024164afca67dd770dce38eaa9d5eb3fbb572a51f479a7dfc8a2622e",
+   "lemmas": 101014,
+   "translations": 99694,
+   "examples": 7463,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "de-en",
+   "langs": [
+    "de",
+    "en"
+   ],
+   "file": "pack-de-en.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-en.sqlite3",
+   "bytes": 204439552,
+   "sha256": "548c72fa5f8d2c4abf25acae9886a105efd0aee2a4d4cb36d13e870d42bc8696",
+   "lemmas": 793243,
+   "translations": 757286,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "de-es",
+   "langs": [
+    "de",
+    "es"
+   ],
+   "file": "pack-de-es.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-es.sqlite3",
+   "bytes": 126025728,
+   "sha256": "45c5b97620d7a6789ee8ca2403d5a5253b98afb9c395a17e8777a5dfe57473f6",
+   "lemmas": 321093,
+   "translations": 364026,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "de-fi",
+   "langs": [
+    "de",
+    "fi"
+   ],
+   "file": "pack-de-fi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-fi.sqlite3",
+   "bytes": 79355904,
+   "sha256": "ea636538d7fd37f473fb1776028e0f1c6fd95aad5eb6cbde00a88770664d1edd",
+   "lemmas": 227740,
+   "translations": 219679,
+   "examples": 12366,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "de-fr",
+   "langs": [
+    "de",
+    "fr"
+   ],
+   "file": "pack-de-fr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-fr.sqlite3",
+   "bytes": 133582848,
+   "sha256": "545ab6dc476bdb22ce71d8c3af562c7cd67cb17f2fdd019aa1b5464e07bd4e38",
+   "lemmas": 419694,
+   "translations": 426283,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C"
+   ]
+  },
+  {
+   "pair": "de-hi",
+   "langs": [
+    "de",
+    "hi"
+   ],
+   "file": "pack-de-hi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-hi.sqlite3",
+   "bytes": 25870336,
+   "sha256": "214e9528914dc0dcfdfe75d1418aad6eb9b036db00de7d14f2e7f4772f57e888",
+   "lemmas": 74160,
+   "translations": 70893,
+   "examples": 5772,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "de-id",
+   "langs": [
+    "de",
+    "id"
+   ],
+   "file": "pack-de-id.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-id.sqlite3",
+   "bytes": 36892672,
+   "sha256": "7e218117f06d0ac465a2a854d6a98bd09cac43163c5c920366e490a5815e7797",
+   "lemmas": 67517,
+   "translations": 65413,
+   "examples": 11630,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "de-it",
+   "langs": [
+    "de",
+    "it"
+   ],
+   "file": "pack-de-it.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-it.sqlite3",
+   "bytes": 112775168,
+   "sha256": "6b2b383b7c92c1daddc14bf2d20297b9b8d3ac957a6e356e874d2702d71ff9f8",
+   "lemmas": 330050,
+   "translations": 335687,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "de-ja",
+   "langs": [
+    "de",
+    "ja"
+   ],
+   "file": "pack-de-ja.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-ja.sqlite3",
+   "bytes": 98848768,
+   "sha256": "2ad18639110247841118c8ede574ff8bf3f4d03f95a301743a34bd1f550fb476",
+   "lemmas": 289012,
+   "translations": 325435,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "de-ko",
+   "langs": [
+    "de",
+    "ko"
+   ],
+   "file": "pack-de-ko.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-ko.sqlite3",
+   "bytes": 54132736,
+   "sha256": "a7f8e6e12929a7e0c34d12cd76f911467469f9cf6e055027c7ef14e7052f4f92",
+   "lemmas": 134810,
+   "translations": 145294,
+   "examples": 6035,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "de-lt",
+   "langs": [
+    "de",
+    "lt"
+   ],
+   "file": "pack-de-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-lt.sqlite3",
+   "bytes": 28565504,
+   "sha256": "b83e9ada818a4bc05225027be925712a3fb1b5c942aa0d31c0e4bce99e513526",
+   "lemmas": 82923,
+   "translations": 62122,
+   "examples": 7651,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "de-nl",
+   "langs": [
+    "de",
+    "nl"
+   ],
+   "file": "pack-de-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-nl.sqlite3",
+   "bytes": 95752192,
+   "sha256": "bbe55746344df00c44e9444055bbb0fd5a7bff46b30054b905c96b7fbc5b6b98",
+   "lemmas": 309149,
+   "translations": 295236,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "de-no",
+   "langs": [
+    "de",
+    "no"
+   ],
+   "file": "pack-de-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-no.sqlite3",
+   "bytes": 75849728,
+   "sha256": "edc31069f766ab176471acc51f1abe4e5d4758951c684e0e39a2dd5d3ee9cf71",
+   "lemmas": 180850,
+   "translations": 152415,
+   "examples": 4991,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "de-pl",
+   "langs": [
+    "de",
+    "pl"
+   ],
+   "file": "pack-de-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-pl.sqlite3",
+   "bytes": 84230144,
+   "sha256": "f12305418684057c5b87cd7d847c5fea99e3b3015703c4da409bbebfae20c39c",
+   "lemmas": 287529,
+   "translations": 236923,
+   "examples": 19495,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "de-pt",
+   "langs": [
+    "de",
+    "pt"
+   ],
+   "file": "pack-de-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-pt.sqlite3",
+   "bytes": 96595968,
+   "sha256": "cf3be8c77327abc324d22a03cfb39fb5c2f2e8334734c11eec355fb5ee112bb8",
+   "lemmas": 255887,
+   "translations": 255547,
+   "examples": 19784,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "de-ru",
+   "langs": [
+    "de",
+    "ru"
+   ],
+   "file": "pack-de-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-ru.sqlite3",
+   "bytes": 148090880,
+   "sha256": "c388c84f433ba4750e6a3f7c12872d55416ee39c36ba7360c31184a1ffc2dedb",
+   "lemmas": 292687,
+   "translations": 364796,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "de-sv",
+   "langs": [
+    "de",
+    "sv"
+   ],
+   "file": "pack-de-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-sv.sqlite3",
+   "bytes": 103882752,
+   "sha256": "67f0a48a2697742455390a9a6c55acfd475969b8f2a88b27233cf621ccafaf77",
+   "lemmas": 261855,
+   "translations": 227316,
+   "examples": 8892,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "de-th",
+   "langs": [
+    "de",
+    "th"
+   ],
+   "file": "pack-de-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-th.sqlite3",
+   "bytes": 21606400,
+   "sha256": "a981add6ecb49f5e3fb325451b437111a9618bc094be26b606d7962b9ac7cefb",
+   "lemmas": 40124,
+   "translations": 42054,
+   "examples": 3266,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "de-tr",
+   "langs": [
+    "de",
+    "tr"
+   ],
+   "file": "pack-de-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-tr.sqlite3",
+   "bytes": 70410240,
+   "sha256": "ce4414dc0d6dbbfb33b511f12f79d91919f58bfaf073af1e5b0c04c8d95b10b9",
+   "lemmas": 159862,
+   "translations": 197443,
+   "examples": 18779,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "de-uk",
+   "langs": [
+    "de",
+    "uk"
+   ],
+   "file": "pack-de-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-uk.sqlite3",
+   "bytes": 56135680,
+   "sha256": "ffa5060ccc829483764eff8b353bcadd8f4811436cff3e679c2b542047b5dc3f",
+   "lemmas": 106597,
+   "translations": 113928,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "de-vi",
+   "langs": [
+    "de",
+    "vi"
+   ],
+   "file": "pack-de-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-vi.sqlite3",
+   "bytes": 15441920,
+   "sha256": "f2e36e21905aa9ebf661cc72bd34990a1eb7d93c7e42319d46ad32110b453ab0",
+   "lemmas": 37051,
+   "translations": 29424,
+   "examples": 8234,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "de-zh",
+   "langs": [
+    "de",
+    "zh"
+   ],
+   "file": "pack-de-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-de-zh.sqlite3",
+   "bytes": 119640064,
+   "sha256": "b9522d7b3accda3fc99025a44adb796096e3e3381a2fcd25760dc8ba55a40af3",
+   "lemmas": 425819,
+   "translations": 464795,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "el-en",
+   "langs": [
+    "el",
+    "en"
+   ],
+   "file": "pack-el-en.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-en.sqlite3",
+   "bytes": 57200640,
+   "sha256": "be9e5993e13949c3f6f86e1e918727a4a84eae5d55d9458d786c5cf28509cb0f",
+   "lemmas": 182985,
+   "translations": 191014,
+   "examples": 20000,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "el-es",
+   "langs": [
+    "el",
+    "es"
+   ],
+   "file": "pack-el-es.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-es.sqlite3",
+   "bytes": 41021440,
+   "sha256": "1b15dbea70f25d62df9e2e8c7e263b31ba759cddbb5993d837ffe59921630fce",
+   "lemmas": 85707,
+   "translations": 85939,
+   "examples": 11730,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "el-fi",
+   "langs": [
+    "el",
+    "fi"
+   ],
+   "file": "pack-el-fi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-fi.sqlite3",
+   "bytes": 36577280,
+   "sha256": "3250222c0f9b4b0598f31972fffec04a14376d4843fe30f6815cda01ceb3c971",
+   "lemmas": 137273,
+   "translations": 145818,
+   "examples": 3702,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "el-fr",
+   "langs": [
+    "el",
+    "fr"
+   ],
+   "file": "pack-el-fr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-fr.sqlite3",
+   "bytes": 44466176,
+   "sha256": "84c6e958f01032343bbbbcc59a7b031c24b1b6fafc93ecae2be45d7b39c2ded5",
+   "lemmas": 98799,
+   "translations": 101655,
+   "examples": 11908,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C"
+   ]
+  },
+  {
+   "pair": "el-hi",
+   "langs": [
+    "el",
+    "hi"
+   ],
+   "file": "pack-el-hi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-hi.sqlite3",
+   "bytes": 5332992,
+   "sha256": "feb6edc4013ead0b9dfce71b49fa53ca82ca682c03ed6c74b67d080cb64e9153",
+   "lemmas": 22190,
+   "translations": 16893,
+   "examples": 716,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "el-id",
+   "langs": [
+    "el",
+    "id"
+   ],
+   "file": "pack-el-id.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-id.sqlite3",
+   "bytes": 33361920,
+   "sha256": "97afebc0525dd92f93069d2775d94d7c24e22bb954abc9b72359f522e916cd90",
+   "lemmas": 46506,
+   "translations": 70664,
+   "examples": 1545,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "el-it",
+   "langs": [
+    "el",
+    "it"
+   ],
+   "file": "pack-el-it.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-it.sqlite3",
+   "bytes": 43876352,
+   "sha256": "16521c4cd214a2c94329f873445e03d023d8fef53af7fcd663e341abab0772cd",
+   "lemmas": 91531,
+   "translations": 91692,
+   "examples": 11687,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "el-ja",
+   "langs": [
+    "el",
+    "ja"
+   ],
+   "file": "pack-el-ja.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-ja.sqlite3",
+   "bytes": 38051840,
+   "sha256": "43b36db9be6276ed6b93d61ad64cd0d9deef6372778d17fe2e972b29c6d903fd",
+   "lemmas": 92817,
+   "translations": 124112,
+   "examples": 5542,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "el-ko",
+   "langs": [
+    "el",
+    "ko"
+   ],
+   "file": "pack-el-ko.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-ko.sqlite3",
+   "bytes": 10964992,
+   "sha256": "6177af69b3f8a1c891f90e1e7e443181610bdd1476a0826d9f50f1ee17a7c069",
+   "lemmas": 54118,
+   "translations": 48092,
+   "examples": 697,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "el-lt",
+   "langs": [
+    "el",
+    "lt"
+   ],
+   "file": "pack-el-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-lt.sqlite3",
+   "bytes": 7589888,
+   "sha256": "e06b1b38384433771c9caba27aab42b902ad03cd433ee6c287c68bf7bff56b78",
+   "lemmas": 39691,
+   "translations": 27916,
+   "examples": 837,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "el-nl",
+   "langs": [
+    "el",
+    "nl"
+   ],
+   "file": "pack-el-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-nl.sqlite3",
+   "bytes": 18472960,
+   "sha256": "bce71ee52a0c3e38c3b5ce864501f675ee2875e766b90d9948659aebfa95d1f6",
+   "lemmas": 74621,
+   "translations": 68884,
+   "examples": 10812,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "el-no",
+   "langs": [
+    "el",
+    "no"
+   ],
+   "file": "pack-el-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-no.sqlite3",
+   "bytes": 20062208,
+   "sha256": "1e700a066dd2a00570ad956c3378d9a75061a015a93548fd58e92db3cac79743",
+   "lemmas": 59348,
+   "translations": 49400,
+   "examples": 861,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "el-pl",
+   "langs": [
+    "el",
+    "pl"
+   ],
+   "file": "pack-el-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-pl.sqlite3",
+   "bytes": 23015424,
+   "sha256": "a7cda99394796e615f8c3ea927f3f1474d77cc93e0a84b96821670175405b517",
+   "lemmas": 82967,
+   "translations": 70859,
+   "examples": 5055,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "el-pt",
+   "langs": [
+    "el",
+    "pt"
+   ],
+   "file": "pack-el-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-pt.sqlite3",
+   "bytes": 27836416,
+   "sha256": "e350ffc9cf57926190f0a42ba8b055c71de88bedbcd3234bfbaf88c36a337b29",
+   "lemmas": 78305,
+   "translations": 82325,
+   "examples": 13597,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "el-ru",
+   "langs": [
+    "el",
+    "ru"
+   ],
+   "file": "pack-el-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-ru.sqlite3",
+   "bytes": 40173568,
+   "sha256": "ee11442c3351666a8749b3f9f89ebb702db35019258c64b771757a3a3f0e3028",
+   "lemmas": 94025,
+   "translations": 99190,
+   "examples": 5359,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "el-sv",
+   "langs": [
+    "el",
+    "sv"
+   ],
+   "file": "pack-el-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-sv.sqlite3",
+   "bytes": 28094464,
+   "sha256": "68ee8a01d3f27d65583efc7977d2edae76eef881c6ad8cb4a8608f07eac015f0",
+   "lemmas": 75380,
+   "translations": 66045,
+   "examples": 2200,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "el-th",
+   "langs": [
+    "el",
+    "th"
+   ],
+   "file": "pack-el-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-th.sqlite3",
+   "bytes": 15163392,
+   "sha256": "fb7fe871487b80591e3f72eab9b06ca182f055b0425033702b454120458e17f9",
+   "lemmas": 42173,
+   "translations": 37589,
+   "examples": 687,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "el-tr",
+   "langs": [
+    "el",
+    "tr"
+   ],
+   "file": "pack-el-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-tr.sqlite3",
+   "bytes": 13885440,
+   "sha256": "4d6588207426d86ba9e0858d76f9bde6edb15ea7bc384cf161aa8f5e9859011f",
+   "lemmas": 53643,
+   "translations": 49446,
+   "examples": 15209,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "el-uk",
+   "langs": [
+    "el",
+    "uk"
+   ],
+   "file": "pack-el-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-uk.sqlite3",
+   "bytes": 14327808,
+   "sha256": "508a7797f970a5ab3cd2d0e221e20a69ba1df6d481cfe50d89fa82d8b5ab1401",
+   "lemmas": 48434,
+   "translations": 41117,
+   "examples": 6956,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "el-vi",
+   "langs": [
+    "el",
+    "vi"
+   ],
+   "file": "pack-el-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-vi.sqlite3",
+   "bytes": 4272128,
+   "sha256": "37e652628f98fe291e54a67dd24858d802f1007e414888072c297b28803b0586",
+   "lemmas": 19734,
+   "translations": 15490,
+   "examples": 1000,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "el-zh",
+   "langs": [
+    "el",
+    "zh"
+   ],
+   "file": "pack-el-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-el-zh.sqlite3",
+   "bytes": 20668416,
+   "sha256": "a73a10f882b6668f69ebf6bbc08f9e58294db062fc778c050f4008f1a0e25a87",
+   "lemmas": 84834,
+   "translations": 92037,
+   "examples": 3175,
+   "licenses": [
+    "Apache-2.0",
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "en-es",
+   "langs": [
+    "en",
+    "es"
+   ],
+   "file": "pack-en-es.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-es.sqlite3",
+   "bytes": 139829248,
+   "sha256": "8c71339395f56bf72ae2372783ddabecf0ab1ff2b4d7849004e2e3502da9da34",
+   "lemmas": 493162,
+   "translations": 478162,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-fi",
+   "langs": [
+    "en",
+    "fi"
+   ],
+   "file": "pack-en-fi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-fi.sqlite3",
+   "bytes": 134377472,
+   "sha256": "2e395ed0e225d102d1291cd827b449966660acb691beb2d9850f0151d1e76969",
+   "lemmas": 490473,
+   "translations": 566174,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-fr",
+   "langs": [
+    "en",
+    "fr"
+   ],
+   "file": "pack-en-fr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-fr.sqlite3",
+   "bytes": 157683712,
+   "sha256": "73afd00acf1e6d23704c44dd3e3f15e6634cefab84250d370e7bd5aedbfff95a",
+   "lemmas": 689043,
+   "translations": 636692,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-hi",
+   "langs": [
+    "en",
+    "hi"
+   ],
+   "file": "pack-en-hi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-hi.sqlite3",
+   "bytes": 40353792,
+   "sha256": "a4b6fa9241b079dc6f9a612683b805398a48bdf191f1d1aba41576539120b697",
+   "lemmas": 186226,
+   "translations": 225503,
+   "examples": 9945,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-id",
+   "langs": [
+    "en",
+    "id"
+   ],
+   "file": "pack-en-id.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-id.sqlite3",
+   "bytes": 73461760,
+   "sha256": "4e376a9112ed87d2d94ce822441b2febce2ab8f83a4ab7c31ba2553be5193a7d",
+   "lemmas": 121676,
+   "translations": 237297,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-it",
+   "langs": [
+    "en",
+    "it"
+   ],
+   "file": "pack-en-it.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-it.sqlite3",
+   "bytes": 131358720,
+   "sha256": "d136328867820ad110192c63b1a931ab12fdfbdb6780fac5a6941831eb28444a",
+   "lemmas": 443970,
+   "translations": 432474,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-ja",
+   "langs": [
+    "en",
+    "ja"
+   ],
+   "file": "pack-en-ja.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-ja.sqlite3",
+   "bytes": 167190528,
+   "sha256": "993ee1fe4fa751fb714659293b4f0ddc20f85292be03ddcb33b820b025896799",
+   "lemmas": 596690,
+   "translations": 867650,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "en-ko",
+   "langs": [
+    "en",
+    "ko"
+   ],
+   "file": "pack-en-ko.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-ko.sqlite3",
+   "bytes": 37830656,
+   "sha256": "38bcab7ca6c912aca572b549d076e19f2435c45d6d9b8bef21ed7c1a4f4677a2",
+   "lemmas": 204700,
+   "translations": 230657,
+   "examples": 8619,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-lt",
+   "langs": [
+    "en",
+    "lt"
+   ],
+   "file": "pack-en-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-lt.sqlite3",
+   "bytes": 13529088,
+   "sha256": "34b532d0051f1dd1db36bb631fd20744cc1460de31de73578e4ac51116b48b6d",
+   "lemmas": 85151,
+   "translations": 60821,
+   "examples": 7697,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-nl",
+   "langs": [
+    "en",
+    "nl"
+   ],
+   "file": "pack-en-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-nl.sqlite3",
+   "bytes": 67993600,
+   "sha256": "a1d4525a818bfe06829915b3c959e96c44ae9b0d9cca0558fab25925c82591a6",
+   "lemmas": 402282,
+   "translations": 364138,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-no",
+   "langs": [
+    "en",
+    "no"
+   ],
+   "file": "pack-en-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-no.sqlite3",
+   "bytes": 47087616,
+   "sha256": "a1291fc51a2a974c26fca8c2fdddc72c3765f13409421697072333dabf270728",
+   "lemmas": 186566,
+   "translations": 149105,
+   "examples": 12096,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "en-pl",
+   "langs": [
+    "en",
+    "pl"
+   ],
+   "file": "pack-en-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-pl.sqlite3",
+   "bytes": 85118976,
+   "sha256": "9a669eb966af470038bf5679de815ae265e4a3fce01a3c19e6f2817a1021325f",
+   "lemmas": 407335,
+   "translations": 343561,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "en-pt",
+   "langs": [
+    "en",
+    "pt"
+   ],
+   "file": "pack-en-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-pt.sqlite3",
+   "bytes": 84307968,
+   "sha256": "ac49a8672dad09973bc2c6824753cef23ca894b3342005bf3717745d0198f8bc",
+   "lemmas": 420909,
+   "translations": 388197,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-ru",
+   "langs": [
+    "en",
+    "ru"
+   ],
+   "file": "pack-en-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-ru.sqlite3",
+   "bytes": 286584832,
+   "sha256": "2d83feac48596c51786b1e08f7a9976efb22e092dbddeaefc07936b63c0cb200",
+   "lemmas": 1083651,
+   "translations": 1012175,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-sv",
+   "langs": [
+    "en",
+    "sv"
+   ],
+   "file": "pack-en-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-sv.sqlite3",
+   "bytes": 72822784,
+   "sha256": "37aa769e785e854fd1694bf4935e85a544756ec75ca75926345e42f5f62260e2",
+   "lemmas": 285144,
+   "translations": 230327,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-th",
+   "langs": [
+    "en",
+    "th"
+   ],
+   "file": "pack-en-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-th.sqlite3",
+   "bytes": 81604608,
+   "sha256": "3778699a722c3c1d584739e69be07b9788cc091cbbb579af710d3307b2aed80f",
+   "lemmas": 248032,
+   "translations": 322702,
+   "examples": 4576,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "en-tr",
+   "langs": [
+    "en",
+    "tr"
+   ],
+   "file": "pack-en-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-tr.sqlite3",
+   "bytes": 42987520,
+   "sha256": "b796504aa62eb9c2edfad958b34e4c83422b483cff396058dd2f511ce84bc916",
+   "lemmas": 229025,
+   "translations": 235181,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-uk",
+   "langs": [
+    "en",
+    "uk"
+   ],
+   "file": "pack-en-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-uk.sqlite3",
+   "bytes": 28913664,
+   "sha256": "ec92625dfb3b108da08da409629cf3f5276c4f11da96fd9a7c66ae7811b1a69d",
+   "lemmas": 98064,
+   "translations": 97137,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-vi",
+   "langs": [
+    "en",
+    "vi"
+   ],
+   "file": "pack-en-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-vi.sqlite3",
+   "bytes": 23293952,
+   "sha256": "184a86684d258292cd83d17c5d0d830bef29682cb4e028c153f053868516fd7e",
+   "lemmas": 110291,
+   "translations": 138830,
+   "examples": 18214,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0"
+   ]
+  },
+  {
+   "pair": "en-zh",
+   "langs": [
+    "en",
+    "zh"
+   ],
+   "file": "pack-en-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-en-zh.sqlite3",
+   "bytes": 319660032,
+   "sha256": "62667655b618d7bd8a16dc21d0a59e0cb1b368071c989a5051acc3e472a6b7d0",
+   "lemmas": 1894712,
+   "translations": 1688684,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "WordNet-3.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "es-fi",
+   "langs": [
+    "es",
+    "fi"
+   ],
+   "file": "pack-es-fi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-fi.sqlite3",
+   "bytes": 72093696,
+   "sha256": "09fff2f27492df9d794b6a2f3b0b7e7f7585933911d9aa900bc32c525d5a10eb",
+   "lemmas": 216541,
+   "translations": 241675,
+   "examples": 9320,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "es-fr",
+   "langs": [
+    "es",
+    "fr"
+   ],
+   "file": "pack-es-fr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-fr.sqlite3",
+   "bytes": 106803200,
+   "sha256": "64e6c28babd73ad0180d46e254d7da2da9b0286a002259635ea5af11b48df3d3",
+   "lemmas": 354029,
+   "translations": 333124,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C"
+   ]
+  },
+  {
+   "pair": "es-hi",
+   "langs": [
+    "es",
+    "hi"
+   ],
+   "file": "pack-es-hi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-hi.sqlite3",
+   "bytes": 14917632,
+   "sha256": "d7974f20b63aade21273f836e28c1aef58ca232a6afb57da6329f4b4686efa96",
+   "lemmas": 64471,
+   "translations": 59242,
+   "examples": 4799,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "es-id",
+   "langs": [
+    "es",
+    "id"
+   ],
+   "file": "pack-es-id.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-id.sqlite3",
+   "bytes": 56229888,
+   "sha256": "c01a52e4ab29f0edd0710a1f7a789f88cd3f111d88b3691fa30a78e0f9de7be1",
+   "lemmas": 73662,
+   "translations": 120938,
+   "examples": 9009,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "es-it",
+   "langs": [
+    "es",
+    "it"
+   ],
+   "file": "pack-es-it.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-it.sqlite3",
+   "bytes": 110780416,
+   "sha256": "af72628d71ab037eaa78d1598a13b9e1c4d8eb7a891b011f46167e0c70a64229",
+   "lemmas": 289310,
+   "translations": 303697,
+   "examples": 16927,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "es-ja",
+   "langs": [
+    "es",
+    "ja"
+   ],
+   "file": "pack-es-ja.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-ja.sqlite3",
+   "bytes": 88420352,
+   "sha256": "9f03d3fc7de51e9f6ebbdde646df0ec7f4f7f9b732419fdacb37172d434bbc18",
+   "lemmas": 262736,
+   "translations": 323583,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "es-ko",
+   "langs": [
+    "es",
+    "ko"
+   ],
+   "file": "pack-es-ko.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-ko.sqlite3",
+   "bytes": 23121920,
+   "sha256": "b0580698fb7b1424618b9eef3d0ffa986d06920dc0017fda1c4454b6eb835af3",
+   "lemmas": 89354,
+   "translations": 88615,
+   "examples": 4026,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "es-lt",
+   "langs": [
+    "es",
+    "lt"
+   ],
+   "file": "pack-es-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-lt.sqlite3",
+   "bytes": 12304384,
+   "sha256": "9ae489b9541e5f7e325fbc496cf35036efcc3cf6ca9d45cf3a58ab3e4953b415",
+   "lemmas": 61990,
+   "translations": 45826,
+   "examples": 5380,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "es-nl",
+   "langs": [
+    "es",
+    "nl"
+   ],
+   "file": "pack-es-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-nl.sqlite3",
+   "bytes": 43659264,
+   "sha256": "2960b3c3a69c9d60553656ec46cd0622b360a1cbd465dd7d701092ab7049149a",
+   "lemmas": 183909,
+   "translations": 173186,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "es-no",
+   "langs": [
+    "es",
+    "no"
+   ],
+   "file": "pack-es-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-no.sqlite3",
+   "bytes": 36929536,
+   "sha256": "4942e9b9da3a1b02be03dcec2020bc3695f9ef794e511e9c700193468d309bc2",
+   "lemmas": 102213,
+   "translations": 85734,
+   "examples": 5740,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "es-pl",
+   "langs": [
+    "es",
+    "pl"
+   ],
+   "file": "pack-es-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-pl.sqlite3",
+   "bytes": 46276608,
+   "sha256": "0598a0a185f0b66c551e94a71e02b39f819202cde28ac857d764eb6834971392",
+   "lemmas": 210253,
+   "translations": 183987,
+   "examples": 10354,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "es-pt",
+   "langs": [
+    "es",
+    "pt"
+   ],
+   "file": "pack-es-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-pt.sqlite3",
+   "bytes": 67706880,
+   "sha256": "725cc1a124def65f59e910a8c958001382e160a314605efb11f63cd6ffa4200e",
+   "lemmas": 252831,
+   "translations": 233799,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "es-ru",
+   "langs": [
+    "es",
+    "ru"
+   ],
+   "file": "pack-es-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-ru.sqlite3",
+   "bytes": 85209088,
+   "sha256": "a7c038404e4722f757379bb9a9055c57c15e13f8cb9f721dbd138ece93edd0e3",
+   "lemmas": 189879,
+   "translations": 222606,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "es-sv",
+   "langs": [
+    "es",
+    "sv"
+   ],
+   "file": "pack-es-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-sv.sqlite3",
+   "bytes": 58732544,
+   "sha256": "a0cece563cbbae038faa56f1d3f9439b64ae4e867e8b8af82ebb6031a97b5fce",
+   "lemmas": 159459,
+   "translations": 146564,
+   "examples": 13760,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "es-th",
+   "langs": [
+    "es",
+    "th"
+   ],
+   "file": "pack-es-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-th.sqlite3",
+   "bytes": 36560896,
+   "sha256": "41d66a7d48272f8f90c0054d6c2c0a50fd91259ae268051e557a6adcada87b60",
+   "lemmas": 82849,
+   "translations": 82321,
+   "examples": 2713,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "es-tr",
+   "langs": [
+    "es",
+    "tr"
+   ],
+   "file": "pack-es-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-tr.sqlite3",
+   "bytes": 28610560,
+   "sha256": "83b74f27e5dff55c2e02b2bf92b7d69a97fe4f75fb825ba99091f6c6a2601d92",
+   "lemmas": 97063,
+   "translations": 101664,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "es-uk",
+   "langs": [
+    "es",
+    "uk"
+   ],
+   "file": "pack-es-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-uk.sqlite3",
+   "bytes": 30318592,
+   "sha256": "760270f58b045dc4d9a9638725a064d8764965d5627c8ecbc1bc9efec74d6f76",
+   "lemmas": 77769,
+   "translations": 78389,
+   "examples": 18942,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "es-vi",
+   "langs": [
+    "es",
+    "vi"
+   ],
+   "file": "pack-es-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-vi.sqlite3",
+   "bytes": 8273920,
+   "sha256": "c8af5e462f5f730a761692104ca4c5831b69405c270f2e145221e91166c922b3",
+   "lemmas": 31374,
+   "translations": 25089,
+   "examples": 6240,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "es-zh",
+   "langs": [
+    "es",
+    "zh"
+   ],
+   "file": "pack-es-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-es-zh.sqlite3",
+   "bytes": 55865344,
+   "sha256": "0f34a276be324765f8f126198b2d7b9bdeb346adb3dfd4d2320411203482c44f",
+   "lemmas": 213978,
+   "translations": 235070,
+   "examples": 10077,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "fi-fr",
+   "langs": [
+    "fi",
+    "fr"
+   ],
+   "file": "pack-fi-fr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-fr.sqlite3",
+   "bytes": 72822784,
+   "sha256": "6cd8bb2b82a4c487dfcbbe68774eda401f9f8027bf9526cf5840f2fe81f3632b",
+   "lemmas": 272215,
+   "translations": 313213,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C"
+   ]
+  },
+  {
+   "pair": "fi-hi",
+   "langs": [
+    "fi",
+    "hi"
+   ],
+   "file": "pack-fi-hi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-hi.sqlite3",
+   "bytes": 5791744,
+   "sha256": "cd0b9c944923b466d74b1b81425e7cdad79f8e900532171c687a3b38d5bfbd87",
+   "lemmas": 27421,
+   "translations": 21371,
+   "examples": 1870,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fi-id",
+   "langs": [
+    "fi",
+    "id"
+   ],
+   "file": "pack-fi-id.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-id.sqlite3",
+   "bytes": 51040256,
+   "sha256": "243ad0e7cc0936ecbd186ed3e84a9ae0a2da018e86338dfe3d8bbd3e930be00b",
+   "lemmas": 109166,
+   "translations": 203979,
+   "examples": 3878,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "fi-it",
+   "langs": [
+    "fi",
+    "it"
+   ],
+   "file": "pack-fi-it.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-it.sqlite3",
+   "bytes": 70418432,
+   "sha256": "25595ad522a788dd56e675edc731a59606da1a3aa8c14841669b512a94258d4b",
+   "lemmas": 196259,
+   "translations": 219508,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fi-ja",
+   "langs": [
+    "fi",
+    "ja"
+   ],
+   "file": "pack-fi-ja.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-ja.sqlite3",
+   "bytes": 75268096,
+   "sha256": "55e0d46799d5427aef74187499e9cf95a48c1323395fcaa6bff0a18dd14a2b87",
+   "lemmas": 223754,
+   "translations": 358837,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "fi-ko",
+   "langs": [
+    "fi",
+    "ko"
+   ],
+   "file": "pack-fi-ko.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-ko.sqlite3",
+   "bytes": 14471168,
+   "sha256": "5ae137853308bbf527a8db8d1caa37672c321de4c7fc888dde48bcae3fcca151",
+   "lemmas": 88286,
+   "translations": 84869,
+   "examples": 1918,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fi-lt",
+   "langs": [
+    "fi",
+    "lt"
+   ],
+   "file": "pack-fi-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-lt.sqlite3",
+   "bytes": 9646080,
+   "sha256": "5dd5c48aff54ff20d2da1af9a1cadf69af849d583c34c343b5be3079b3e6ea8f",
+   "lemmas": 66791,
+   "translations": 46401,
+   "examples": 2072,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fi-nl",
+   "langs": [
+    "fi",
+    "nl"
+   ],
+   "file": "pack-fi-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-nl.sqlite3",
+   "bytes": 28753920,
+   "sha256": "90c86b7bd76cb39bd87b4bf8872763525e188fc8a0b5c79cc1a5b994dafe2754",
+   "lemmas": 157272,
+   "translations": 143928,
+   "examples": 17527,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fi-no",
+   "langs": [
+    "fi",
+    "no"
+   ],
+   "file": "pack-fi-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-no.sqlite3",
+   "bytes": 25182208,
+   "sha256": "d9792c38f09e972fd0ede75622c6723b6db7ecf4da4429f6f2b40cf04f2c6a16",
+   "lemmas": 110523,
+   "translations": 87603,
+   "examples": 2006,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "fi-pl",
+   "langs": [
+    "fi",
+    "pl"
+   ],
+   "file": "pack-fi-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-pl.sqlite3",
+   "bytes": 38559744,
+   "sha256": "5bf9190ec5720d966cf7ed862be6717a24d67ba4193bbb694d83f9315998606d",
+   "lemmas": 201561,
+   "translations": 178953,
+   "examples": 11830,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "fi-pt",
+   "langs": [
+    "fi",
+    "pt"
+   ],
+   "file": "pack-fi-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-pt.sqlite3",
+   "bytes": 43302912,
+   "sha256": "fb630f47c4021ff31e903a98fc8970fdc3a82969642edacb8fb81ae47cc0939f",
+   "lemmas": 179566,
+   "translations": 196261,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fi-ru",
+   "langs": [
+    "fi",
+    "ru"
+   ],
+   "file": "pack-fi-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-ru.sqlite3",
+   "bytes": 78786560,
+   "sha256": "79c46f70f85cefb61683f5bc3cf08573653c8a4a3afe6cf1e3b4b157a82c0a57",
+   "lemmas": 230470,
+   "translations": 255525,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fi-sv",
+   "langs": [
+    "fi",
+    "sv"
+   ],
+   "file": "pack-fi-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-sv.sqlite3",
+   "bytes": 46669824,
+   "sha256": "d95e5e00f5c4f7fba8edd92ad0e208ea4a78d314ab7486dc0645eef6822c878e",
+   "lemmas": 180924,
+   "translations": 152432,
+   "examples": 10825,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fi-th",
+   "langs": [
+    "fi",
+    "th"
+   ],
+   "file": "pack-fi-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-th.sqlite3",
+   "bytes": 41701376,
+   "sha256": "6b85a17592014ada70dee760ff7694b6f009fc5b6074d87e830452f7e4e13ec2",
+   "lemmas": 185752,
+   "translations": 178980,
+   "examples": 1420,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "fi-tr",
+   "langs": [
+    "fi",
+    "tr"
+   ],
+   "file": "pack-fi-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-tr.sqlite3",
+   "bytes": 19070976,
+   "sha256": "750e78b4bb434d08ef69952428b1309dd4422e677abb02977f0e5ca7d180260b",
+   "lemmas": 93330,
+   "translations": 93393,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fi-uk",
+   "langs": [
+    "fi",
+    "uk"
+   ],
+   "file": "pack-fi-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-uk.sqlite3",
+   "bytes": 18694144,
+   "sha256": "4dd71040cae4924b9b74915dc4ae7bb5efb42d04b76b48113b2c5cf1f1c36668",
+   "lemmas": 69093,
+   "translations": 63295,
+   "examples": 19133,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fi-vi",
+   "langs": [
+    "fi",
+    "vi"
+   ],
+   "file": "pack-fi-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-vi.sqlite3",
+   "bytes": 4960256,
+   "sha256": "38b06417d69581f68e29021e929c17d77c9088c5bfdb3291c40381279d3b051a",
+   "lemmas": 30000,
+   "translations": 23642,
+   "examples": 2672,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fi-zh",
+   "langs": [
+    "fi",
+    "zh"
+   ],
+   "file": "pack-fi-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fi-zh.sqlite3",
+   "bytes": 46608384,
+   "sha256": "9ed08850d4056ba998f865a8ce9987c75e76f8b402df15a00d0f0874c9903bf1",
+   "lemmas": 238732,
+   "translations": 293899,
+   "examples": 10234,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "fr-hi",
+   "langs": [
+    "fr",
+    "hi"
+   ],
+   "file": "pack-fr-hi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-hi.sqlite3",
+   "bytes": 13697024,
+   "sha256": "2da9309c0679e41a7c656a9dbb3ce78a67f8e44ea0c5d878c7dfb8ecaa40c002",
+   "lemmas": 65917,
+   "translations": 60113,
+   "examples": 5202,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fr-id",
+   "langs": [
+    "fr",
+    "id"
+   ],
+   "file": "pack-fr-id.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-id.sqlite3",
+   "bytes": 57913344,
+   "sha256": "e53ed8f04832e43e4d1c633151ddc696e5ea240c6164fec82cbc282bbeeb29a4",
+   "lemmas": 90390,
+   "translations": 163824,
+   "examples": 10750,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "fr-it",
+   "langs": [
+    "fr",
+    "it"
+   ],
+   "file": "pack-fr-it.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-it.sqlite3",
+   "bytes": 107560960,
+   "sha256": "361acf329b41ceb83e4e26695b062b80e3a42bb09e537844e8325434eecac047",
+   "lemmas": 335501,
+   "translations": 331945,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C"
+   ]
+  },
+  {
+   "pair": "fr-ja",
+   "langs": [
+    "fr",
+    "ja"
+   ],
+   "file": "pack-fr-ja.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-ja.sqlite3",
+   "bytes": 86732800,
+   "sha256": "7083ee0f55e517953dc142fd701cd73a4265a9e299e001ec7f30822c80ad5645",
+   "lemmas": 250133,
+   "translations": 368696,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "fr-ko",
+   "langs": [
+    "fr",
+    "ko"
+   ],
+   "file": "pack-fr-ko.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-ko.sqlite3",
+   "bytes": 20979712,
+   "sha256": "82b9e532670a41015ab09ad9a978abaa8a16b10f46c4e27824ba5e3c33bbd085",
+   "lemmas": 102234,
+   "translations": 103272,
+   "examples": 5200,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C"
+   ]
+  },
+  {
+   "pair": "fr-lt",
+   "langs": [
+    "fr",
+    "lt"
+   ],
+   "file": "pack-fr-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-lt.sqlite3",
+   "bytes": 10690560,
+   "sha256": "60266b6498f6dea9464f8dff66064eba8157b3152f00539a05110a9fda3c60c2",
+   "lemmas": 67831,
+   "translations": 49189,
+   "examples": 4871,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fr-nl",
+   "langs": [
+    "fr",
+    "nl"
+   ],
+   "file": "pack-fr-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-nl.sqlite3",
+   "bytes": 48099328,
+   "sha256": "db7b500b261027ab049d51a3d38ccbba9fb073ece3f4caafb5fe4485e24b2ac1",
+   "lemmas": 253513,
+   "translations": 227681,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fr-no",
+   "langs": [
+    "fr",
+    "no"
+   ],
+   "file": "pack-fr-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-no.sqlite3",
+   "bytes": 36716544,
+   "sha256": "1c7dc91e17312af7255c4dc8a5b2d216c96340c421bf114e7d13b4a90917b5d7",
+   "lemmas": 123554,
+   "translations": 101558,
+   "examples": 6160,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "fr-pl",
+   "langs": [
+    "fr",
+    "pl"
+   ],
+   "file": "pack-fr-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-pl.sqlite3",
+   "bytes": 50884608,
+   "sha256": "bf3284f402c9b08fc0ab1f4661492c1bba9de94a36aadf0309e792af37e306d0",
+   "lemmas": 272682,
+   "translations": 230917,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "fr-pt",
+   "langs": [
+    "fr",
+    "pt"
+   ],
+   "file": "pack-fr-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-pt.sqlite3",
+   "bytes": 62656512,
+   "sha256": "fd8a3f28eae5631ff2fe1082a59ea8d6de4da4263cde4a7a1a1e6e04f967b33b",
+   "lemmas": 272738,
+   "translations": 258203,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C"
+   ]
+  },
+  {
+   "pair": "fr-ru",
+   "langs": [
+    "fr",
+    "ru"
+   ],
+   "file": "pack-fr-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-ru.sqlite3",
+   "bytes": 93626368,
+   "sha256": "740ef5014cfd407011f132943f46d706604eeb55561d1a7d82fa491198836677",
+   "lemmas": 233792,
+   "translations": 278028,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C"
+   ]
+  },
+  {
+   "pair": "fr-sv",
+   "langs": [
+    "fr",
+    "sv"
+   ],
+   "file": "pack-fr-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-sv.sqlite3",
+   "bytes": 61009920,
+   "sha256": "1eceb9e64ec750b9bf99aef6f78a1e7d803f5240085e8d556a396cae63718c61",
+   "lemmas": 196375,
+   "translations": 173848,
+   "examples": 17090,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C"
+   ]
+  },
+  {
+   "pair": "fr-th",
+   "langs": [
+    "fr",
+    "th"
+   ],
+   "file": "pack-fr-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-th.sqlite3",
+   "bytes": 38522880,
+   "sha256": "9b267a94ace755dc7220a18c40e49cb15b7d349e5176e05fd8eb63f7e463cc62",
+   "lemmas": 114027,
+   "translations": 127183,
+   "examples": 2907,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "fr-tr",
+   "langs": [
+    "fr",
+    "tr"
+   ],
+   "file": "pack-fr-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-tr.sqlite3",
+   "bytes": 36864000,
+   "sha256": "68bee3246ff6e7cef441d15e9910e2c23e1019b47ccfdda2d474664e2f2096d6",
+   "lemmas": 153019,
+   "translations": 174937,
+   "examples": 11574,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C"
+   ]
+  },
+  {
+   "pair": "fr-uk",
+   "langs": [
+    "fr",
+    "uk"
+   ],
+   "file": "pack-fr-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-uk.sqlite3",
+   "bytes": 27635712,
+   "sha256": "957e2200dbe20cb1174a743dd9c3df40f3faeff7d89229a7edc99197091011c5",
+   "lemmas": 83601,
+   "translations": 85345,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "fr-vi",
+   "langs": [
+    "fr",
+    "vi"
+   ],
+   "file": "pack-fr-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-vi.sqlite3",
+   "bytes": 29212672,
+   "sha256": "910c7250ba8b332429b6366588d34beb23c09134f25307e65c8c9252ecb8bf50",
+   "lemmas": 105594,
+   "translations": 112035,
+   "examples": 7962,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C"
+   ]
+  },
+  {
+   "pair": "fr-zh",
+   "langs": [
+    "fr",
+    "zh"
+   ],
+   "file": "pack-fr-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-fr-zh.sqlite3",
+   "bytes": 56725504,
+   "sha256": "d90cc7b7e28d1175e4bc5b33fe506891b931ffb406652d8be10248b9a5b7e08d",
+   "lemmas": 249916,
+   "translations": 288459,
+   "examples": 18074,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "CeCILL-C",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "hi-id",
+   "langs": [
+    "hi",
+    "id"
+   ],
+   "file": "pack-hi-id.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-id.sqlite3",
+   "bytes": 3387392,
+   "sha256": "14249d9cbecba39c40c1361db951e4d8d70fde1fb5e209422b6eb904bd3bb2cf",
+   "lemmas": 15164,
+   "translations": 11409,
+   "examples": 804,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "hi-it",
+   "langs": [
+    "hi",
+    "it"
+   ],
+   "file": "pack-hi-it.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-it.sqlite3",
+   "bytes": 14725120,
+   "sha256": "8059394a4c54308b929b1ea2921a6431cbf9f7ed6d53f223acc083e0e6fee44c",
+   "lemmas": 64836,
+   "translations": 60451,
+   "examples": 4970,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "hi-ja",
+   "langs": [
+    "hi",
+    "ja"
+   ],
+   "file": "pack-hi-ja.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-ja.sqlite3",
+   "bytes": 13713408,
+   "sha256": "fdfbdb8cbd6339fc364934bba724356bf614ef9fb634b43ee1555af178490f07",
+   "lemmas": 62262,
+   "translations": 60123,
+   "examples": 4819,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "hi-ko",
+   "langs": [
+    "hi",
+    "ko"
+   ],
+   "file": "pack-hi-ko.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-ko.sqlite3",
+   "bytes": 4759552,
+   "sha256": "0e45dc1f223dbca70bee32e85f0d300093477f1cdd1f23f7c448765bfcdf1ca3",
+   "lemmas": 24951,
+   "translations": 19441,
+   "examples": 376,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "hi-lt",
+   "langs": [
+    "hi",
+    "lt"
+   ],
+   "file": "pack-hi-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-lt.sqlite3",
+   "bytes": 3702784,
+   "sha256": "83824bf544e0b92cdb24b7e8885c3b6bfa67feec37b85e9407583fb994bc6d6e",
+   "lemmas": 19524,
+   "translations": 13357,
+   "examples": 464,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "hi-nl",
+   "langs": [
+    "hi",
+    "nl"
+   ],
+   "file": "pack-hi-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-nl.sqlite3",
+   "bytes": 6868992,
+   "sha256": "39865c2919b7e8a68e482e214d0682de7b17ac5241fa94f4008a9e78028bad46",
+   "lemmas": 27182,
+   "translations": 21695,
+   "examples": 3189,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "hi-no",
+   "langs": [
+    "hi",
+    "no"
+   ],
+   "file": "pack-hi-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-no.sqlite3",
+   "bytes": 6590464,
+   "sha256": "39c52f2d418463a7836f554db8be1e2fcddea4e8a5fcb1db8798bda3a7512a2d",
+   "lemmas": 23439,
+   "translations": 18023,
+   "examples": 514,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "hi-pl",
+   "langs": [
+    "hi",
+    "pl"
+   ],
+   "file": "pack-hi-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-pl.sqlite3",
+   "bytes": 13770752,
+   "sha256": "cc4e807077a6882458fd2d2d0644a2a70914333f3b303ca5a3bc446833a616b0",
+   "lemmas": 68327,
+   "translations": 63637,
+   "examples": 1867,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "hi-pt",
+   "langs": [
+    "hi",
+    "pt"
+   ],
+   "file": "pack-hi-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-pt.sqlite3",
+   "bytes": 16936960,
+   "sha256": "5ff08713a5fa1283e083d0d46d50631f9e59ba608ddef39601aa22f6b55e64c6",
+   "lemmas": 63513,
+   "translations": 57244,
+   "examples": 4044,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "hi-ru",
+   "langs": [
+    "hi",
+    "ru"
+   ],
+   "file": "pack-hi-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-ru.sqlite3",
+   "bytes": 15302656,
+   "sha256": "4a2816376ad3cedfcd98f9e940703a0f67f749f5c540daade28f77103df63ac0",
+   "lemmas": 32644,
+   "translations": 29628,
+   "examples": 6786,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "hi-sv",
+   "langs": [
+    "hi",
+    "sv"
+   ],
+   "file": "pack-hi-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-sv.sqlite3",
+   "bytes": 8454144,
+   "sha256": "d3855c516f669444e261596cb79ec7331eb326b45e14a831ed06fe30a93730d9",
+   "lemmas": 26718,
+   "translations": 20846,
+   "examples": 1144,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "hi-th",
+   "langs": [
+    "hi",
+    "th"
+   ],
+   "file": "pack-hi-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-th.sqlite3",
+   "bytes": 3657728,
+   "sha256": "c8e9f42b72b40ea4b0e91984ba6038fc0201642216558f196ea1fec624de1cd9",
+   "lemmas": 17833,
+   "translations": 14629,
+   "examples": 336,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "hi-tr",
+   "langs": [
+    "hi",
+    "tr"
+   ],
+   "file": "pack-hi-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-tr.sqlite3",
+   "bytes": 6635520,
+   "sha256": "973a3ea491f17e87a905ac71f7e4df6a99213b7bc126222f031d5278fee0e00c",
+   "lemmas": 24274,
+   "translations": 19144,
+   "examples": 7763,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "hi-uk",
+   "langs": [
+    "hi",
+    "uk"
+   ],
+   "file": "pack-hi-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-uk.sqlite3",
+   "bytes": 5922816,
+   "sha256": "65c797dd69479c61b6d2e558a58b9183f00a843b52ccbcb34a72c3ea6f937a1d",
+   "lemmas": 23568,
+   "translations": 18146,
+   "examples": 3393,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "hi-vi",
+   "langs": [
+    "hi",
+    "vi"
+   ],
+   "file": "pack-hi-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-vi.sqlite3",
+   "bytes": 3026944,
+   "sha256": "de6d16798d1dbf57b7f7b17fbe6cc85a4938d5ee9a22858726cdf4c82ad7f814",
+   "lemmas": 14585,
+   "translations": 11324,
+   "examples": 472,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "hi-zh",
+   "langs": [
+    "hi",
+    "zh"
+   ],
+   "file": "pack-hi-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-hi-zh.sqlite3",
+   "bytes": 14315520,
+   "sha256": "80b1478d79b9197881c5b0710ceb13c71f395eb2c9870a8b6f636f149252eb78",
+   "lemmas": 75567,
+   "translations": 74289,
+   "examples": 2228,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "id-it",
+   "langs": [
+    "id",
+    "it"
+   ],
+   "file": "pack-id-it.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-it.sqlite3",
+   "bytes": 63217664,
+   "sha256": "7ad8a2068257c82b7b268d800dd3e999baa2da28a06c12fe5aa89e41d05928f6",
+   "lemmas": 73559,
+   "translations": 143349,
+   "examples": 9372,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "id-ja",
+   "langs": [
+    "id",
+    "ja"
+   ],
+   "file": "pack-id-ja.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-ja.sqlite3",
+   "bytes": 73928704,
+   "sha256": "9d167bd22733471d8b27843577071ce439ec97eaffbd6c04c7ffec9e0c0423e1",
+   "lemmas": 115144,
+   "translations": 342015,
+   "examples": 5317,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "id-ko",
+   "langs": [
+    "id",
+    "ko"
+   ],
+   "file": "pack-id-ko.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-ko.sqlite3",
+   "bytes": 9949184,
+   "sha256": "2dc5dbf734e69f3b014220778cbf6209ce2074d22419c5c5ea668a9deeaae46b",
+   "lemmas": 49902,
+   "translations": 41556,
+   "examples": 700,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "id-lt",
+   "langs": [
+    "id",
+    "lt"
+   ],
+   "file": "pack-id-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-lt.sqlite3",
+   "bytes": 3633152,
+   "sha256": "c91a25d8aa28577a7887a50f0ee35a0182be986ca29290c2910411cdb2d51008",
+   "lemmas": 22743,
+   "translations": 16175,
+   "examples": 880,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "id-nl",
+   "langs": [
+    "id",
+    "nl"
+   ],
+   "file": "pack-id-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-nl.sqlite3",
+   "bytes": 10084352,
+   "sha256": "aaa21b23eec75e1ceb58068eb39eade81afbe0ad7ac4ff6c3919f642ca210c73",
+   "lemmas": 44446,
+   "translations": 41584,
+   "examples": 5891,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "id-no",
+   "langs": [
+    "id",
+    "no"
+   ],
+   "file": "pack-id-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-no.sqlite3",
+   "bytes": 24129536,
+   "sha256": "c98ad15c047dd29a8757ec44879fbfa0602e458fa17be2151464574b4dd720b4",
+   "lemmas": 39825,
+   "translations": 42505,
+   "examples": 1324,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "id-pl",
+   "langs": [
+    "id",
+    "pl"
+   ],
+   "file": "pack-id-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-pl.sqlite3",
+   "bytes": 21737472,
+   "sha256": "a3db6f8837c757a87f18d7d12eea3b3848cbed07886cfe05ae5b676c3a13c307",
+   "lemmas": 57262,
+   "translations": 69693,
+   "examples": 3786,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "id-pt",
+   "langs": [
+    "id",
+    "pt"
+   ],
+   "file": "pack-id-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-pt.sqlite3",
+   "bytes": 25513984,
+   "sha256": "3d61ff8bc68563dad90518e4d4b8a1bdb1147af5572f3c45140e398963110f37",
+   "lemmas": 71599,
+   "translations": 104135,
+   "examples": 7575,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "id-ru",
+   "langs": [
+    "id",
+    "ru"
+   ],
+   "file": "pack-id-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-ru.sqlite3",
+   "bytes": 28590080,
+   "sha256": "0e85fb7221e3b857cfd5e4f02b8c34f353679c47704c52a3ce45b0d03f4c4ea1",
+   "lemmas": 51174,
+   "translations": 47358,
+   "examples": 13432,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "id-sv",
+   "langs": [
+    "id",
+    "sv"
+   ],
+   "file": "pack-id-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-sv.sqlite3",
+   "bytes": 31744000,
+   "sha256": "8d842dbac7d443bd8012273251e59c07c10e766bbdb883d7dcc95489f2d7b698",
+   "lemmas": 48806,
+   "translations": 51992,
+   "examples": 1927,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "id-th",
+   "langs": [
+    "id",
+    "th"
+   ],
+   "file": "pack-id-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-th.sqlite3",
+   "bytes": 40103936,
+   "sha256": "43c22b22804dc7b5c1cb0b4b016e103c2cd5040c1704fbd9eb900065c225e257",
+   "lemmas": 77975,
+   "translations": 125691,
+   "examples": 654,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "id-tr",
+   "langs": [
+    "id",
+    "tr"
+   ],
+   "file": "pack-id-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-tr.sqlite3",
+   "bytes": 11288576,
+   "sha256": "93d2de75112cb9e4b866379690330ee94f8b73c518cd15287c5c5bb436b52316",
+   "lemmas": 43824,
+   "translations": 38634,
+   "examples": 13940,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "id-uk",
+   "langs": [
+    "id",
+    "uk"
+   ],
+   "file": "pack-id-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-uk.sqlite3",
+   "bytes": 10948608,
+   "sha256": "f663cd30d2081249b85a0f203b9a7003902aec2b1dcb4138a7906ad00c1ab99d",
+   "lemmas": 37205,
+   "translations": 29171,
+   "examples": 6067,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "id-vi",
+   "langs": [
+    "id",
+    "vi"
+   ],
+   "file": "pack-id-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-vi.sqlite3",
+   "bytes": 4251648,
+   "sha256": "7273c503cb53a97a3d8131ea74eaf3e1ff901becb6b34e6d91c83ded7d1e3e74",
+   "lemmas": 17495,
+   "translations": 14165,
+   "examples": 1041,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT"
+   ]
+  },
+  {
+   "pair": "id-zh",
+   "langs": [
+    "id",
+    "zh"
+   ],
+   "file": "pack-id-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-id-zh.sqlite3",
+   "bytes": 37888000,
+   "sha256": "c65f87adc2e81c25134f0062bacd57aade80d408dd6cd9d7b4e60406e6880500",
+   "lemmas": 85266,
+   "translations": 167529,
+   "examples": 4054,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "MIT",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "it-ja",
+   "langs": [
+    "it",
+    "ja"
+   ],
+   "file": "pack-it-ja.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-it-ja.sqlite3",
+   "bytes": 94081024,
+   "sha256": "5bdab5ac99795b965b31f6598000b14cc9f95439db9c894ddd88554ce26e7a01",
+   "lemmas": 270876,
+   "translations": 378106,
+   "examples": 5712,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "it-ko",
+   "langs": [
+    "it",
+    "ko"
+   ],
+   "file": "pack-it-ko.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-it-ko.sqlite3",
+   "bytes": 20152320,
+   "sha256": "d5a58d5793d3980495aef02e70f8650525c1a1da70eba1339bf620821d5e092b",
+   "lemmas": 93918,
+   "translations": 94980,
+   "examples": 3727,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "it-lt",
+   "langs": [
+    "it",
+    "lt"
+   ],
+   "file": "pack-it-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-it-lt.sqlite3",
+   "bytes": 12152832,
+   "sha256": "5fe3a2aab95ff77fb21cfee173e4d8746695c984e2544487670cab0f8624bfaf",
+   "lemmas": 67373,
+   "translations": 53884,
+   "examples": 4340,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "it-nl",
+   "langs": [
+    "it",
+    "nl"
+   ],
+   "file": "pack-it-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-it-nl.sqlite3",
+   "bytes": 40751104,
+   "sha256": "fc14391a42e39fa1fa96a096ee4dbab36e29640c8a9d290748babaa1d938d133",
+   "lemmas": 212254,
+   "translations": 182038,
+   "examples": 13074,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "it-no",
+   "langs": [
+    "it",
+    "no"
+   ],
+   "file": "pack-it-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-it-no.sqlite3",
+   "bytes": 49000448,
+   "sha256": "6711d5dc279125e95e594d4658fef194a13b489c0208ea951129e8f5955e6362",
+   "lemmas": 134073,
+   "translations": 158317,
+   "examples": 6172,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "it-pl",
+   "langs": [
+    "it",
+    "pl"
+   ],
+   "file": "pack-it-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-it-pl.sqlite3",
+   "bytes": 51314688,
+   "sha256": "4a661cc774913c3dc83f102e98b7d901814ce02495f76c3930642eac2ca54481",
+   "lemmas": 244349,
+   "translations": 210411,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "it-pt",
+   "langs": [
+    "it",
+    "pt"
+   ],
+   "file": "pack-it-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-it-pt.sqlite3",
+   "bytes": 55984128,
+   "sha256": "3d966ea22742d87f23261e9bce588a360f916fdbb71fb760ab8c5a0a611eaac6",
+   "lemmas": 227627,
+   "translations": 220599,
+   "examples": 12094,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "it-ru",
+   "langs": [
+    "it",
+    "ru"
+   ],
+   "file": "pack-it-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-it-ru.sqlite3",
+   "bytes": 79663104,
+   "sha256": "7954df63f670c2c0a2a05ed0a686559b7fe43e74fdde1ba3dbd2b8bfc53a25df",
+   "lemmas": 187577,
+   "translations": 221103,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "it-sv",
+   "langs": [
+    "it",
+    "sv"
+   ],
+   "file": "pack-it-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-it-sv.sqlite3",
+   "bytes": 58200064,
+   "sha256": "32244f16d321608131e99faa10305572c9ae3c25c79a15eb707eff690cc1c26f",
+   "lemmas": 164301,
+   "translations": 143632,
+   "examples": 14763,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "it-th",
+   "langs": [
+    "it",
+    "th"
+   ],
+   "file": "pack-it-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-it-th.sqlite3",
+   "bytes": 40943616,
+   "sha256": "26dc46f65ed1623deea7945aaf1f4ed2630dc9f60204388d4f5a390ad389e900",
+   "lemmas": 83236,
+   "translations": 91261,
+   "examples": 2615,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "it-tr",
+   "langs": [
+    "it",
+    "tr"
+   ],
+   "file": "pack-it-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-it-tr.sqlite3",
+   "bytes": 25374720,
+   "sha256": "7efa6386700e9324054357322b87eddc3819b2f209cbd0b933e55ce51b078e34",
+   "lemmas": 101490,
+   "translations": 108677,
+   "examples": 16284,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "it-uk",
+   "langs": [
+    "it",
+    "uk"
+   ],
+   "file": "pack-it-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-it-uk.sqlite3",
+   "bytes": 25927680,
+   "sha256": "0921b9fd0200ce0c1fb8db830170d28d539c70c0764be17ca41c8fed2fad664e",
+   "lemmas": 80401,
+   "translations": 79284,
+   "examples": 11602,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "it-vi",
+   "langs": [
+    "it",
+    "vi"
+   ],
+   "file": "pack-it-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-it-vi.sqlite3",
+   "bytes": 13930496,
+   "sha256": "8d88ecd34db065acbaef4f4e034a8b73a91636354573cce5b7301c2f0bc3d906",
+   "lemmas": 51411,
+   "translations": 50994,
+   "examples": 6868,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "it-zh",
+   "langs": [
+    "it",
+    "zh"
+   ],
+   "file": "pack-it-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-it-zh.sqlite3",
+   "bytes": 53063680,
+   "sha256": "4d9dc6171f3892506f2fd1e0acb0f4d7e2217bf44f87ccd594b2b45dfebf1b75",
+   "lemmas": 182043,
+   "translations": 217498,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ja-ko",
+   "langs": [
+    "ja",
+    "ko"
+   ],
+   "file": "pack-ja-ko.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ja-ko.sqlite3",
+   "bytes": 15790080,
+   "sha256": "8101fa4c02151cf7e40593ee4505e86eee61d3a03dbdbaf3cc67cc9dc00e8e66",
+   "lemmas": 88072,
+   "translations": 78249,
+   "examples": 4673,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ja-lt",
+   "langs": [
+    "ja",
+    "lt"
+   ],
+   "file": "pack-ja-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ja-lt.sqlite3",
+   "bytes": 6922240,
+   "sha256": "197c12170529d2af5c7a54318cec9ffe9eed8b22ec6c6bc3b3858b39e9c2ccc5",
+   "lemmas": 43014,
+   "translations": 31335,
+   "examples": 4210,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ja-nl",
+   "langs": [
+    "ja",
+    "nl"
+   ],
+   "file": "pack-ja-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ja-nl.sqlite3",
+   "bytes": 19226624,
+   "sha256": "ce7c6d6064bfb7407ba59b6fb8e1d24967c4d95939d4410edf30a6feb7a64df2",
+   "lemmas": 107001,
+   "translations": 93067,
+   "examples": 5238,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ja-no",
+   "langs": [
+    "ja",
+    "no"
+   ],
+   "file": "pack-ja-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ja-no.sqlite3",
+   "bytes": 31629312,
+   "sha256": "1e376c0b002b778eaad1b217a647974050ab5ab570fb50f8232ee8e502db14de",
+   "lemmas": 93963,
+   "translations": 93911,
+   "examples": 5638,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ja-pl",
+   "langs": [
+    "ja",
+    "pl"
+   ],
+   "file": "pack-ja-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ja-pl.sqlite3",
+   "bytes": 48332800,
+   "sha256": "70d30a77851152c9d5275b30b47f179bc69eec000d69762cdab047356809c657",
+   "lemmas": 180672,
+   "translations": 201276,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ja-pt",
+   "langs": [
+    "ja",
+    "pt"
+   ],
+   "file": "pack-ja-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ja-pt.sqlite3",
+   "bytes": 45285376,
+   "sha256": "001e73f200edb4ad57caea12407fc21c2c7f2acff54c2a03d1cde0cd7ecc68d2",
+   "lemmas": 176082,
+   "translations": 201589,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ja-ru",
+   "langs": [
+    "ja",
+    "ru"
+   ],
+   "file": "pack-ja-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ja-ru.sqlite3",
+   "bytes": 83963904,
+   "sha256": "9a40b0efcd34f345b33d09da107f7c7b8614ac003052c107d4629592185177c3",
+   "lemmas": 244399,
+   "translations": 346372,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ja-sv",
+   "langs": [
+    "ja",
+    "sv"
+   ],
+   "file": "pack-ja-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ja-sv.sqlite3",
+   "bytes": 42590208,
+   "sha256": "289689d2226541151fad471f58024e95b5237a43d9e62d5a45b3196a2fb6d249",
+   "lemmas": 120523,
+   "translations": 112840,
+   "examples": 9583,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ja-th",
+   "langs": [
+    "ja",
+    "th"
+   ],
+   "file": "pack-ja-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ja-th.sqlite3",
+   "bytes": 50405376,
+   "sha256": "5802913a655834f80d108ccd335c88f54dbbb6f97e23107a3c884cf045b2789e",
+   "lemmas": 141080,
+   "translations": 196770,
+   "examples": 4121,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ja-tr",
+   "langs": [
+    "ja",
+    "tr"
+   ],
+   "file": "pack-ja-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ja-tr.sqlite3",
+   "bytes": 15822848,
+   "sha256": "964c7ca56486b292565e4c393dfa2e356b3a50f82b72cc7bbbd7868ebe1c6a5a",
+   "lemmas": 64219,
+   "translations": 61617,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ja-uk",
+   "langs": [
+    "ja",
+    "uk"
+   ],
+   "file": "pack-ja-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ja-uk.sqlite3",
+   "bytes": 13836288,
+   "sha256": "9fbe5055a927db0b435c6355afbbed6eeb25e001c7df4848000a788e252880d3",
+   "lemmas": 50844,
+   "translations": 45374,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ja-vi",
+   "langs": [
+    "ja",
+    "vi"
+   ],
+   "file": "pack-ja-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ja-vi.sqlite3",
+   "bytes": 8167424,
+   "sha256": "f403b614df304aab8ef15dbb097309d5a58efd7c8b0c59e95e978bbcb5ee53de",
+   "lemmas": 37843,
+   "translations": 32681,
+   "examples": 5476,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ja-zh",
+   "langs": [
+    "ja",
+    "zh"
+   ],
+   "file": "pack-ja-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ja-zh.sqlite3",
+   "bytes": 65515520,
+   "sha256": "0cfc372576e99d301ac59dec2165639162957fe63e2a580507ec3a31da919b99",
+   "lemmas": 263218,
+   "translations": 373470,
+   "examples": 13282,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ko-lt",
+   "langs": [
+    "ko",
+    "lt"
+   ],
+   "file": "pack-ko-lt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ko-lt.sqlite3",
+   "bytes": 5791744,
+   "sha256": "da7b4f5b7669bab8735d2ccf2a21ef4eb5b360a2eee358ee1289dd1c90938927",
+   "lemmas": 39055,
+   "translations": 30147,
+   "examples": 335,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ko-nl",
+   "langs": [
+    "ko",
+    "nl"
+   ],
+   "file": "pack-ko-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ko-nl.sqlite3",
+   "bytes": 15372288,
+   "sha256": "b0f9c8ae7f0cdcab3d54eaede564858952a50089546e8112590bd8f92bd06c37",
+   "lemmas": 82727,
+   "translations": 82478,
+   "examples": 2707,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ko-no",
+   "langs": [
+    "ko",
+    "no"
+   ],
+   "file": "pack-ko-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ko-no.sqlite3",
+   "bytes": 13959168,
+   "sha256": "73cc46da225cd1b9a881bc4ab2fdd02fd874b853234a2367a150dd815d896a96",
+   "lemmas": 60995,
+   "translations": 51383,
+   "examples": 451,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ko-pl",
+   "langs": [
+    "ko",
+    "pl"
+   ],
+   "file": "pack-ko-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ko-pl.sqlite3",
+   "bytes": 11431936,
+   "sha256": "c314a53e45252a12f2478e0947b2c7d0bd0987d4150a0f8bfa350b6cbe6b2770",
+   "lemmas": 70052,
+   "translations": 58297,
+   "examples": 1743,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ko-pt",
+   "langs": [
+    "ko",
+    "pt"
+   ],
+   "file": "pack-ko-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ko-pt.sqlite3",
+   "bytes": 20148224,
+   "sha256": "d4db400fffd775bd239f2b33e264f8f9da957ff4d2b175e03a92abee7b088e8c",
+   "lemmas": 75915,
+   "translations": 73499,
+   "examples": 3372,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ko-ru",
+   "langs": [
+    "ko",
+    "ru"
+   ],
+   "file": "pack-ko-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ko-ru.sqlite3",
+   "bytes": 50577408,
+   "sha256": "80c9e468ad2fbd8f75532be8d724226ae2fee5afc84787e12813371d73301ec4",
+   "lemmas": 137734,
+   "translations": 153690,
+   "examples": 5324,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ko-sv",
+   "langs": [
+    "ko",
+    "sv"
+   ],
+   "file": "pack-ko-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ko-sv.sqlite3",
+   "bytes": 19406848,
+   "sha256": "fdb1851be85e2f62363745ad03628192e13740be3c1b2094b64c7bcb8be85ffd",
+   "lemmas": 77456,
+   "translations": 68230,
+   "examples": 927,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ko-th",
+   "langs": [
+    "ko",
+    "th"
+   ],
+   "file": "pack-ko-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ko-th.sqlite3",
+   "bytes": 5033984,
+   "sha256": "e782e46628a4b8008cc234a18c9c8e84ea82baced21ef9055775bb9862c5a50b",
+   "lemmas": 29824,
+   "translations": 28932,
+   "examples": 335,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ko-tr",
+   "langs": [
+    "ko",
+    "tr"
+   ],
+   "file": "pack-ko-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ko-tr.sqlite3",
+   "bytes": 14725120,
+   "sha256": "9ee019241dff26ead94d4bd95e47950f581d4a83536a957879e381ce87e18f09",
+   "lemmas": 80863,
+   "translations": 87026,
+   "examples": 5932,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ko-uk",
+   "langs": [
+    "ko",
+    "uk"
+   ],
+   "file": "pack-ko-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ko-uk.sqlite3",
+   "bytes": 18374656,
+   "sha256": "3ae42ee133e473e817c97b8b5e2d6be9fde9994b033a7c94cb402913820539d6",
+   "lemmas": 72670,
+   "translations": 71869,
+   "examples": 2895,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ko-vi",
+   "langs": [
+    "ko",
+    "vi"
+   ],
+   "file": "pack-ko-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ko-vi.sqlite3",
+   "bytes": 3964928,
+   "sha256": "e68f98df96a074af3ee08e0aeaae0f0c3396eff774e47393064f0ad518362913",
+   "lemmas": 25928,
+   "translations": 21259,
+   "examples": 541,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ko-zh",
+   "langs": [
+    "ko",
+    "zh"
+   ],
+   "file": "pack-ko-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ko-zh.sqlite3",
+   "bytes": 17805312,
+   "sha256": "3d0fb85287c8d7c90219f1a2d5b32867d2c3708eb65a44fa7b35a601e23c872f",
+   "lemmas": 112505,
+   "translations": 112262,
+   "examples": 3684,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "lt-nl",
+   "langs": [
+    "lt",
+    "nl"
+   ],
+   "file": "pack-lt-nl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-lt-nl.sqlite3",
+   "bytes": 11317248,
+   "sha256": "ee0596a18128e848ebbf3492a6b9c7090a15ddf9aef900454ebbda9c2a928b13",
+   "lemmas": 66801,
+   "translations": 47939,
+   "examples": 2940,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "lt-no",
+   "langs": [
+    "lt",
+    "no"
+   ],
+   "file": "pack-lt-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-lt-no.sqlite3",
+   "bytes": 8945664,
+   "sha256": "8c4ec39376aac54cec65a6f5ede2b14fc23a3b5120c3494f39597a98c4c86746",
+   "lemmas": 45591,
+   "translations": 30788,
+   "examples": 578,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "lt-pl",
+   "langs": [
+    "lt",
+    "pl"
+   ],
+   "file": "pack-lt-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-lt-pl.sqlite3",
+   "bytes": 10510336,
+   "sha256": "9820e4ef96d4a5db81dae88b47cedd74cc6da42da94e78331bf2469eaf71c841",
+   "lemmas": 68307,
+   "translations": 45380,
+   "examples": 3489,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "lt-pt",
+   "langs": [
+    "lt",
+    "pt"
+   ],
+   "file": "pack-lt-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-lt-pt.sqlite3",
+   "bytes": 13996032,
+   "sha256": "1f866b991dc1549c969254564e6bc53b56fabbe6211d2a31996a11c6a8ff4c93",
+   "lemmas": 59528,
+   "translations": 43454,
+   "examples": 3879,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "lt-ru",
+   "langs": [
+    "lt",
+    "ru"
+   ],
+   "file": "pack-lt-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-lt-ru.sqlite3",
+   "bytes": 34476032,
+   "sha256": "523a0f3f2876824f43c747389ff8cbfa973fa7a04b2170ac9702bbce1c962dcb",
+   "lemmas": 81259,
+   "translations": 69090,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "lt-sv",
+   "langs": [
+    "lt",
+    "sv"
+   ],
+   "file": "pack-lt-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-lt-sv.sqlite3",
+   "bytes": 14577664,
+   "sha256": "7e6d7e4e8ba4b727126ff592afa196d8d59f0e556e8bb4b52d263e0eff768b4b",
+   "lemmas": 65458,
+   "translations": 45235,
+   "examples": 996,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "lt-th",
+   "langs": [
+    "lt",
+    "th"
+   ],
+   "file": "pack-lt-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-lt-th.sqlite3",
+   "bytes": 2080768,
+   "sha256": "407e7d2c4aa9ba6dce2e472ac6fd8b4a22ca0eed4880c4f82e73f2151c9d94c1",
+   "lemmas": 13925,
+   "translations": 10302,
+   "examples": 317,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "lt-tr",
+   "langs": [
+    "lt",
+    "tr"
+   ],
+   "file": "pack-lt-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-lt-tr.sqlite3",
+   "bytes": 7573504,
+   "sha256": "82e8918b53f26d1fba5190add3b1d3a174cd60ebbf3d7da1ebaff5a84a75b4c7",
+   "lemmas": 44313,
+   "translations": 33523,
+   "examples": 7533,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "lt-uk",
+   "langs": [
+    "lt",
+    "uk"
+   ],
+   "file": "pack-lt-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-lt-uk.sqlite3",
+   "bytes": 7901184,
+   "sha256": "a74885924c756ecd878c96117165099655428fa273521ea1fd404252c628f31a",
+   "lemmas": 39991,
+   "translations": 29083,
+   "examples": 3345,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "lt-vi",
+   "langs": [
+    "lt",
+    "vi"
+   ],
+   "file": "pack-lt-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-lt-vi.sqlite3",
+   "bytes": 2658304,
+   "sha256": "507b797b8265433561ed09f88c0aa10e5031dfe1adfa9f74d2051206b2541996",
+   "lemmas": 19178,
+   "translations": 12941,
+   "examples": 443,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "lt-zh",
+   "langs": [
+    "lt",
+    "zh"
+   ],
+   "file": "pack-lt-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-lt-zh.sqlite3",
+   "bytes": 7811072,
+   "sha256": "47d93bd7ba44830f50ba7d127fd1eaee594f2ddf39bd36cc6316709c178f1085",
+   "lemmas": 53466,
+   "translations": 42652,
+   "examples": 2065,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "nl-no",
+   "langs": [
+    "nl",
+    "no"
+   ],
+   "file": "pack-nl-no.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-nl-no.sqlite3",
+   "bytes": 24915968,
+   "sha256": "5cade0bd7afd781983be41b64adef16964a1f1d282a043e459ddd7c95786c9c7",
+   "lemmas": 116000,
+   "translations": 89079,
+   "examples": 3740,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "nl-pl",
+   "langs": [
+    "nl",
+    "pl"
+   ],
+   "file": "pack-nl-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-nl-pl.sqlite3",
+   "bytes": 33144832,
+   "sha256": "07af4fc7de9decf2bbcf1e98fa78e0afd285bcc556dbdda614449f37175ad62c",
+   "lemmas": 195108,
+   "translations": 139853,
+   "examples": 19581,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "nl-pt",
+   "langs": [
+    "nl",
+    "pt"
+   ],
+   "file": "pack-nl-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-nl-pt.sqlite3",
+   "bytes": 45338624,
+   "sha256": "4452173a8a11bdf79ec962d48388528956551053d094e54bb1a301f469199f24",
+   "lemmas": 205376,
+   "translations": 185955,
+   "examples": 16059,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "nl-ru",
+   "langs": [
+    "nl",
+    "ru"
+   ],
+   "file": "pack-nl-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-nl-ru.sqlite3",
+   "bytes": 62337024,
+   "sha256": "c76a5c2010c8a18ea358dda059628a1ab7ae04b7bc54796d1ffbed8b359b5b86",
+   "lemmas": 184840,
+   "translations": 201499,
+   "examples": 13657,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "nl-sv",
+   "langs": [
+    "nl",
+    "sv"
+   ],
+   "file": "pack-nl-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-nl-sv.sqlite3",
+   "bytes": 40239104,
+   "sha256": "9ee176a6c61d467ac3a95a5fe9ea7d13da803835e0765fdb90fbd5c0c01edf5c",
+   "lemmas": 172493,
+   "translations": 143700,
+   "examples": 9246,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "nl-th",
+   "langs": [
+    "nl",
+    "th"
+   ],
+   "file": "pack-nl-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-nl-th.sqlite3",
+   "bytes": 5885952,
+   "sha256": "83bb0164af589e816dcc5b1513da89149d8b8451ce2a92feff1a628a2fab2563",
+   "lemmas": 26071,
+   "translations": 26159,
+   "examples": 2086,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "nl-tr",
+   "langs": [
+    "nl",
+    "tr"
+   ],
+   "file": "pack-nl-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-nl-tr.sqlite3",
+   "bytes": 18182144,
+   "sha256": "09e560fa7d05f1bd3445bc834e5a651cdc137e47e3021a8a6cd8c096aab0ee08",
+   "lemmas": 94918,
+   "translations": 96567,
+   "examples": 7857,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "nl-uk",
+   "langs": [
+    "nl",
+    "uk"
+   ],
+   "file": "pack-nl-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-nl-uk.sqlite3",
+   "bytes": 18796544,
+   "sha256": "44529f2ef17b5a168e6e472d4678891038902d7f406212ef6ccacb6899e95569",
+   "lemmas": 68351,
+   "translations": 66877,
+   "examples": 13383,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "nl-vi",
+   "langs": [
+    "nl",
+    "vi"
+   ],
+   "file": "pack-nl-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-nl-vi.sqlite3",
+   "bytes": 6512640,
+   "sha256": "0adacc419556c5943b0acf3da8284a93b5f9bbeed436df464e973ff21f6b4499",
+   "lemmas": 32570,
+   "translations": 25251,
+   "examples": 4227,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "nl-zh",
+   "langs": [
+    "nl",
+    "zh"
+   ],
+   "file": "pack-nl-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-nl-zh.sqlite3",
+   "bytes": 21860352,
+   "sha256": "c6fbc42c1d8e7cbfc80d5dbf1ce9fc281a3417351264107537a1a14c5d08a41a",
+   "lemmas": 123234,
+   "translations": 124573,
+   "examples": 8251,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "no-pl",
+   "langs": [
+    "no",
+    "pl"
+   ],
+   "file": "pack-no-pl.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-no-pl.sqlite3",
+   "bytes": 22523904,
+   "sha256": "829358f937d5c06f4db9003aa22164ab3807437209a355afaec7a6f4834ddf2f",
+   "lemmas": 104607,
+   "translations": 74291,
+   "examples": 2547,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "no-pt",
+   "langs": [
+    "no",
+    "pt"
+   ],
+   "file": "pack-no-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-no-pt.sqlite3",
+   "bytes": 29736960,
+   "sha256": "b88713768b612f428cedc0b6ccce343b6b7438413321128788194e07fb18ee28",
+   "lemmas": 97732,
+   "translations": 82192,
+   "examples": 4908,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "no-ru",
+   "langs": [
+    "no",
+    "ru"
+   ],
+   "file": "pack-no-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-no-ru.sqlite3",
+   "bytes": 49553408,
+   "sha256": "7ad89cc0bfec889b9a8f5cd0bd0e1f542172b266ba1695b48705a525ef9d6f51",
+   "lemmas": 110210,
+   "translations": 109420,
+   "examples": 8660,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "no-sv",
+   "langs": [
+    "no",
+    "sv"
+   ],
+   "file": "pack-no-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-no-sv.sqlite3",
+   "bytes": 41992192,
+   "sha256": "9c5103acf7e42af2970f912363c06f988f72edd69b88158a5a22dcd15804934b",
+   "lemmas": 126413,
+   "translations": 96354,
+   "examples": 1692,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "no-th",
+   "langs": [
+    "no",
+    "th"
+   ],
+   "file": "pack-no-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-no-th.sqlite3",
+   "bytes": 8654848,
+   "sha256": "8d5f2286fd6bf3771f37169d45614f2d0f748fa13ea012e6394c63ff249d9c3d",
+   "lemmas": 25686,
+   "translations": 22982,
+   "examples": 431,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "no-tr",
+   "langs": [
+    "no",
+    "tr"
+   ],
+   "file": "pack-no-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-no-tr.sqlite3",
+   "bytes": 17285120,
+   "sha256": "d1171b4251a4c269b34107bf3303de1c7e374d90b0de1661b9b6c3feb83f60ea",
+   "lemmas": 68451,
+   "translations": 59508,
+   "examples": 8900,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "no-uk",
+   "langs": [
+    "no",
+    "uk"
+   ],
+   "file": "pack-no-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-no-uk.sqlite3",
+   "bytes": 15319040,
+   "sha256": "9d11239f44abedb053b79992191c2351d9335149c59cad680bf6cdc257e87f7d",
+   "lemmas": 51647,
+   "translations": 42949,
+   "examples": 4268,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "no-vi",
+   "langs": [
+    "no",
+    "vi"
+   ],
+   "file": "pack-no-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-no-vi.sqlite3",
+   "bytes": 9736192,
+   "sha256": "b401a6eacab4e5f7dc924483f89a43e6cde42971c5f1487843300fa8e85e1d4d",
+   "lemmas": 37388,
+   "translations": 36393,
+   "examples": 657,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "no-zh",
+   "langs": [
+    "no",
+    "zh"
+   ],
+   "file": "pack-no-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-no-zh.sqlite3",
+   "bytes": 22081536,
+   "sha256": "d5aff80a764972378d8e38afed4d5e6e36d57b9cc240242b4e45888e9e6ad73f",
+   "lemmas": 101268,
+   "translations": 93572,
+   "examples": 2699,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "pl-pt",
+   "langs": [
+    "pl",
+    "pt"
+   ],
+   "file": "pack-pl-pt.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pl-pt.sqlite3",
+   "bytes": 44400640,
+   "sha256": "167082c79ede65e2cb4b71576824affa47b038bfab1bea0ebd8cb7f4e5b9962e",
+   "lemmas": 205097,
+   "translations": 179203,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "pl-ru",
+   "langs": [
+    "pl",
+    "ru"
+   ],
+   "file": "pack-pl-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pl-ru.sqlite3",
+   "bytes": 61702144,
+   "sha256": "5f9445a64f29e9d5daeccdd4b0af6b3384be5bf717c3e04a73fa3e11dfc307aa",
+   "lemmas": 182348,
+   "translations": 182420,
+   "examples": 8444,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "pl-sv",
+   "langs": [
+    "pl",
+    "sv"
+   ],
+   "file": "pack-pl-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pl-sv.sqlite3",
+   "bytes": 37462016,
+   "sha256": "a464bc757d3f800c92790e34a3e418f840395ceb5b7492a970972a0ce4647211",
+   "lemmas": 154295,
+   "translations": 113590,
+   "examples": 7371,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "pl-th",
+   "langs": [
+    "pl",
+    "th"
+   ],
+   "file": "pack-pl-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pl-th.sqlite3",
+   "bytes": 17571840,
+   "sha256": "f317d5e94ac2dbea79aa3fe6f968139a109e52448398ae1bc6845946e4fe7c5d",
+   "lemmas": 81890,
+   "translations": 70516,
+   "examples": 1393,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "pl-tr",
+   "langs": [
+    "pl",
+    "tr"
+   ],
+   "file": "pack-pl-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pl-tr.sqlite3",
+   "bytes": 16367616,
+   "sha256": "7b4c3afed7aeac3420981f699270ddf119ce5cca1f3381052eae696cdff5a218",
+   "lemmas": 80969,
+   "translations": 68056,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "pl-uk",
+   "langs": [
+    "pl",
+    "uk"
+   ],
+   "file": "pack-pl-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pl-uk.sqlite3",
+   "bytes": 17948672,
+   "sha256": "8a9f0bc267de3b4429f02922da4e03b7f240c5cfa9a2edf58430426cac1d3f65",
+   "lemmas": 70650,
+   "translations": 56530,
+   "examples": 9357,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "pl-vi",
+   "langs": [
+    "pl",
+    "vi"
+   ],
+   "file": "pack-pl-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pl-vi.sqlite3",
+   "bytes": 4849664,
+   "sha256": "fdfa4b1316b7076be6f4e6ba45f8940d18d2c6e23c57ba1e274388113ba5fd9a",
+   "lemmas": 29581,
+   "translations": 21334,
+   "examples": 2603,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "pl-zh",
+   "langs": [
+    "pl",
+    "zh"
+   ],
+   "file": "pack-pl-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pl-zh.sqlite3",
+   "bytes": 32702464,
+   "sha256": "2cb80ccf82794db971ef745f66356a200ea01183a3188bfc61e380fc4119b1f3",
+   "lemmas": 182078,
+   "translations": 181359,
+   "examples": 11238,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "pt-ru",
+   "langs": [
+    "pt",
+    "ru"
+   ],
+   "file": "pack-pt-ru.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pt-ru.sqlite3",
+   "bytes": 64229376,
+   "sha256": "1dc7836769aeaf1a7ff9b6cad53ffd15f9a0bbb366d2bc307bbf68a63ca28479",
+   "lemmas": 148182,
+   "translations": 166086,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "pt-sv",
+   "langs": [
+    "pt",
+    "sv"
+   ],
+   "file": "pack-pt-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pt-sv.sqlite3",
+   "bytes": 43737088,
+   "sha256": "d7aa34ce1d698ec7d7f6da62da071a4d1104fe665e52b8c2b989b3280d333842",
+   "lemmas": 139802,
+   "translations": 125106,
+   "examples": 12055,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "pt-th",
+   "langs": [
+    "pt",
+    "th"
+   ],
+   "file": "pack-pt-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pt-th.sqlite3",
+   "bytes": 14667776,
+   "sha256": "64df1c868273916b88167e4e3f9b92056aa6479a93197858b1f9d2ccb14ae360",
+   "lemmas": 44496,
+   "translations": 48162,
+   "examples": 2630,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "pt-tr",
+   "langs": [
+    "pt",
+    "tr"
+   ],
+   "file": "pack-pt-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pt-tr.sqlite3",
+   "bytes": 25944064,
+   "sha256": "43c7ac2234f31dd3e9d932d156851a914a1ed7f39d75d3c913ffc50b06c943c0",
+   "lemmas": 86329,
+   "translations": 86953,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "pt-uk",
+   "langs": [
+    "pt",
+    "uk"
+   ],
+   "file": "pack-pt-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pt-uk.sqlite3",
+   "bytes": 26243072,
+   "sha256": "0ead7bc49f201cb42ca1bb78316b8987beeff8db63e9a7d7914a526dec34654e",
+   "lemmas": 65872,
+   "translations": 63472,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "pt-vi",
+   "langs": [
+    "pt",
+    "vi"
+   ],
+   "file": "pack-pt-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pt-vi.sqlite3",
+   "bytes": 9220096,
+   "sha256": "54999eecc8fe8711bb2c3ff1335d43cc090849f2c990a574aafb182b4c6277b0",
+   "lemmas": 30273,
+   "translations": 23673,
+   "examples": 5335,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "pt-zh",
+   "langs": [
+    "pt",
+    "zh"
+   ],
+   "file": "pack-pt-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-pt-zh.sqlite3",
+   "bytes": 39907328,
+   "sha256": "d95bf7a32c3c76efc2dd8333c2c0c21e3f4ab94c4cf17149400d90f67f5702c3",
+   "lemmas": 169264,
+   "translations": 197593,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ru-sv",
+   "langs": [
+    "ru",
+    "sv"
+   ],
+   "file": "pack-ru-sv.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ru-sv.sqlite3",
+   "bytes": 68538368,
+   "sha256": "64c73532c70a0d98dba48b8c477f9edd4c51d35ef531e20510ed6660fc9df6cd",
+   "lemmas": 151525,
+   "translations": 161856,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ru-th",
+   "langs": [
+    "ru",
+    "th"
+   ],
+   "file": "pack-ru-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ru-th.sqlite3",
+   "bytes": 14139392,
+   "sha256": "58febcfad5a023bf81157683ddd11191c2d3e50bf27855f8ce509711e034f1e8",
+   "lemmas": 31120,
+   "translations": 32472,
+   "examples": 3499,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "ru-tr",
+   "langs": [
+    "ru",
+    "tr"
+   ],
+   "file": "pack-ru-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ru-tr.sqlite3",
+   "bytes": 49819648,
+   "sha256": "e517dae455b61e25f247bfeb243f4d3953876f72239d9accc13dcbed0f3fb6f1",
+   "lemmas": 120943,
+   "translations": 145096,
+   "examples": 17325,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ru-uk",
+   "langs": [
+    "ru",
+    "uk"
+   ],
+   "file": "pack-ru-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ru-uk.sqlite3",
+   "bytes": 63422464,
+   "sha256": "0bc0cee0353b4a06801d5b8f4f53c9ff96bc00c9f3dab2045519c3234f5779c5",
+   "lemmas": 117750,
+   "translations": 113612,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ru-vi",
+   "langs": [
+    "ru",
+    "vi"
+   ],
+   "file": "pack-ru-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ru-vi.sqlite3",
+   "bytes": 34652160,
+   "sha256": "351c578dc966949510e40297f9b52b8b6359cd9c5ccc99cd581ae3135ea4fe96",
+   "lemmas": 81100,
+   "translations": 114210,
+   "examples": 10045,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "ru-zh",
+   "langs": [
+    "ru",
+    "zh"
+   ],
+   "file": "pack-ru-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-ru-zh.sqlite3",
+   "bytes": 143208448,
+   "sha256": "b47926ea52010e549120b13c93a09378788e575676a8525fda99a4026c2edfcb",
+   "lemmas": 541188,
+   "translations": 806574,
+   "examples": 9451,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "sv-th",
+   "langs": [
+    "sv",
+    "th"
+   ],
+   "file": "pack-sv-th.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-sv-th.sqlite3",
+   "bytes": 11849728,
+   "sha256": "c1c7e2df3b326b075f80b5c881323ae0c2a4d16675d049615f937708384d603a",
+   "lemmas": 31662,
+   "translations": 27017,
+   "examples": 766,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "sv-tr",
+   "langs": [
+    "sv",
+    "tr"
+   ],
+   "file": "pack-sv-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-sv-tr.sqlite3",
+   "bytes": 24772608,
+   "sha256": "e8bcf9a087eef75e1258b987e6c414e87cdc5e9501a3d6d10a0219a871da99ff",
+   "lemmas": 86656,
+   "translations": 80233,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "sv-uk",
+   "langs": [
+    "sv",
+    "uk"
+   ],
+   "file": "pack-sv-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-sv-uk.sqlite3",
+   "bytes": 21655552,
+   "sha256": "c2deaaff000d0eec089d57d9037ea3f983602c944c1c53c4b3339a8513b20648",
+   "lemmas": 64791,
+   "translations": 56059,
+   "examples": 9691,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "sv-vi",
+   "langs": [
+    "sv",
+    "vi"
+   ],
+   "file": "pack-sv-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-sv-vi.sqlite3",
+   "bytes": 6918144,
+   "sha256": "bd53e5166917f23af9583c3b1bccb9c1b84612ea7642a412d3057104d2b3dcc1",
+   "lemmas": 28650,
+   "translations": 21394,
+   "examples": 1220,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "sv-zh",
+   "langs": [
+    "sv",
+    "zh"
+   ],
+   "file": "pack-sv-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-sv-zh.sqlite3",
+   "bytes": 30711808,
+   "sha256": "2eed503fa3f42d0417cf2b8be0ee84c8fc7f663f99b1bf201aba91ce25123a82",
+   "lemmas": 125157,
+   "translations": 119942,
+   "examples": 4582,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "th-tr",
+   "langs": [
+    "th",
+    "tr"
+   ],
+   "file": "pack-th-tr.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-th-tr.sqlite3",
+   "bytes": 5550080,
+   "sha256": "146e1d677072fecd1134c05bd74643aaf81452d6d028d6bfa365ddeea5d4e229",
+   "lemmas": 27491,
+   "translations": 28518,
+   "examples": 3745,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "th-uk",
+   "langs": [
+    "th",
+    "uk"
+   ],
+   "file": "pack-th-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-th-uk.sqlite3",
+   "bytes": 6545408,
+   "sha256": "2bc034140b60dcec01aaa7efa51975505f671493d1834d01fdbaa3bdc12a50fc",
+   "lemmas": 25271,
+   "translations": 24414,
+   "examples": 2428,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "th-vi",
+   "langs": [
+    "th",
+    "vi"
+   ],
+   "file": "pack-th-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-th-vi.sqlite3",
+   "bytes": 2170880,
+   "sha256": "f2df401e37a90f8b49f754f2f88e4aa61d042f4adef7835623923e4a345c8036",
+   "lemmas": 12846,
+   "translations": 10392,
+   "examples": 484,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "th-zh",
+   "langs": [
+    "th",
+    "zh"
+   ],
+   "file": "pack-th-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-th-zh.sqlite3",
+   "bytes": 19759104,
+   "sha256": "91d9052cc492f4f54304e8ed2e4ac82c227df41b231e483a4222caf9e2839ad8",
+   "lemmas": 100958,
+   "translations": 101952,
+   "examples": 1386,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "tr-uk",
+   "langs": [
+    "tr",
+    "uk"
+   ],
+   "file": "pack-tr-uk.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-tr-uk.sqlite3",
+   "bytes": 19140608,
+   "sha256": "e4d73f79653bf19b731a77a423eed9dd79cc9c5a31fe5ce839f01a23c97c280d",
+   "lemmas": 69181,
+   "translations": 73396,
+   "examples": 8095,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "tr-vi",
+   "langs": [
+    "tr",
+    "vi"
+   ],
+   "file": "pack-tr-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-tr-vi.sqlite3",
+   "bytes": 5431296,
+   "sha256": "e6c49ad8032a2e8c4e95683f49b2e4ab86158bf4c963dff2b9684eabad08b28d",
+   "lemmas": 23861,
+   "translations": 18514,
+   "examples": 10239,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "tr-zh",
+   "langs": [
+    "tr",
+    "zh"
+   ],
+   "file": "pack-tr-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-tr-zh.sqlite3",
+   "bytes": 17084416,
+   "sha256": "5f3f6c05cafba6e479906bbb65762cd14bfefd6abbd5d1801f88019785831728",
+   "lemmas": 87131,
+   "translations": 92162,
+   "examples": 20000,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  },
+  {
+   "pair": "uk-vi",
+   "langs": [
+    "uk",
+    "vi"
+   ],
+   "file": "pack-uk-vi.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-uk-vi.sqlite3",
+   "bytes": 4321280,
+   "sha256": "c697a82a22eb36395927ab4594a803548cd2d9bc21e085f1f4fa821c55205be3",
+   "lemmas": 20977,
+   "translations": 16635,
+   "examples": 4396,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "uk-zh",
+   "langs": [
+    "uk",
+    "zh"
+   ],
+   "file": "pack-uk-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-uk-zh.sqlite3",
+   "bytes": 16326656,
+   "sha256": "bf133d3b62b899230ca32ed3aa49e4c1a33f4e28510b6e2a11261abacab13fb3",
+   "lemmas": 69243,
+   "translations": 69180,
+   "examples": 16536,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0"
+   ]
+  },
+  {
+   "pair": "vi-zh",
+   "langs": [
+    "vi",
+    "zh"
+   ],
+   "file": "pack-vi-zh.sqlite3",
+   "url": "https://github.com/hudaiapa88/lingolate-dict-data/releases/download/packs-v2026.11.2/pack-vi-zh.sqlite3",
+   "bytes": 6606848,
+   "sha256": "008f3ba8f6e4b7fa20cd8a232a07c04e0cf61e67d22c496f319a78f3bf2813df",
+   "lemmas": 42682,
+   "translations": 38419,
+   "examples": 2938,
+   "licenses": [
+    "CC-BY-2.0-FR",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "wordnet"
+   ]
+  }
+ ]
+}
