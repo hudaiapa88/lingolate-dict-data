@@ -55,6 +55,10 @@ MODELS = {  # same files the app downloads (lib/app/services/ai/model_store.dart
         'https://huggingface.co/CohereLabs/tiny-aya-global-GGUF/resolve/main/tiny-aya-global-q4_k_m.gguf',
     'granite-4.2-3b-q4-k-m':
         'https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/resolve/main/granite-4.2-3b-Q4_K_M.gguf',
+    'eurollm-1.7b-q4-k-m':  # Apache-2.0, 35 languages, trained with parallel data
+        'https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF/resolve/main/EuroLLM-1.7B-Instruct.Q4_K_M.gguf',
+    'phi-4-mini-q4-k-m':  # MIT, 23 languages
+        'https://huggingface.co/unsloth/Phi-4-mini-instruct-GGUF/resolve/main/Phi-4-mini-instruct-Q4_K_M.gguf',
     'qwen3.5-4b-q4-k-m':
         'https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/main/Qwen3.5-4B-Q4_K_M.gguf',
 }
