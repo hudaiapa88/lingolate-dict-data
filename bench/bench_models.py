@@ -66,6 +66,8 @@ MODELS = {  # same files the app downloads (lib/app/services/ai/model_store.dart
         'https://huggingface.co/mradermacher/GemmaX2-28-2B-v0.1-GGUF/resolve/main/GemmaX2-28-2B-v0.1.Q4_K_M.gguf',
     'kumru-2b-q4-k-m':  # Turkish-only model (VNGRS)
         'https://huggingface.co/icecubetr/Kumru-2B-GGUF/resolve/main/kumru-2b-Q4_K_M.gguf',
+    'gemma-4-e2b-qat-q2-k-xl':  # Google mobile-mixture QAT (TQ2_0 + Q4_0), 2.19 GB
+        'https://huggingface.co/unsloth/gemma-4-E2B-it-qat-GGUF/resolve/main/gemma-4-E2B-it-qat-UD-Q2_K_XL.gguf',
     'qwen3.5-4b-q4-k-m':
         'https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/main/Qwen3.5-4B-Q4_K_M.gguf',
 }
