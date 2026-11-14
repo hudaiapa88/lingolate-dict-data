@@ -5,7 +5,7 @@ from the published pair packs; references are human translations.
 Per model and language: chrF++ against the reference, the share of answers in
 the wrong language (language confusion) and seconds per answer.
 
-Runs on a Colab CPU VM:
+Runs on a Colab VM (GPU used when present, e.g. L4/T4):
     apt-get install -y cmake && pip install sacrebleu langid requests
     python bench/bench_models.py --out /content/bench.md
 
@@ -44,6 +44,7 @@ MODELS = {  # same files the app downloads (lib/app/services/ai/model_store.dart
         'https://huggingface.co/mradermacher/Qwen3.5-0.8B-GGUF/resolve/main/Qwen3.5-0.8B.Q4_K_M.gguf',
 }
 WORK = Path('/content/bench')
+GPU = subprocess.run('nvidia-smi', shell=True, capture_output=True).returncode == 0
 LLAMA = Path('/content/llama.cpp')
 PORT = 8089
 
@@ -56,7 +57,8 @@ def build_llama() -> Path:
     server = LLAMA / 'build' / 'bin' / 'llama-server'
     if not server.exists():
         sh(f'git clone -q --depth 1 https://github.com/ggml-org/llama.cpp {LLAMA}')
-        sh(f'cmake -S {LLAMA} -B {LLAMA}/build -DLLAMA_CURL=OFF -DGGML_NATIVE=ON > /dev/null')
+        cuda = '-DGGML_CUDA=ON -DCMAKE_CUDA_ARCHITECTURES=native' if GPU else ''
+        sh(f'cmake -S {LLAMA} -B {LLAMA}/build -DLLAMA_CURL=OFF -DGGML_NATIVE=ON {cuda} > /dev/null')
         sh(f'cmake --build {LLAMA}/build --target llama-server -j {os.cpu_count()} > /dev/null')
     return server
 
@@ -112,7 +114,8 @@ def run_model(server: Path, model: str, url: str, data: dict) -> dict:
     if not gguf.exists():
         sh(f'curl -sSL --retry 5 -o {gguf} {url}')
     proc = subprocess.Popen([str(server), '-m', str(gguf), '--port', str(PORT), '-c', '2048',
-                             '-t', str(os.cpu_count()), '--jinja'],
+                             '-t', str(os.cpu_count()), '--jinja',
+                             *(['-ngl', '99'] if GPU else [])],
                             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     try:
         for _ in range(180):
