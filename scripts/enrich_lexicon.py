@@ -228,8 +228,13 @@ def step_wikidata(db: sqlite3.Connection, force: bool) -> None:
             sid = s['id']
             for v in values(s.get('claims', {}), 'P5972'):
                 uf.union(sid, v['id'])
-            for v in values(s.get('claims', {}), 'P5137'):
-                uf.union(sid, v['id'])
+            # P5137 ('item for this sense') names a thing: it joins nouns
+            # meaning that thing. On a verb or adjective it is only an
+            # association ('have' → possession, 'senior' → old age) and
+            # would make 'have' a translation of '性質'.
+            if e.get('lexicalCategory') in ('Q1084', 'Q147276'):
+                for v in values(s.get('claims', {}), 'P5137'):
+                    uf.union(sid, v['id'])
             for v in values(s.get('claims', {}), 'P8814'):
                 key = ili_of_wn31.get(v) or ili_of_wn31.get(v.replace('-s', '-a'))
                 if key:
