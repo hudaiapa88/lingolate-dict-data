@@ -59,6 +59,10 @@ MODELS = {  # same files the app downloads (lib/app/services/ai/model_store.dart
         'https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF/resolve/main/EuroLLM-1.7B-Instruct.Q4_K_M.gguf',
     'phi-4-mini-q4-k-m':  # MIT, 23 languages
         'https://huggingface.co/unsloth/Phi-4-mini-instruct-GGUF/resolve/main/Phi-4-mini-instruct-Q4_K_M.gguf',
+    'gemmax2-28-2b-q4-k-m':  # translation-only Gemma 2 2B (Xiaomi), 28 languages
+        'https://huggingface.co/mradermacher/GemmaX2-28-2B-v0.1-GGUF/resolve/main/GemmaX2-28-2B-v0.1.Q4_K_M.gguf',
+    'kumru-2b-q4-k-m':  # Turkish-only model (VNGRS)
+        'https://huggingface.co/icecubetr/Kumru-2B-GGUF/resolve/main/kumru-2b-Q4_K_M.gguf',
     'qwen3.5-4b-q4-k-m':
         'https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/main/Qwen3.5-4B-Q4_K_M.gguf',
 }
@@ -166,6 +170,31 @@ def run_opus(data: dict) -> dict:
     return out
 
 
+def run_madlad(data: dict) -> dict:
+    """MADLAD-400 3B MT (Google, Apache-2.0): T5 seq2seq, target tag <2xx>."""
+    from transformers import AutoTokenizer, T5ForConditionalGeneration
+    import torch
+    dev = 'cuda' if torch.cuda.is_available() else 'cpu'
+    name = 'google/madlad400-3b-mt'
+    tok = AutoTokenizer.from_pretrained(name)
+    model = T5ForConditionalGeneration.from_pretrained(
+        name, torch_dtype=torch.float16 if dev == 'cuda' else torch.float32).to(dev)
+    out = {}
+    for key, pairs in data.items():
+        lang = key.split('/')[1]
+        t0 = time.time()
+        src = [f'<2{lang}> {e}' for e, _ in pairs]
+        hyps = []
+        for i in range(0, len(src), 16):
+            batch = tok(src[i:i + 16], return_tensors='pt', padding=True).to(dev)
+            gen = model.generate(**batch, num_beams=4, max_new_tokens=256)
+            hyps += tok.batch_decode(gen, skip_special_tokens=True)
+        out[key] = score(pairs, hyps, [(time.time() - t0) / len(src)] * len(src), lang)
+        print('madlad', key, out[key]['chrf'], out[key]['right_lang'], flush=True)
+    del model
+    return out
+
+
 def script_ok(lang: str, text: str) -> bool:
     """Answer is in the target language (script check, then langid)."""
     letters = [c for c in text if c.isalpha()]
@@ -178,6 +207,22 @@ def script_ok(lang: str, text: str) -> bool:
     import langid
     langid.set_languages(['en', 'tr', 'de', 'fr', 'es', 'it', 'nl', 'az'])
     return langid.classify(text)[0] == lang
+
+
+RAW_PROMPT = {
+    'gemmax2-28-2b-q4-k-m': 'Translate this from English to {name}:\nEnglish: {src}\n{name}:',
+}
+
+
+def ask_raw(prompt: str) -> tuple[str, float]:
+    t0 = time.time()
+    try:
+        r = requests.post(f'http://127.0.0.1:{PORT}/completion', timeout=300, json={
+            'prompt': prompt, 'n_predict': 256, 'temperature': 0, 'stop': ['\n']})
+        r.raise_for_status()
+        return r.json().get('content', '').strip(), time.time() - t0
+    except Exception:  # noqa: BLE001
+        return '', 0.0
 
 
 def ask(prompt: str) -> tuple[str, float]:
@@ -221,10 +266,14 @@ def run_model(server: Path, model: str, url: str, data: dict) -> dict:
         for key, pairs in data.items():
             lang = key.split('/')[1]
             from concurrent.futures import ThreadPoolExecutor
-            prompts = [f'Translate into {NAMES[lang]}. Reply with the translation only.\n\n{en}'
-                       for en, _ in pairs]
+            raw = RAW_PROMPT.get(model)
+            if raw:
+                prompts = [raw.format(name=NAMES[lang], src=en) for en, _ in pairs]
+            else:
+                prompts = [f'Translate into {NAMES[lang]}. Reply with the translation only.\n\n{en}'
+                           for en, _ in pairs]
             with ThreadPoolExecutor(PAR) as ex:
-                answers = list(ex.map(ask, prompts))  # keeps input order
+                answers = list(ex.map(ask_raw if raw else ask, prompts))  # keeps input order
             hyps = [h for h, _ in answers]
             secs = [t for _, t in answers]
             out[key] = score(pairs, hyps, secs, lang)
@@ -252,6 +301,7 @@ def main() -> None:
     ap.add_argument('--n', type=int, default=50)
     ap.add_argument('--models', default=','.join(MODELS))
     ap.add_argument('--opus', action='store_true', help='also run the Opus-MT models')
+    ap.add_argument('--madlad', action='store_true', help='also run MADLAD-400 3B MT')
     ap.add_argument('--out', default='/content/bench.md')
     args = ap.parse_args()
     WORK.mkdir(parents=True, exist_ok=True)
@@ -262,6 +312,11 @@ def main() -> None:
     results = {}
     if args.opus:
         results['opus-mt (Marian)'] = run_opus(data)
+    if args.madlad:
+        try:
+            results['madlad400-3b-mt'] = run_madlad(data)
+        except Exception as e:  # noqa: BLE001
+            print('madlad FAILED', e, flush=True)
     server = build_llama() if args.models else None
     for m in filter(None, args.models.split(',')):
         try:
