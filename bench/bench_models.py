@@ -53,6 +53,8 @@ MODELS = {  # same files the app downloads (lib/app/services/ai/model_store.dart
         'https://huggingface.co/bullerwins/translategemma-4b-it-GGUF/resolve/main/translategemma-4b-it-Q4_K_M.gguf',
     'tiny-aya-global-q4-k-m':
         'https://huggingface.co/CohereLabs/tiny-aya-global-GGUF/resolve/main/tiny-aya-global-q4_k_m.gguf',
+    'granite-4.2-3b-q4-k-m':
+        'https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/resolve/main/granite-4.2-3b-Q4_K_M.gguf',
     'qwen3.5-4b-q4-k-m':
         'https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/main/Qwen3.5-4B-Q4_K_M.gguf',
 }
