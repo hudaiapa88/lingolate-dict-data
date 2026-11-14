@@ -97,6 +97,69 @@ def sentences(lang: str, n: int, seed: int = 7) -> list[tuple[str, str]]:
     return pairs[:n]
 
 
+# Held-out test sets (never in OPUS / Tatoeba training data): WMT news and
+# IWSLT talks, fetched by sacrebleu. Tatoeba sentences are in the training
+# data of Opus-MT, so only this set compares Opus-MT fairly.
+HELDOUT = {'tr': 'wmt18', 'de': 'wmt20', 'ja': 'wmt20', 'ru': 'wmt20', 'ar': 'iwslt17'}
+
+
+def sentences_heldout(lang: str, n: int, seed: int = 7) -> list[tuple[str, str]]:
+    """n (English, lang) pairs, 5-30 words, from the held-out test set."""
+    def echo(side: str) -> list[str]:
+        r = subprocess.run(['sacrebleu', '-t', HELDOUT[lang], '-l', f'en-{lang}', '--echo', side],
+                           capture_output=True, encoding='utf-8', errors='replace', check=True,
+                           env={**os.environ, 'PYTHONIOENCODING': 'utf-8'})
+        return r.stdout.rstrip('\n').split('\n')
+    pairs = [(e, t) for e, t in zip(echo('src'), echo('ref')) if 5 <= len(e.split()) <= 30]
+    random.Random(seed).shuffle(pairs)
+    return pairs[:n]
+
+
+def score(pairs: list, hyps: list, secs: list, lang: str) -> dict:
+    import sacrebleu
+    refs = [t for _, t in pairs]
+    ok = sum(script_ok(lang, h) for h in hyps)
+    return {'chrf': round(sacrebleu.corpus_chrf(hyps, [refs], word_order=2).score, 1),
+            'right_lang': round(100 * ok / len(pairs)),
+            'sec': round(sum(secs) / max(len(secs), 1), 2),
+            'samples': [[e, r, h] for (e, r), h in list(zip(pairs, hyps))[:3]]}
+
+
+# Dedicated translation models (Marian, CC BY 4.0), 30-300 MB per direction.
+OPUS = {'tr': 'Helsinki-NLP/opus-mt-tc-big-en-tr', 'de': 'Helsinki-NLP/opus-mt-en-de',
+        'ja': 'Helsinki-NLP/opus-tatoeba-en-ja', 'ar': 'Helsinki-NLP/opus-mt-tc-big-en-ar',
+        'ru': 'Helsinki-NLP/opus-mt-en-ru'}
+OPUS_PREFIX = {'ar': '>>arb<< '}  # multi-target model: pick Standard Arabic
+
+
+def run_opus(data: dict) -> dict:
+    from transformers import MarianMTModel, MarianTokenizer
+    import torch
+    dev = 'cuda' if torch.cuda.is_available() else 'cpu'
+    out = {}
+    for lang, name in OPUS.items():
+        try:
+            tok = MarianTokenizer.from_pretrained(name)
+            model = MarianMTModel.from_pretrained(name).to(dev)
+        except Exception as e:  # noqa: BLE001
+            print('opus', lang, 'FAILED', e, flush=True)
+            continue
+        for key, pairs in data.items():
+            if key.split('/')[1] != lang:
+                continue
+            t0 = time.time()
+            src = [OPUS_PREFIX.get(lang, '') + e for e, _ in pairs]
+            hyps = []
+            for i in range(0, len(src), 16):
+                batch = tok(src[i:i + 16], return_tensors='pt', padding=True, truncation=True).to(dev)
+                gen = model.generate(**batch, num_beams=4, max_new_tokens=256)
+                hyps += tok.batch_decode(gen, skip_special_tokens=True)
+            per = (time.time() - t0) / len(src)
+            out[key] = score(pairs, hyps, [per] * len(src), lang)
+            print('opus-mt', key, out[key]['chrf'], out[key]['right_lang'], flush=True)
+    return out
+
+
 def script_ok(lang: str, text: str) -> bool:
     """Answer is in the target language (script check, then langid)."""
     letters = [c for c in text if c.isalpha()]
@@ -124,7 +187,7 @@ def _ask(prompt: str) -> tuple[str, float]:
     t0 = time.time()
     r = requests.post(f'http://127.0.0.1:{PORT}/v1/chat/completions', timeout=300, json={
         'messages': [{'role': 'user', 'content': prompt}],
-        'temperature': 0, 'max_tokens': 128,
+        'temperature': 0, 'max_tokens': 256,
         'chat_template_kwargs': {'enable_thinking': False},
     })
     r.raise_for_status()
@@ -148,9 +211,9 @@ def run_model(server: Path, model: str, url: str, data: dict) -> dict:
             except requests.RequestException:
                 pass
             time.sleep(1)
-        import sacrebleu
         out = {}
-        for lang, pairs in data.items():
+        for key, pairs in data.items():
+            lang = key.split('/')[1]
             from concurrent.futures import ThreadPoolExecutor
             prompts = [f'Translate into {NAMES[lang]}. Reply with the translation only.\n\n{en}'
                        for en, _ in pairs]
@@ -158,13 +221,8 @@ def run_model(server: Path, model: str, url: str, data: dict) -> dict:
                 answers = list(ex.map(ask, prompts))  # keeps input order
             hyps = [h for h, _ in answers]
             secs = [t for _, t in answers]
-            ok = sum(script_ok(lang, h) for h in hyps)
-            refs = [t for _, t in pairs]
-            chrf = sacrebleu.corpus_chrf(hyps, [refs], word_order=2).score
-            out[lang] = {'chrf': round(chrf, 1), 'right_lang': round(100 * ok / len(pairs)),
-                         'sec': round(sum(secs) / len(secs), 2),
-                         'samples': [[e, r, h] for (e, r), h in list(zip(pairs, hyps))[:3]]}
-            print(model, lang, out[lang]['chrf'], out[lang]['right_lang'], out[lang]['sec'], flush=True)
+            out[key] = score(pairs, hyps, secs, lang)
+            print(model, key, out[key]['chrf'], out[key]['right_lang'], out[key]['sec'], flush=True)
         return out
     finally:
         proc.terminate()
@@ -172,38 +230,57 @@ def run_model(server: Path, model: str, url: str, data: dict) -> dict:
         gguf.unlink(missing_ok=True)
 
 
+def table(results: dict, dataset: str) -> list[str]:
+    L = ['| model | ' + ' | '.join(LANGS) + ' |', '|---|' + '---|' * len(LANGS)]
+    for m, r in results.items():
+        cells = []
+        for x in LANGS:
+            v = r.get(f'{dataset}/{x}')
+            cells.append(f'{v["chrf"]} / {v["right_lang"]}% / {v["sec"]}s' if v else '-')
+        L.append(f'| {m} | ' + ' | '.join(cells) + ' |')
+    return L
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument('--n', type=int, default=50)
     ap.add_argument('--models', default=','.join(MODELS))
+    ap.add_argument('--opus', action='store_true', help='also run the Opus-MT models')
     ap.add_argument('--out', default='/content/bench.md')
     args = ap.parse_args()
     WORK.mkdir(parents=True, exist_ok=True)
-    server = build_llama()
-    data = {lang: sentences(lang, args.n) for lang in LANGS}
+    data = {}
+    for lang in LANGS:
+        data[f'tatoeba/{lang}'] = sentences(lang, args.n)
+        data[f'heldout/{lang}'] = sentences_heldout(lang, args.n)
     results = {}
-    for m in args.models.split(','):
+    if args.opus:
+        results['opus-mt (Marian)'] = run_opus(data)
+    server = build_llama() if args.models else None
+    for m in filter(None, args.models.split(',')):
         try:
             results[m] = run_model(server, m, MODELS[m], data)
         except Exception as e:  # noqa: BLE001 — one broken model must not stop the others
             print(m, 'FAILED', e, flush=True)
     (WORK / 'bench.json').write_text(json.dumps(results, ensure_ascii=False, indent=1))
     L = ['# On-device model benchmark', '',
-         f'en → {", ".join(LANGS)}; {args.n} Tatoeba pairs per language; greedy, thinking off.',
-         'chrF++ vs human reference (higher is better) / % answers in the right language / s per answer.', '',
-         '| model | ' + ' | '.join(LANGS) + ' |', '|---|' + '---|' * len(LANGS)]
-    for m, r in results.items():
-        L.append(f'| {m} | ' + ' | '.join(
-            f'{r[x]["chrf"]} / {r[x]["right_lang"]}% / {r[x]["sec"]}s' for x in LANGS) + ' |')
+         f'en → {", ".join(LANGS)}; {args.n} sentences per language and test set; '
+         'LLMs greedy with thinking off, Opus-MT beam 4.',
+         'Cells: chrF++ vs human reference (higher is better) / % answers in the right '
+         'language / s per answer (GPU, 8 parallel; not phone speed).', '',
+         '## Held-out test set (WMT18 tr, WMT20 de/ja/ru, IWSLT17 ar) — fair for every model', '']
+    L += table(results, 'heldout')
+    L += ['', '## Tatoeba (short everyday sentences; in Opus-MT training data)', '']
+    L += table(results, 'tatoeba')
     L += ['', '## Samples (source / reference / model)', '']
     for m, r in results.items():
         L.append(f'### {m}')
-        for x in LANGS:
-            for e, ref, h in r[x]['samples']:
-                L.append(f'- [{x}] {e} / {ref} / {h}')
+        for key in sorted(r):
+            for e, ref, h in r[key]['samples'][:2]:
+                L.append(f'- [{key}] {e} / {ref} / {h}')
         L.append('')
     Path(args.out).write_text('\n'.join(L), encoding='utf-8')
-    print('\n'.join(L[:12]))
+    print('\n'.join(L[:30]))
 
 
 if __name__ == '__main__':
