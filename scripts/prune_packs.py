@@ -151,6 +151,9 @@ def prune_pack(path: Path) -> tuple[int, int, int, int]:
     tr0 = p.execute('SELECT count(*) FROM trans').fetchone()[0]
 
     fix_tr_verb_stems(p)
+    # Japanese wordnet marks the inflection boundary with '+' ('逃避+する')
+    p.execute("UPDATE lemma SET written = replace(written, '+', ''), norm = replace(norm, '+', '') "
+              "WHERE lang = 'ja' AND written LIKE '%+%'")
     merge_duplicates(p)
     drop_case_variants(p)
     info = {lid: (lang, w) for lid, lang, w in p.execute('SELECT id, lang, written FROM lemma')}
